@@ -165,7 +165,7 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                                principal.btn_evaluacion.setVisible(false);
                                principal.btn_evaluacion.setEnabled(false);
                                principal.btn_primero.setEnabled(false);
-                               
+                               principal.jm_Empresa.setVisible(false);
                                principal.txt_nombrePri.setText(modelo.getValueAt(0, 1).toString());
                                id=Integer.parseInt(modelo.getValueAt(0, 0).toString());
                           nombrecompleto=(modelo.getValueAt(0, 1).toString()+" "+modelo.getValueAt(0, 2)+" "+modelo.getValueAt(0, 3));

@@ -4,12 +4,17 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/USUARIO/safety/src/Controlador/C_SelecEmple.java</file>
+            <file>file:/C:/Users/USUARIO/safety/src/Controlador/C_HabEncuTodos.java</file>
+            <file>file:/C:/Users/USUARIO/safety/src/Controlador/C_RegistrarEmpleado.java</file>
             <file>file:/C:/Users/USUARIO/safety/src/Vista/Encuesta_SocioDemografica.java</file>
-            <file>file:/C:/Users/USUARIO/safety/src/Modelo/infoEmpEncuesta.java</file>
+            <file>file:/C:/Users/USUARIO/safety/src/Vista/Principal.java</file>
             <file>file:/C:/Users/USUARIO/safety/src/Controlador/C_RealizarEncuesta.java</file>
-            <file>file:/C:/Users/USUARIO/safety/src/Modelo/M_EncDatosPer.java</file>
-            <file>file:/C:/Users/USUARIO/safety/src/Modelo/M_EncDatosSalud.java</file>
-            <file>file:/C:/Users/USUARIO/safety/src/Modelo/M_RegistrarEmpleado.java</file>
+            <file>file:/C:/Users/USUARIO/safety/src/Modelo/M_SeleccionarEmpleado.java</file>
+            <file>file:/C:/Users/USUARIO/safety/src/Controlador/C_IngresoSistema.java</file>
+            <file>file:/C:/Users/USUARIO/safety/src/Vista/welcome.java</file>
+            <file>file:/C:/Users/USUARIO/safety/src/Vista/VistaPrueba.java</file>
+            <file>file:/C:/Users/USUARIO/safety/src/Modelo/M_EncuDatosSGSST.java</file>
+            <file>file:/C:/Users/USUARIO/safety/src/Vista/SeleccionarEmpleados.java</file>
         </group>
     </open-files>
 </project-private>

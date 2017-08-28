@@ -72,6 +72,7 @@ private Connection connection= new Conexion().getConexion();
         btn_rencu.setVisible(false);
         btn_quinto.setVisible(true);
         
+       jmLlamadosdeAtencion.setVisible(false);
         
         transparenciaCerrar (); 
         this.setExtendedState(MAXIMIZED_BOTH);
@@ -183,9 +184,9 @@ private Connection connection= new Conexion().getConexion();
         mn_veriCumple = new javax.swing.JMenuItem();
         mn_criteriosNoCumple = new javax.swing.JMenuItem();
         mn_noaplica = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jmLlamadosdeAtencion = new javax.swing.JMenu();
         jm_realizarLlamadoAtencion = new javax.swing.JMenu();
-        jMenu1 = new javax.swing.JMenu();
+        jm_Empresa = new javax.swing.JMenu();
         jm_registrarEmpresa = new javax.swing.JMenuItem();
         jmSalir = new javax.swing.JMenu();
 
@@ -675,9 +676,9 @@ private Connection connection= new Conexion().getConexion();
 
         menuBar.add(helpMenu);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ATENCION.png"))); // NOI18N
-        jMenu2.setText("Llamados de atencion");
-        jMenu2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jmLlamadosdeAtencion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ATENCION.png"))); // NOI18N
+        jmLlamadosdeAtencion.setText("Llamados de atencion");
+        jmLlamadosdeAtencion.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
 
         jm_realizarLlamadoAtencion.setText("Realizar Llamado de Atencion");
         jm_realizarLlamadoAtencion.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -685,12 +686,12 @@ private Connection connection= new Conexion().getConexion();
                 jm_realizarLlamadoAtencionMouseClicked(evt);
             }
         });
-        jMenu2.add(jm_realizarLlamadoAtencion);
+        jmLlamadosdeAtencion.add(jm_realizarLlamadoAtencion);
 
-        menuBar.add(jMenu2);
+        menuBar.add(jmLlamadosdeAtencion);
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/clipboard.png"))); // NOI18N
-        jMenu1.setText("Empresa");
+        jm_Empresa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/clipboard.png"))); // NOI18N
+        jm_Empresa.setText("Empresa");
 
         jm_registrarEmpresa.setText("Registrar empresa");
         jm_registrarEmpresa.addActionListener(new java.awt.event.ActionListener() {
@@ -698,9 +699,9 @@ private Connection connection= new Conexion().getConexion();
                 jm_registrarEmpresaActionPerformed(evt);
             }
         });
-        jMenu1.add(jm_registrarEmpresa);
+        jm_Empresa.add(jm_registrarEmpresa);
 
-        menuBar.add(jMenu1);
+        menuBar.add(jm_Empresa);
 
         jmSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/SALIR.png"))); // NOI18N
         jmSalir.setText("Salir");
@@ -1033,8 +1034,6 @@ btn_evaluacion.setVisible(false);
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
@@ -1049,7 +1048,9 @@ btn_evaluacion.setVisible(false);
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JMenu jmLlamadosdeAtencion;
     private javax.swing.JMenu jmSalir;
+    public javax.swing.JMenu jm_Empresa;
     private javax.swing.JMenuItem jm_RealizarEncuesta;
     private javax.swing.JMenu jm_evaluacionIni;
     public javax.swing.JMenu jm_realizarEvaIni;
