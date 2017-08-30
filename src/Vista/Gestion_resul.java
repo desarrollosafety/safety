@@ -6,6 +6,7 @@
 package Vista;
 
 
+import Controlador.Cevaluacion;
 import Controlador.Cgestion_resul;
 import Controlador.Crecursos;
 import Modelo.Mevaluacion;
@@ -112,6 +113,81 @@ public class Gestion_resul extends javax.swing.JFrame {
         
         
     }
+    
+    Cevaluacion cm = new Cevaluacion();
+    
+   public void Validar(){
+       
+       
+           
+       
+         if(tr.getI531().equals("")){
+        
+        JOptionPane.showMessageDialog(null,"El item 1 del estandar E6.1 no se ha diligenciado correctamente ");
+        
+    }
+    
+    if(tr.getI541().equals("")){
+        
+         JOptionPane.showMessageDialog(null,"El item 2 del estandar E6.1 no se ha diligenciado correctamente ");
+        
+    }
+    
+    if(tr.getI551().equals("")){
+        
+         JOptionPane.showMessageDialog(null,"El item 3 del estandar E6.1 no se ha diligenciado correctamente ");
+        
+    }
+    
+    if(tr.getI561().equals("")){
+        
+         JOptionPane.showMessageDialog(null,"El item 4 del estandar E6.1 no se ha diligenciado correctamente ");
+        
+    }
+    
+        if(!tr.getI531().equals("") && !tr.getI541().equals("") && !tr.getI551().equals("") && !tr.getI561().equals("")){
+     
+        
+    int dialogButton =JOptionPane.showConfirmDialog(null, "Esta seguro que desea guardar las respuesta diligenciadas en la evaluacion inicial,"
+                                                        + " recuerde que si acepta no podra volver a diligenciar este formulario hasta que comience una nueva E. inicial ");
+           if(dialogButton == JOptionPane.YES_OPTION){     
+           Cgestion_resul func = new Cgestion_resul();
+
+        func.insertarItem53(tr);
+        func.insertarItem54(tr);
+        func.insertarItem55(tr);
+        
+        if(func.insertarItem56(tr)){
+            JOptionPane.showMessageDialog(rootPane, "Se han registrado los items satisfactoriamente");
+
+        }
+        
+        
+    ps.setE6(1);
+       gh.config();
+       int valo=5;
+       ps.setBarra(ps.getBarra()+valo);
+       this.dispose();
+       gh.val=ps.getBarra();
+        gh.empezar();
+        
+        cm.est_gestResul(ps);
+       gh.setVisible(true);
+       gh.toFront();
+       
+       
+      
+   
+       
+           }
+       
+     }
+        
+        
+    }
+       
+       
+    
 Mgestion_resul tr= new Mgestion_resul();
     /**
      * This method is called from within the constructor to initialize the form.
@@ -986,6 +1062,8 @@ Mgestion_resul tr= new Mgestion_resul();
         btnadjnoitem53.setEnabled(false);
          rbjustiitem53.setEnabled(true);
           rbnojustiitem53.setEnabled(true);
+          
+          tr.setI531("");
         
         }else{
           rbsi531.setEnabled(true);
@@ -1002,6 +1080,7 @@ Mgestion_resul tr= new Mgestion_resul();
 
     private void rbjustiitem53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbjustiitem53ActionPerformed
       txtitem53.setEnabled(true);
+       tr.setI531("");
 
     }//GEN-LAST:event_rbjustiitem53ActionPerformed
 
@@ -1029,7 +1108,7 @@ Mgestion_resul tr= new Mgestion_resul();
        tr.setA531("");
        tr.setA531("No");
        tr.setV531("");
-       tr.setA531("No");
+       tr.setV531("no aplica");
        tr.setJ531("");
        tr.setJ531(txtitem53.getText());
        
@@ -1037,11 +1116,6 @@ Mgestion_resul tr= new Mgestion_resul();
    }else{
         tr.setJ531("");
         tr.setI531("");
-        tr.setI531("No");
-        tr.setA531("");
-        tr.setA531("No");
-        tr.setV531("");
-        tr.setV531("No");
         
         
             lblcum53.setEnabled(false);
@@ -1169,6 +1243,8 @@ Mgestion_resul tr= new Mgestion_resul();
         btnadjnoitem54.setEnabled(false);
          rbjustiitem54.setEnabled(false);
           rbnojustiitem54.setEnabled(false);
+          
+           tr.setI541("");
                        
         }   
         
@@ -1178,6 +1254,7 @@ Mgestion_resul tr= new Mgestion_resul();
     private void rbjustiitem54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbjustiitem54ActionPerformed
        
         txtitem54.setEnabled(true);
+        tr.setI541("");
         
     }//GEN-LAST:event_rbjustiitem54ActionPerformed
 
@@ -1206,7 +1283,7 @@ Mgestion_resul tr= new Mgestion_resul();
        tr.setA541("");
        tr.setA541("No");
        tr.setV541("");
-       tr.setA541("No");
+       tr.setV541("no aplica");
        tr.setJ541("");
        tr.setJ541(txtitem54.getText());
        
@@ -1214,13 +1291,7 @@ Mgestion_resul tr= new Mgestion_resul();
    }else{
         tr.setJ541("");
         tr.setI541("");
-        tr.setI541("No");
-        tr.setA541("");
-        tr.setA541("No");
-        tr.setV541("");
-        tr.setV541("No");
-        
-        
+                
             lblcum54.setEnabled(false);
             lblnocum54.setEnabled(false);
             btnadjnoitem54.setEnabled(false);
@@ -1347,6 +1418,8 @@ Mgestion_resul tr= new Mgestion_resul();
         btnadjnoitem55.setEnabled(false);
            rbjustiitem55.setEnabled(false);
           rbnojustiitem55.setEnabled(false);
+          
+          tr.setI551("");
                       
         }  
         
@@ -1356,6 +1429,7 @@ Mgestion_resul tr= new Mgestion_resul();
     private void rbjustiitem55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbjustiitem55ActionPerformed
      
         txtitem55.setEnabled(true);
+         tr.setI551("");
       
     }//GEN-LAST:event_rbjustiitem55ActionPerformed
 
@@ -1385,7 +1459,7 @@ Mgestion_resul tr= new Mgestion_resul();
        tr.setA551("");
        tr.setA551("No");
        tr.setV551("");
-       tr.setA551("No");
+       tr.setV551("No");
        tr.setJ551("");
        tr.setJ551(txtitem55.getText());
        
@@ -1393,12 +1467,7 @@ Mgestion_resul tr= new Mgestion_resul();
    }else{
         tr.setJ551("");
         tr.setI551("");
-        tr.setI551("No");
-        tr.setA551("");
-        tr.setA551("No");
-        tr.setV551("");
-        tr.setV551("No");
-        
+           
         
             lblcum55.setEnabled(false);
             lblnocum55.setEnabled(false);
@@ -1516,6 +1585,8 @@ Mgestion_resul tr= new Mgestion_resul();
         btnadjnoitem56.setEnabled(false);
          rbjustiitem56.setEnabled(true);
           rbnojustiitem56.setEnabled(true);
+          
+           tr.setI561("");
         
         }else{
           rbsi561.setEnabled(true);
@@ -1533,6 +1604,7 @@ Mgestion_resul tr= new Mgestion_resul();
 
     private void rbjustiitem56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbjustiitem56ActionPerformed
        txtitem56.setEnabled(true);
+       tr.setI561("");
 
     }//GEN-LAST:event_rbjustiitem56ActionPerformed
 
@@ -1560,7 +1632,7 @@ Mgestion_resul tr= new Mgestion_resul();
        tr.setA561("");
        tr.setA561("No");
        tr.setV561("");
-       tr.setA561("No");
+       tr.setV561("no aplica");
        tr.setJ561("");
        tr.setJ561(txtitem56.getText());
        
@@ -1568,12 +1640,7 @@ Mgestion_resul tr= new Mgestion_resul();
    }else{
         tr.setJ561("");
         tr.setI561("");
-        tr.setI561("No");
-        tr.setA561("");
-        tr.setA561("No");
-        tr.setV561("");
-        tr.setV561("No");
-        
+         
         
             lblcum56.setEnabled(false);
             lblnocum56.setEnabled(false);
@@ -1682,7 +1749,7 @@ Mgestion_resul tr= new Mgestion_resul();
     }//GEN-LAST:event_btnmv561ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-/*      
+      
      // Item 53
 
         if(rbsi531.isSelected()){
@@ -1753,26 +1820,8 @@ Mgestion_resul tr= new Mgestion_resul();
 
         }
 
-      
-          Cgestion_resul func = new Cgestion_resul();
-
-        func.insertarItem53(tr);
-        func.insertarItem54(tr);
-        func.insertarItem55(tr);
-        
-        if(func.insertarItem56(tr)){
-            JOptionPane.showMessageDialog(rootPane, "Se han registrado los items satisfactoriamente");
-
-        }*/
-    ps.setE6(1);
-       gh.config();
-       int valo=5;
-       ps.setBarra(ps.getBarra()+valo);
-       this.dispose();
-       gh.val=ps.getBarra();
-        gh.empezar();
-       gh.setVisible(true);
-       gh.toFront();
+      Validar();
+       
 
     }//GEN-LAST:event_jButton2ActionPerformed
 

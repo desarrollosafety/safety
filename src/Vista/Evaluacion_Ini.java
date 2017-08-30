@@ -501,6 +501,9 @@ Recursos ps;
        tr.setE6(1);
        tr.setE7(1);
        tr.setE8(1);
+       tr.setBarra(0);
+       pgeva.setValue(0);
+       hg.est_empNuev(tr);
            
             hg.empezarItem(tr);
             hg.empezarVeri(tr);

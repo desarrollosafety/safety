@@ -21,25 +21,25 @@ public class Mgestion_resul {
  private FileInputStream fi11121;
  
 // Item 53   
-    private String i531;
+    private String i531="";
     private String a531;
     private String v531;
     private String j531;
              
 // Item 54   
-    private String i541;
+    private String i541="";
     private String a541;
     private String v541;
     private String j541;
     
 // Item 55   
-    private String i551;
+    private String i551="";
     private String a551;
     private String v551;
     private String j551;
    
  // item 56   
-    private String i561;
+    private String i561="";
     private String a561;
     private String v561;
     private String j561; 

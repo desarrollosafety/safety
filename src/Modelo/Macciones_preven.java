@@ -21,25 +21,25 @@ public class Macciones_preven {
  private FileInputStream fi11121;
  
 // Item 57   
-    private String i571;
+    private String i571="";
     private String a571;
     private String v571;
     private String j571;
              
 // Item 58   
-    private String i581;
+    private String i581="";
     private String a581;
     private String v581;
     private String j581;
     
 // Item 59   
-    private String i591;
+    private String i591="";
     private String a591;
     private String v591;
     private String j591;
    
  // item 60   
-    private String i601;
+    private String i601="";
     private String a601;
     private String v601;
     private String j601; 

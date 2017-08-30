@@ -6,6 +6,8 @@
 package Vista;
 
 import Controlador.Cacciones_preven;
+import Controlador.Cevaluacion;
+import Controlador.Cgestion_resul;
 import Controlador.Crecursos;
 import Modelo.Macciones_preven;
 import Modelo.Mevaluacion;
@@ -111,6 +113,81 @@ public class Acciones_preventivas extends javax.swing.JFrame {
         
         
     }
+    
+     Cevaluacion cm = new Cevaluacion();
+    
+   public void Validar(){
+       
+       
+           
+       
+         if(tr.getI571().equals("")){
+        
+        JOptionPane.showMessageDialog(null,"El item 1 del estandar E7.1 no se ha diligenciado correctamente ");
+        
+    }
+    
+    if(tr.getI581().equals("")){
+        
+         JOptionPane.showMessageDialog(null,"El item 2 del estandar E7.1 no se ha diligenciado correctamente ");
+        
+    }
+    
+    if(tr.getI591().equals("")){
+        
+         JOptionPane.showMessageDialog(null,"El item 3 del estandar E7.1 no se ha diligenciado correctamente ");
+        
+    }
+    
+    if(tr.getI601().equals("")){
+        
+         JOptionPane.showMessageDialog(null,"El item 4 del estandar E7.1 no se ha diligenciado correctamente ");
+        
+    }
+    
+        if(!tr.getI571().equals("") && !tr.getI581().equals("") && !tr.getI591().equals("") && !tr.getI601().equals("")){
+     
+        
+    int dialogButton =JOptionPane.showConfirmDialog(null, "Esta seguro que desea guardar las respuesta diligenciadas en la evaluacion inicial,"
+                                                        + " recuerde que si acepta no podra volver a diligenciar este formulario hasta que comience una nueva E. inicial ");
+           if(dialogButton == JOptionPane.YES_OPTION){     
+          
+            
+         // Donde se llama al controlador para que guarde los items
+        Cacciones_preven func = new Cacciones_preven();
+
+        func.insertarItem57(tr);
+        func.insertarItem58(tr);
+        func.insertarItem59(tr);
+        
+        if(func.insertarItem60(tr)){
+            JOptionPane.showMessageDialog(rootPane, "Se han registrado los items satisfactoriamente");
+
+        }  
+   
+   
+       ps.setE7(1);
+       gh.config();
+       int valo=10;
+       ps.setBarra(ps.getBarra()+valo);
+       this.dispose();
+       gh.val=ps.getBarra();
+        gh.empezar();
+        
+        cm.est_accionPreven(ps);
+        gh.setVisible(true);
+       gh.toFront();
+       
+      
+   
+       
+           }
+       
+     }
+        
+        
+    }
+    
             
     Macciones_preven tr= new Macciones_preven();
     /**
@@ -987,6 +1064,8 @@ public class Acciones_preventivas extends javax.swing.JFrame {
         btnadjnoitem57.setEnabled(false);
           rbjustiitem57.setEnabled(true);
           rbnojustiitem57.setEnabled(true);
+          
+          tr.setI571("");
         
         }else{
           rbsi571.setEnabled(true);
@@ -1003,6 +1082,7 @@ public class Acciones_preventivas extends javax.swing.JFrame {
 
     private void rbjustiitem57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbjustiitem57ActionPerformed
       txtitem57.setEnabled(true);
+       tr.setI571("");
     }//GEN-LAST:event_rbjustiitem57ActionPerformed
 
     private void rbnojustiitem57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbnojustiitem57ActionPerformed
@@ -1030,7 +1110,7 @@ public class Acciones_preventivas extends javax.swing.JFrame {
        tr.setA571("");
        tr.setA571("No");
        tr.setV571("");
-       tr.setA571("No");
+       tr.setV571("no aplica");
        tr.setJ571("");
        tr.setJ571(txtitem57.getText());
        
@@ -1038,12 +1118,7 @@ public class Acciones_preventivas extends javax.swing.JFrame {
    }else{
         tr.setJ571("");
         tr.setI571("");
-        tr.setI571("No");
-        tr.setA571("");
-        tr.setA571("No");
-        tr.setV571("");
-        tr.setV571("No");
-        
+                
         
             lblcum57.setEnabled(false);
             lblnocum57.setEnabled(false);
@@ -1160,6 +1235,8 @@ public class Acciones_preventivas extends javax.swing.JFrame {
         btnadjnoitem58.setEnabled(false);
          rbjustiitem58.setEnabled(true);
           rbnojustiitem58.setEnabled(true);
+          
+          tr.setI581("");
         
         }else{
           rbsi581.setEnabled(true);
@@ -1176,6 +1253,7 @@ public class Acciones_preventivas extends javax.swing.JFrame {
 
     private void rbjustiitem58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbjustiitem58ActionPerformed
        txtitem58.setEnabled(true);
+       tr.setI581("");
     }//GEN-LAST:event_rbjustiitem58ActionPerformed
 
     private void rbnojustiitem58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbnojustiitem58ActionPerformed
@@ -1203,7 +1281,7 @@ public class Acciones_preventivas extends javax.swing.JFrame {
        tr.setA581("");
        tr.setA581("No");
        tr.setV581("");
-       tr.setA581("No");
+       tr.setV581("no aplica");
        tr.setJ581("");
        tr.setJ581(txtitem58.getText());
        
@@ -1211,12 +1289,7 @@ public class Acciones_preventivas extends javax.swing.JFrame {
    }else{
         tr.setJ581("");
         tr.setI581("");
-        tr.setI581("No");
-        tr.setA581("");
-        tr.setA581("No");
-        tr.setV581("");
-        tr.setV581("No");
-        
+             
         
             lblcum58.setEnabled(false);
             lblnocum58.setEnabled(false);
@@ -1334,6 +1407,8 @@ public class Acciones_preventivas extends javax.swing.JFrame {
         btnadjnoitem59.setEnabled(false);
           rbjustiitem59.setEnabled(true);
           rbnojustiitem59.setEnabled(true);
+          
+          tr.setI591("");
         
         }else{
           rbsi591.setEnabled(true);
@@ -1350,6 +1425,7 @@ public class Acciones_preventivas extends javax.swing.JFrame {
 
     private void rbjustiitem59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbjustiitem59ActionPerformed
         txtitem59.setEnabled(true);
+        tr.setI591("");
     }//GEN-LAST:event_rbjustiitem59ActionPerformed
 
     private void rbnojustiitem59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbnojustiitem59ActionPerformed
@@ -1376,7 +1452,7 @@ public class Acciones_preventivas extends javax.swing.JFrame {
        tr.setA591("");
        tr.setA591("No");
        tr.setV591("");
-       tr.setA591("No");
+       tr.setV591("no aplica");
        tr.setJ591("");
        tr.setJ591(txtitem59.getText());
        
@@ -1384,13 +1460,7 @@ public class Acciones_preventivas extends javax.swing.JFrame {
    }else{
         tr.setJ591("");
         tr.setI591("");
-        tr.setI591("No");
-        tr.setA591("");
-        tr.setA591("No");
-        tr.setV591("");
-        tr.setV591("No");
-        
-        
+              
             lblcum59.setEnabled(false);
             lblnocum59.setEnabled(false);
             btnadjnoitem59.setEnabled(false);
@@ -1506,6 +1576,8 @@ public class Acciones_preventivas extends javax.swing.JFrame {
         btnadjnoitem60.setEnabled(false);
            rbjustiitem60.setEnabled(true);
           rbnojustiitem60.setEnabled(true);
+          
+          tr.setI601("");
         
         }else{
           rbsi601.setEnabled(true);
@@ -1523,6 +1595,7 @@ public class Acciones_preventivas extends javax.swing.JFrame {
 
     private void rbjustiitem60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbjustiitem60ActionPerformed
        txtitem60.setEnabled(true);
+        tr.setI601("");
     }//GEN-LAST:event_rbjustiitem60ActionPerformed
 
     private void rbnojustiitem60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbnojustiitem60ActionPerformed
@@ -1550,7 +1623,7 @@ if(txtitem60.getText().length()>2){
        tr.setA601("");
        tr.setA601("No");
        tr.setV601("");
-       tr.setA601("No");
+       tr.setV601("no aplica");
        tr.setJ601("");
        tr.setJ601(txtitem60.getText());
        
@@ -1558,13 +1631,7 @@ if(txtitem60.getText().length()>2){
    }else{
         tr.setJ601("");
         tr.setI601("");
-        tr.setI601("No");
-        tr.setA601("");
-        tr.setA601("No");
-        tr.setV601("");
-        tr.setV601("No");
-        
-        
+       
             lblcum60.setEnabled(false);
             lblnocum60.setEnabled(false);
             btnadjnoitem60.setEnabled(false);
@@ -1675,7 +1742,7 @@ if(txtitem60.getText().length()>2){
        
       /* Donde se guardan el cumplimiento de los items                       */
   
-   /*   // Item 57
+   // Item 57
         if(rbsi571.isSelected()){
             tr.setI571("");
             tr.setI571("si");
@@ -1746,29 +1813,10 @@ if(txtitem60.getText().length()>2){
             tr.setA601("si");
 
         }
-
-        // Donde se llama al controlador para que guarde los items
-        Cacciones_preven func = new Cacciones_preven();
-
-        func.insertarItem57(tr);
-        func.insertarItem58(tr);
-        func.insertarItem59(tr);
         
-        if(func.insertarItem60(tr)){
-            JOptionPane.showMessageDialog(rootPane, "Se han registrado los items satisfactoriamente");
+        Validar();
 
-        }  */
-   
-   
-       ps.setE7(1);
-       gh.config();
-       int valo=10;
-       ps.setBarra(ps.getBarra()+valo);
-       this.dispose();
-       gh.val=ps.getBarra();
-        gh.empezar();
-       gh.setVisible(true);
-       gh.toFront();
+      
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

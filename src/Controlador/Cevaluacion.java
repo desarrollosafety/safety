@@ -323,12 +323,12 @@ public class Cevaluacion extends Conexion {
             pst.setInt(1, dts.getE0());
             pst1.setInt(1, dts.getE1());
             pst2.setInt(1, dts.getE2());                                  
-            pst3.setInt(1, dts.getE1());
-            pst4.setInt(1, dts.getE2());
-            pst5.setInt(1, dts.getE1());
-            pst6.setInt(1, dts.getE2());                                  
-            pst7.setInt(1, dts.getE1());
-            pst8.setInt(1, dts.getE2());
+            pst3.setInt(1, dts.getE3());
+            pst4.setInt(1, dts.getE4());
+            pst5.setInt(1, dts.getE5());
+            pst6.setInt(1, dts.getE6());                                  
+            pst7.setInt(1, dts.getE7());
+            pst8.setInt(1, dts.getE8());
             
             
             pst.executeUpdate();
@@ -349,6 +349,55 @@ public class Cevaluacion extends Conexion {
         }
                        
            }
+           
+          public void est_empNuev(Mevaluacion dts){
+               
+                try {
+
+            PreparedStatement pst = cn.prepareStatement("update est_evalua set estado=? where nombre='E'");
+            PreparedStatement pst1 = cn.prepareStatement("update est_evalua set estado=? where nombre='E1'");
+            PreparedStatement pst2 = cn.prepareStatement("update est_evalua set estado=? where nombre='E2'");
+            PreparedStatement pst3 = cn.prepareStatement("update est_evalua set estado=? where nombre='E3'");
+            PreparedStatement pst4 = cn.prepareStatement("update est_evalua set estado=? where nombre='E4'");
+            PreparedStatement pst5 = cn.prepareStatement("update est_evalua set estado=? where nombre='E5'");
+            PreparedStatement pst6 = cn.prepareStatement("update est_evalua set estado=? where nombre='E6'");
+            PreparedStatement pst7 = cn.prepareStatement("update est_evalua set estado=? where nombre='E7'");
+            PreparedStatement pst8 = cn.prepareStatement("update est_evalua set estado=? where nombre='E8'");
+            PreparedStatement pst9 = cn.prepareStatement("update est_evalua set barra=? where nombre='E'");
+            
+            pst.setInt(1, dts.getE0());
+            pst1.setInt(1, dts.getE1());
+            pst2.setInt(1, dts.getE2());                                  
+            pst3.setInt(1, dts.getE3());
+            pst4.setInt(1, dts.getE4());
+            pst5.setInt(1, dts.getE5());
+            pst6.setInt(1, dts.getE6());                                  
+            pst7.setInt(1, dts.getE7());
+            pst8.setInt(1, dts.getE8());
+            pst9.setInt(1, dts.getBarra());
+            
+            
+            pst.executeUpdate();
+            pst1.executeUpdate();
+            pst2.executeUpdate();
+            pst3.executeUpdate();
+            pst4.executeUpdate();
+            pst5.executeUpdate();
+            pst6.executeUpdate();
+            pst7.executeUpdate();
+            pst8.executeUpdate();
+            pst9.executeUpdate();
+            
+           
+                                          
+        } catch (Exception e) {
+            JOptionPane.showConfirmDialog(null, e);
+           
+        }
+                       
+           }     
+           
+           
            
               public void est_recursos(Mevaluacion dts){
          
@@ -449,6 +498,48 @@ public class Cevaluacion extends Conexion {
               PreparedStatement pst1 = cn.prepareStatement("update est_evalua set barra=? where nombre='E'");
               
               pst.setInt(1, dts.getE5());
+              pst1.setInt(1, dts.getBarra());
+              
+               pst.executeUpdate();
+               pst1.executeUpdate();
+              
+         
+           } catch (Exception e) {
+            JOptionPane.showConfirmDialog(null, e);
+           
+        }
+    
+}
+         
+                  public void est_gestResul(Mevaluacion dts){
+         
+         try{
+             
+              PreparedStatement pst = cn.prepareStatement("update est_evalua set estado=? where nombre='E6'");
+              PreparedStatement pst1 = cn.prepareStatement("update est_evalua set barra=? where nombre='E'");
+              
+              pst.setInt(1, dts.getE6());
+              pst1.setInt(1, dts.getBarra());
+              
+               pst.executeUpdate();
+               pst1.executeUpdate();
+              
+         
+           } catch (Exception e) {
+            JOptionPane.showConfirmDialog(null, e);
+           
+        }
+    
+}
+                  
+                    public void est_accionPreven(Mevaluacion dts){
+         
+         try{
+             
+              PreparedStatement pst = cn.prepareStatement("update est_evalua set estado=? where nombre='E7'");
+              PreparedStatement pst1 = cn.prepareStatement("update est_evalua set barra=? where nombre='E'");
+              
+              pst.setInt(1, dts.getE7());
               pst1.setInt(1, dts.getBarra());
               
                pst.executeUpdate();
