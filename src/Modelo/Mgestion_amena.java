@@ -21,7 +21,7 @@ public class Mgestion_amena {
  private FileInputStream fi11121;
  
 // Item 51   
-    private String i511;
+    private String i511="";
     private String a511;
     private String v511;
     private String v512;
@@ -32,7 +32,7 @@ public class Mgestion_amena {
     
                   
 // Item 52   
-    private String i521;
+    private String i521="";
     private String a521;
     private String v521;
     private String j521;

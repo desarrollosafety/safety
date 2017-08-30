@@ -6,6 +6,7 @@
 package Vista;
 
 
+import Controlador.Cevaluacion;
 import Controlador.Cgestion_amena;
 import Controlador.Crecursos;
 import Modelo.Mevaluacion;
@@ -91,11 +92,66 @@ public class Gestion_amenazas extends javax.swing.JFrame {
        btnmv512.setEnabled(false);
        btnmv513.setEnabled(false);
        btnmv521.setEnabled(false);
-       
-     
-       
+         
        
    }
+  
+    Cevaluacion cm = new Cevaluacion();
+ private void Validar(){
+      
+       if(tr.getI511().equals("")){
+        
+        JOptionPane.showMessageDialog(null,"El item 1 del estandar E5.1 no se ha diligenciado correctamente ");
+        
+    }
+    
+    if(tr.getI521().equals("")){
+        
+         JOptionPane.showMessageDialog(null,"El item 2 del estandar E5.1 no se ha diligenciado correctamente ");
+        
+    }
+      
+       if(!tr.getI511().equals("") && !tr.getI521().equals("")){
+           
+           int dialogButton =JOptionPane.showConfirmDialog(null, "Esta seguro que desea guardar las respuesta diligenciadas en la evaluacion inicial,"
+                                                        + " recuerde que si acepta no podra volver a diligenciar este formulario hasta que comience una nueva E. inicial ");
+           if(dialogButton == JOptionPane.YES_OPTION){     
+           
+           
+            Cgestion_amena func = new Cgestion_amena();
+
+        func.insertarItem51(tr);
+       
+        if(func.insertarItem52(tr)){
+            JOptionPane.showMessageDialog(rootPane, "Se han registrado los items satisfactoriamente");
+
+        }  
+
+       ps.setE5(1);
+       gh.config();
+       int valo=10;
+       ps.setBarra(ps.getBarra()+valo);
+       this.dispose();
+       gh.val=ps.getBarra();
+        gh.empezar();
+        
+        cm.est_gestAmena(ps);
+       gh.setVisible(true);
+       gh.toFront();
+           
+           
+           
+           
+           }
+           
+           
+       }
+      
+      
+      
+      
+  }
+  
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -674,6 +730,7 @@ public class Gestion_amenazas extends javax.swing.JFrame {
           btnadjnoitem51.setEnabled(false);
             rbjustiitem51.setEnabled(true);
           rbnojustiitem51.setEnabled(true);
+          tr.setI511("");
         
         }else{
           rbsi511.setEnabled(true);
@@ -697,6 +754,7 @@ public class Gestion_amenazas extends javax.swing.JFrame {
 
     private void rbjustiitem51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbjustiitem51ActionPerformed
       txtitem51.setEnabled(true);
+       tr.setI511("");
     }//GEN-LAST:event_rbjustiitem51ActionPerformed
 
     private void rbnojustiitem51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbnojustiitem51ActionPerformed
@@ -730,8 +788,11 @@ public class Gestion_amenazas extends javax.swing.JFrame {
        tr.setA511("");
        tr.setA511("No");
        tr.setV511("");
+       tr.setV511("no aplica");
        tr.setV512("");
+       tr.setV512("no aplica");
        tr.setV513("");
+       tr.setV513("no aplica");
        tr.setJ511("");
        tr.setJ511(txtitem51.getText());
        
@@ -739,16 +800,7 @@ public class Gestion_amenazas extends javax.swing.JFrame {
    }else{
         tr.setJ511("");
             tr.setI511("");
-             tr.setI511("No");
-              tr.setA511("");
-             tr.setA511("No");
-             tr.setV511("");
-        tr.setV511("No");
-        tr.setV512("");
-        tr.setV512("No");
-        tr.setV513("");
-        tr.setV513("No");
-        
+                    
             lblcum51.setEnabled(false);
             lblnocum51.setEnabled(false);
             btnadjnoitem51.setEnabled(false);
@@ -991,6 +1043,7 @@ public class Gestion_amenazas extends javax.swing.JFrame {
         btnadjnoitem52.setEnabled(false);
           rbjustiitem52.setEnabled(true);
           rbnojustiitem52.setEnabled(true);
+          tr.setI521("");
         
         }else{
           rbsi521.setEnabled(true);
@@ -1007,6 +1060,7 @@ public class Gestion_amenazas extends javax.swing.JFrame {
 
     private void rbjustiitem52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbjustiitem52ActionPerformed
        txtitem52.setEnabled(true);
+       tr.setI521("");
     }//GEN-LAST:event_rbjustiitem52ActionPerformed
 
     private void rbnojustiitem52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbnojustiitem52ActionPerformed
@@ -1034,7 +1088,7 @@ public class Gestion_amenazas extends javax.swing.JFrame {
        tr.setA521("");
        tr.setA521("No");
        tr.setV521("");
-       tr.setA521("No");
+       tr.setV521("no aplica");
        tr.setJ521("");
        tr.setJ521(txtitem52.getText());
        
@@ -1042,13 +1096,7 @@ public class Gestion_amenazas extends javax.swing.JFrame {
    }else{
         tr.setJ521("");
         tr.setI521("");
-        tr.setI521("No");
-        tr.setA521("");
-        tr.setA521("No");
-        tr.setV521("");
-        tr.setV521("No");
-        
-        
+           
             lblcum52.setEnabled(false);
             lblnocum52.setEnabled(false);
             btnadjnoitem52.setEnabled(false);
@@ -1163,7 +1211,7 @@ gh.toFront();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-/*       // Item 51
+      // Item 51
         if(rbsi511.isSelected() && rbsi512.isSelected() && rbsi513.isSelected()){
             tr.setI511("");
             tr.setI511("si");
@@ -1172,10 +1220,15 @@ gh.toFront();
 
         }
         if(rbno511.isSelected() || rbno512.isSelected() || rbno513.isSelected()){
+          if((!rbno511.isSelected() && !rbsi511.isSelected()) || (!rbno512.isSelected() && !rbsi512.isSelected()) || (!rbno513.isSelected() && !rbsi513.isSelected()) 
+       ){   
+                
+        }else{  
+            
             tr.setI511("");
             tr.setI511("no");
             tr.setA511("");
-            tr.setA511("si");
+            tr.setA511("si"); }
 
         }
         // Item 2
@@ -1196,24 +1249,7 @@ gh.toFront();
 
         }
 
-        Cgestion_amena func = new Cgestion_amena();
-
-        func.insertarItem51(tr);
-       
-        if(func.insertarItem52(tr)){
-            JOptionPane.showMessageDialog(rootPane, "Se han registrado los items satisfactoriamente");
-
-        }  */
-
-       ps.setE5(1);
-       gh.config();
-       int valo=10;
-       ps.setBarra(ps.getBarra()+valo);
-       this.dispose();
-       gh.val=ps.getBarra();
-        gh.empezar();
-       gh.setVisible(true);
-       gh.toFront();
+       Validar();
 
     }//GEN-LAST:event_jButton2ActionPerformed
 

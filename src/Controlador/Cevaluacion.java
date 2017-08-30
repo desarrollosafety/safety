@@ -440,5 +440,26 @@ public class Cevaluacion extends Conexion {
          
          
      }
+       
+         public void est_gestAmena(Mevaluacion dts){
+         
+         try{
+             
+              PreparedStatement pst = cn.prepareStatement("update est_evalua set estado=? where nombre='E5'");
+              PreparedStatement pst1 = cn.prepareStatement("update est_evalua set barra=? where nombre='E'");
+              
+              pst.setInt(1, dts.getE5());
+              pst1.setInt(1, dts.getBarra());
+              
+               pst.executeUpdate();
+               pst1.executeUpdate();
+              
+         
+           } catch (Exception e) {
+            JOptionPane.showConfirmDialog(null, e);
+           
+        }
     
+}
+         
 }

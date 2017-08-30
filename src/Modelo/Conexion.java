@@ -22,7 +22,7 @@ public class Conexion {
     
         try {
           Class.forName("com.mysql.jdbc.Driver").newInstance(); 
-        con=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/bd_safety","root",""); 
+        con=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/safety","root",""); 
         } catch (Exception e) {
         }
         

@@ -17,6 +17,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -81,8 +82,8 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
             if (rol.equals("Administrador SGSST")) {
                 ArrayList<M_IngresoSistema> array = modelo_ingreso.Ingreso_AdminSGSST(user, contraseñatxt);
                 int cantidad = array.size();
-
-                if (cantidad <= 0) {
+               
+                if (cantidad == 0) {
                     JOptionPane.showMessageDialog(null, "Error, Usuario y/o Contraseña Incorrectos ");
                     contador++;
                     if (contador >= 3) {
@@ -115,7 +116,7 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                             principal.label_rol.setText("Administrador SGSST");
                             id=Integer.parseInt(modelo.getValueAt(0, 0).toString());
                           nombrecompleto=(modelo.getValueAt(0, 1).toString()+" "+modelo.getValueAt(0, 2)+" "+modelo.getValueAt(0, 3));
-                            principal.setVisible(true);
+                          principal.setVisible(true);
                             this.vista_ingreso.dispose();
                         } else {
                         }
@@ -183,7 +184,7 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                     if (rol.equals("Gerente")) {
                         ArrayList<M_IngresoSistema> array = modelo_ingreso.Ingreso_Gerente(user, contraseñatxt);
                         int cantidad = array.size();
-
+                       
                         if (cantidad == 0) {
                             JOptionPane.showMessageDialog(null, "Error, Usuario y/o Contraseña Incorrectos ");
                             contador++;
