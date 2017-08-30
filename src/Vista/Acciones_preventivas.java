@@ -167,6 +167,9 @@ public class Acciones_preventivas extends javax.swing.JFrame {
    
    
        ps.setE7(1);
+       cm.Puntaje();
+      gh.punt= ps.getPunt();
+      
        gh.config();
        int valo=10;
        ps.setBarra(ps.getBarra()+valo);

@@ -38,7 +38,7 @@ public class Cevaluacion extends Conexion {
     
      public boolean empezarItem(Mevaluacion dts) {
          
-     while(con<60){    
+     while(con<=60){    
                 
         empItem = "update item set cumple=?, justifi=?, aplica=? where idItem="+con;
                
@@ -65,7 +65,7 @@ public class Cevaluacion extends Conexion {
     
       public boolean empezarVeri(Mevaluacion dts) {
          
-     for(int i=1;i<91;i++){    
+     for(int i=1;i<=91;i++){    
                 
         empVeri = "update verificacion set cumplimiento=? where idverificacion="+i;
                
@@ -304,6 +304,27 @@ public class Cevaluacion extends Conexion {
         }
                  
       }
+                  
+          public void Puntaje() {
+                         
+         try {
+
+            Statement pst = cn.createStatement();
+            ResultSet rs = pst.executeQuery("select sum(valor_item) from item where cumple='si'");
+            
+            if(rs.next()){    
+                
+                    
+            tr.setPunt(Double.parseDouble(rs.getString("sum(valor_item)")));         
+          
+            }
+                                          
+        } catch (Exception e) {
+            JOptionPane.showConfirmDialog(null, e);
+            
+        }
+                 
+      }        
            
            
            public void est_emp(Mevaluacion dts){

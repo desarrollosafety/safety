@@ -54,10 +54,12 @@ Recursos ps;
             hg.est_E7();
             hg.est_E8();
              hg.Barra();
+             hg.Puntaje();
            
            
          // cuando inicie carge el valor de la barra  
            val=tr.getBarra();
+           punt=tr.getPunt();
            empezar();
        
 // metodo para configurar botones 
@@ -78,6 +80,7 @@ Recursos ps;
     }
          // variable para el llenado del progress bar
  public int val;
+ public double punt;
  
   // metodo para configurar botones
   public void config(){
@@ -173,7 +176,11 @@ Recursos ps;
   // metodo para llenar el progress bar
     public void empezar(){
           int valor=val;
+          double pun=punt;
+          
+       lblcal.setText(pun+"%");   
         pgeva.setValue(valor);
+        pgcal.setValue((int) pun);
               
     }
         
@@ -210,6 +217,9 @@ Recursos ps;
         jLabel8 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         pgeva = new javax.swing.JProgressBar();
+        pgcal = new javax.swing.JProgressBar();
+        jLabel9 = new javax.swing.JLabel();
+        lblcal = new javax.swing.JLabel();
         label_fondo1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -352,10 +362,10 @@ Recursos ps;
         jLabel1.setBounds(330, 40, 510, 107);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 204, 0));
-        jLabel8.setText("Porcentanje de diligenciamiento de la E. inicial");
+        jLabel8.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel8.setText("Puntaje Calificado Evaluacion Inicial :");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(340, 560, 330, 20);
+        jLabel8.setBounds(620, 570, 230, 20);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/personaje1.png"))); // NOI18N
         getContentPane().add(jLabel6);
@@ -363,7 +373,22 @@ Recursos ps;
 
         pgeva.setStringPainted(true);
         getContentPane().add(pgeva);
-        pgeva.setBounds(450, 590, 410, 50);
+        pgeva.setBounds(340, 590, 250, 30);
+
+        pgcal.setForeground(new java.awt.Color(255, 0, 0));
+        getContentPane().add(pgcal);
+        pgcal.setBounds(630, 590, 250, 30);
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel9.setText("Porcentanje de diligenciamiento de la E. inicial");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(320, 570, 300, 20);
+
+        lblcal.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        lblcal.setText("jLabel10");
+        getContentPane().add(lblcal);
+        lblcal.setBounds(850, 570, 50, 20);
 
         label_fondo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FONDOEVA.jpg"))); // NOI18N
         getContentPane().add(label_fondo1);
@@ -503,6 +528,8 @@ Recursos ps;
        tr.setE8(1);
        tr.setBarra(0);
        pgeva.setValue(0);
+       pgcal.setValue(0);
+       lblcal.setText("0.0%");
        hg.est_empNuev(tr);
            
             hg.empezarItem(tr);
@@ -548,7 +575,10 @@ Recursos ps;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel label_fondo1;
+    private javax.swing.JLabel lblcal;
+    private javax.swing.JProgressBar pgcal;
     private javax.swing.JProgressBar pgeva;
     // End of variables declaration//GEN-END:variables
 }

@@ -503,6 +503,8 @@ public class Gestion_salud extends javax.swing.JFrame {
 
         }
       ps.setE3(1);
+      cm.Puntaje();
+      gh.punt= ps.getPunt();
        gh.config();
        int valo=20;
        ps.setBarra(ps.getBarra()+valo);

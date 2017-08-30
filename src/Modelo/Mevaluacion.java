@@ -16,6 +16,19 @@ public class Mevaluacion {
     private String tres="";
     private String cuatro="";
     private static int barra;
+    private static Double punt;
+
+    public static Double getPunt() {
+        return punt;
+    }
+
+    public static void setPunt(Double punt) {
+        Mevaluacion.punt = punt;
+    }
+
+    
+    
+    
 
     public static int getBarra() {
         return barra;

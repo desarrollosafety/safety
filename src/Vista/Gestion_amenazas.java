@@ -128,6 +128,8 @@ public class Gestion_amenazas extends javax.swing.JFrame {
         }  
 
        ps.setE5(1);
+       cm.Puntaje();
+      gh.punt= ps.getPunt();
        gh.config();
        int valo=10;
        ps.setBarra(ps.getBarra()+valo);

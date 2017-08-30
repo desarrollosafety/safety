@@ -367,6 +367,8 @@ public class Recursos extends javax.swing.JFrame{
   
      // configurar botones y llenar el progress bar dinamicamente
        ps.setE1(1);
+      cm.Puntaje();
+      gh.punt= ps.getPunt();
        gh.config();
        int valo=10;
        ps.setBarra(ps.getBarra()+valo);

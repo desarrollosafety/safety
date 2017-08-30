@@ -344,6 +344,8 @@ public class Gestion_integral extends javax.swing.JFrame {
     
     // configurar botones y llenar el progress bar dinamicamente
        ps.setE2(1);
+       cm.Puntaje();
+      gh.punt= ps.getPunt();
        
        gh.config();
        int valo=15;

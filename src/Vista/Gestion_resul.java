@@ -164,6 +164,8 @@ public class Gestion_resul extends javax.swing.JFrame {
         
         
     ps.setE6(1);
+    cm.Puntaje();
+      gh.punt= ps.getPunt();
        gh.config();
        int valo=5;
        ps.setBarra(ps.getBarra()+valo);

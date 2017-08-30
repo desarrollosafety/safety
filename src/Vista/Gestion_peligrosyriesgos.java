@@ -342,6 +342,8 @@ public class Gestion_peligrosyriesgos extends javax.swing.JFrame {
         }  
 
        ps.setE4(1);
+       cm.Puntaje();
+      gh.punt= ps.getPunt();
        gh.config();
        int valo=30;
        ps.setBarra(ps.getBarra()+valo);
