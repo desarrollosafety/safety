@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jScrollPane1" alignment="0" pref="401" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="ff" red="66" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Criterio Item 1.1.4">
+                  <Font PropertyName="font" name="Dialog" size="18" style="1"/>
+                </TitledBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel20" alignment="0" min="-2" pref="173" max="-2" attributes="0"/>
+                          <Component id="jLabel18" alignment="0" min="-2" pref="173" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel19" min="-2" pref="148" max="-2" attributes="0"/>
+                          <Component id="jLabel21" min="-2" pref="183" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel19" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel20" min="-2" pref="629" max="-2" attributes="0"/>
+                          <Component id="jLabel21" alignment="0" min="-2" pref="281" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel18">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="     Marco Legal"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel19">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="      Criterio"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel20">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;Decreto 2090/2003 Art.5&lt;br/&gt; &lt;br/&gt;Ley 1562/2012 Art.2,6 y 7 &lt;br/&gt; &lt;br/&gt;Decreto 1295/1994 Art 4,16,21 y 23&lt;br/&gt; &lt;br/&gt;Decreto 1072/2015&lt;br/&gt; &lt;br/&gt;Art&#xed;culos:&lt;br/&gt; &lt;br/&gt;&lt;br/&gt;2.2.4.2.2.5.&lt;br/&gt; &lt;br/&gt;2.2.4.2.2.6.&lt;br/&gt; &lt;br/&gt;2.2.4..2.2.13.&lt;br/&gt; &lt;br/&gt;&lt;br/&gt;2.2.4.2.3.4.&lt;br/&gt; &lt;br/&gt;2.2.4.2.4.3.&lt;br/&gt; &lt;br/&gt;2.2.4.3.7.&lt;br/&gt; &lt;br/&gt;2.2.4.6.28.   numeral 3&lt;br/&gt;&lt;br/&gt; &lt;br/&gt;2.2.1.6.1.3.&lt;br/&gt; &lt;br/&gt;2.2.1.6.1.4.&lt;br/&gt; &lt;br/&gt;2.2.1.6.4.6.&lt;br/&gt; &lt;br/&gt;2.2.1.6.4.7.&lt;br/&gt; &lt;br/&gt;Ley 1150/2007 Art.23&lt;html&gt;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel21">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;Todos los trabajadores, independiente de su forma de vinculacci&#xf3;n o&lt;br/&gt;&#xa; contrataci&#xf3;n est&#xe1;n afiliados al Sistema General de Riesgos Laborales &lt;br/&gt;&#xa;y el pago de los aportes se realiza conforme a la normatividad y en la &lt;br/&gt;&#xa;respectiva clase de riesgo.&lt;html&gt;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

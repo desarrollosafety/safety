@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel4"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel8"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel29">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel29"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jScrollPane2" alignment="1" pref="744" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jScrollPane2" min="-2" pref="671" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <Properties>
+        <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="99" red="0" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Criterio Item 1.1.1">
+                  <Font PropertyName="font" name="Dialog" size="18" style="1"/>
+                </TitledBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel1" min="-2" pref="161" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel5" min="-2" pref="346" max="-2" attributes="0"/>
+                          <Component id="jLabel6" alignment="0" min="-2" pref="274" max="-2" attributes="0"/>
+                          <Component id="jLabel7" alignment="0" min="-2" pref="346" max="-2" attributes="0"/>
+                          <Component id="jLabel9" alignment="0" min="-2" pref="346" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="jLabel2" min="-2" pref="185" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" pref="173" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel3" alignment="3" min="-2" pref="134" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel7" min="-2" pref="128" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="    Marco Legal"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="            Criterio"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt; &#xa;&lt;br/&gt;Decreto 1607/2002&lt;br/&gt;&#xa;&lt;br/&gt;Decreto 1072/2015 &lt;br/&gt; &#xa;&lt;br/&gt;Art.2.2.4.6.8 numerales 2 y 10.&lt;br/&gt;&#xa;&lt;br/&gt;Resoluci&#xf3;n 4502/2012&lt;html&gt;                                                                      "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;br/&gt;El dise&#xf1;o del Sistema de Gesti&#xf3;n de Seguridad &lt;br/&gt;&#xa;y Salud en el Trabajo, para empresas de diez (10) o menos &lt;br/&gt;&#xa;trabajadores clasificadas en Riesgo I, II, III, podr&#xe1; ser realizado&lt;br/&gt;&#xa;por t&#xe9;cnicos o&#xa0;tecn&#xf3;logos en eguridad y Salud en el Trabajo o en alguna de sus &#xe1;reas, con licencia vigente en&lt;br/&gt; Salud Ocupacional o Seguridad y Salud en el Trabajo que &lt;br/&gt;&#xa;acrediten m&#xed;nimo dos (2) a&#xf1;os de experiencia en el desarrollo de actividades de Seguridad y Salud en el Trabajo y que&lt;br/&gt;&#xa; acrediten la aprobaci&#xf3;n del curso de capacitaci&#xf3;n virtual de cincuenta (50) horas.&lt;html&gt;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;br/&gt;Para empresas de diez (10) o menos trabajadores clasificadas en Riesgo&lt;br/&gt; &#xa;IV y V, podr&#xe1; ser realizado por un Profesional en Salud Ocupacional o Seguridad y &lt;br/&gt;Salud en el Trabajo, profesional con posgrado en Seguridad y Salud en el Trabajo, con licencia &lt;br/&gt;&#xa;en Salud Ocupacional o Seguridad y Salud en el Trabajo vigente y que acrediten&lt;br/&gt;&#xa;la aprobaci&#xf3;n del curso de capacitaci&#xf3;n virtual de cincuenta (50) horas.&lt;html&gt;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel7">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;br/&gt;&#xa;Para empresas de diez (10) o menos trabaja dores clasificadas en Riesgo IV y V, podr&#xe1; ser realizado por un Profesional en Salud Ocupacional o Seguridad &lt;br/&gt;&#xa;y Salud en el Trabajobr, profesional con posgrado en Seguridad y Salud en el Trabajo, con licencia&lt;br/&gt; &#xa;en Salud en el Trabajo, vigente que acrediten la aprobaci&#xf3;n del curso de capacitaci&#xf3;n virtual de (50) horas.&lt;html&gt;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel9">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;La persona que dise&#xf1;e, ejecute e implemente el Sistema de Gesti&#xf2;n de Seguridady Salud en el Trabajo tenga la formaci&#xf3;n y cursos solicitada en los art&#xed;culos 5 y 6 de la presente resolucion.&lt;html&gt;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;&#x9;&#xa;"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

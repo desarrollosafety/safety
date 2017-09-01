@@ -8,6 +8,7 @@ package Vista;
 
 import Controlador.Cevaluacion;
 import Controlador.Crecursos;
+import Criterios.*;
 import Modelo.Mevaluacion;
 import Modelo.Mrecursos;
 import java.awt.image.RenderedImage;
@@ -809,6 +810,11 @@ public class Recursos extends javax.swing.JFrame{
         });
 
         jButton3.setText("Criterio");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -1030,6 +1036,11 @@ public class Recursos extends javax.swing.JFrame{
         });
 
         jButton4.setText("Criterio");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -1193,6 +1204,11 @@ public class Recursos extends javax.swing.JFrame{
         jLabel19.setText("SG-SST (0.5%).");
 
         jButton5.setText("Criterio");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -1400,6 +1416,11 @@ public class Recursos extends javax.swing.JFrame{
         jLabel29.setText("(listado pagina Web).");
 
         jButton6.setText("Criterio");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -1601,6 +1622,11 @@ public class Recursos extends javax.swing.JFrame{
         jLabel63.setText("el decreto 2090 de 2003.");
 
         jButton7.setText("Criterio");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -1801,6 +1827,11 @@ public class Recursos extends javax.swing.JFrame{
         jLabel71.setText("SST y verificar el cumplimiento de sus funciones.");
 
         jButton8.setText("Criterio");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
@@ -1999,6 +2030,11 @@ public class Recursos extends javax.swing.JFrame{
         jLabel75.setText("que estén vigentes.");
 
         jButton9.setText("Criterio");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -2192,6 +2228,11 @@ public class Recursos extends javax.swing.JFrame{
         jLabel33.setText("vencia laboral, verificando el desarrollo de sus funciones. ");
 
         jButton10.setText("Criterio");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -2409,6 +2450,11 @@ public class Recursos extends javax.swing.JFrame{
         });
 
         jButton12.setText("Criterio");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -2609,6 +2655,11 @@ public class Recursos extends javax.swing.JFrame{
         jLabel79.setText("Nota : Para la verificacion, empresas de 1 a 10 trabajadores verificar 100%, entre 11 y 50 el 20%, entre 51 y 200 el 10% y mayores a 200 verificar el registro de 30 trabajadores. ");
 
         jButton11.setText("Criterio");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
@@ -2827,6 +2878,11 @@ public class Recursos extends javax.swing.JFrame{
         jLabel39.setText("y Prevención Pyp. (2%)");
 
         jButton13.setText("Criterio");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -5632,16 +5688,84 @@ gh.toFront();
        }
     }//GEN-LAST:event_btnmv111ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    
+        Criterio1 im= new Criterio1();
+        im.toFront();
+        im.setVisible(true);
+        
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+      Criterio2 im= new Criterio2();
+        im.toFront();
+        im.setVisible(true);
+        
+        
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    Criterio3 im= new Criterio3();
+        im.toFront();
+        im.setVisible(true);
+        
+        
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        Criterio4 im= new Criterio4();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+       Criterio5 im= new Criterio5();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+     Criterio6 im= new Criterio6();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+       Criterio7 im= new Criterio7();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+      Criterio8 im= new Criterio8();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+      Criterio9 im= new Criterio9();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+      Criterio10 im= new Criterio10();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        Criterio11 im= new Criterio11();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton13ActionPerformed
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        try{
-            UIManager.setLookAndFeel("com.jtattoo.plaf.mcwin.McWinLookAndFeel");
-        }catch(Exception e){
-            
-        }
-
+       
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Recursos().setVisible(true);
