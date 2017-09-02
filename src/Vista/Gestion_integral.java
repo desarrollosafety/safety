@@ -9,6 +9,7 @@ package Vista;
 import Controlador.Cevaluacion;
 import Controlador.Cgestion_integral;
 import Controlador.Crecursos;
+import Criterios.*;
 import Modelo.Mevaluacion;
 import Modelo.Mgestion_integral;
 import Modelo.Mrecursos;
@@ -788,6 +789,11 @@ public class Gestion_integral extends javax.swing.JFrame {
         jLabel24.setText("- Si la empresa aplica la normativa legal vigente en materia de riesgos laborales.");
 
         jButton13.setText("Criterio");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -1010,6 +1016,11 @@ public class Gestion_integral extends javax.swing.JFrame {
         jLabel25.setText("de difusión.");
 
         jButton14.setText("Criterio");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -1190,6 +1201,11 @@ public class Gestion_integral extends javax.swing.JFrame {
         jLabel31.setText("médicos iniciales y periódicos y seguimiento de indicadores entre otros.");
 
         jButton15.setText("Criterio");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -1404,6 +1420,11 @@ public class Gestion_integral extends javax.swing.JFrame {
         jLabel40.setText("cumplimiento, solicitar los planes de mejora para el logro del plan inicial.");
 
         jButton16.setText("Criterio");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -1638,6 +1659,11 @@ public class Gestion_integral extends javax.swing.JFrame {
         });
 
         jButton17.setText("Criterio");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
@@ -1890,6 +1916,11 @@ public class Gestion_integral extends javax.swing.JFrame {
         });
 
         jButton18.setText("Criterio");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -2137,6 +2168,11 @@ public class Gestion_integral extends javax.swing.JFrame {
         jLabel69.setText("- Normas técnicas de cumplimiento de acuerdo con los peligros / riesgos identificados en la empresa.");
 
         jButton19.setText("Criterio");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
@@ -2320,6 +2356,11 @@ public class Gestion_integral extends javax.swing.JFrame {
         jLabel75.setText("y Salud en el Trabajo SG-SST (1%)");
 
         jButton20.setText("Criterio");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
@@ -2522,6 +2563,11 @@ public class Gestion_integral extends javax.swing.JFrame {
         });
 
         jButton21.setText("Criterio");
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
         jPanel23.setLayout(jPanel23Layout);
@@ -2730,6 +2776,11 @@ public class Gestion_integral extends javax.swing.JFrame {
         jLabel88.setText("de controlarlos a la hora de ejecutar a realizar el servicio en la empresa donde prestan el servicio.");
 
         jButton22.setText("Criterio");
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
         jPanel25.setLayout(jPanel25Layout);
@@ -2939,6 +2990,11 @@ public class Gestion_integral extends javax.swing.JFrame {
         });
 
         jButton23.setText("Criterio");
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
         jPanel27.setLayout(jPanel27Layout);
@@ -5688,6 +5744,74 @@ public class Gestion_integral extends javax.swing.JFrame {
  gh.setVisible(true);
  gh.toFront();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+       
+        Criterio12 im= new Criterio12();
+        im.toFront();
+        im.setVisible(true);
+        
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+       Criterio13 im= new Criterio13();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+      Criterio14 im= new Criterio14();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+      Criterio15 im= new Criterio15();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+      Criterio16 im= new Criterio16();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+       Criterio17 im= new Criterio17();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+      Criterio18 im= new Criterio18();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+       Criterio19 im= new Criterio19();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+      Criterio20 im= new Criterio20();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+       Criterio21 im= new Criterio21();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+       Criterio22 im= new Criterio22();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton23ActionPerformed
 
     /**
      * @param args the command line arguments
