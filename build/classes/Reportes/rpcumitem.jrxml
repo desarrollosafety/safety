@@ -32,6 +32,9 @@ cumple="si" and idpersona=1]]>
 	<variable name="item_descripcion_1" class="java.lang.Integer" resetType="Column" calculation="Count">
 		<variableExpression><![CDATA[$F{item_descripcion}]]></variableExpression>
 	</variable>
+	<variable name="item_Valor_item_3" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{item_Valor_item}]]></variableExpression>
+	</variable>
 	<background>
 		<band/>
 	</background>
@@ -54,8 +57,8 @@ cumple="si" and idpersona=1]]>
 					<text><![CDATA[Evaluacion inicial]]></text>
 				</staticText>
 				<image>
-					<reportElement x="482" y="0" width="113" height="88" uuid="3ae606c0-a60c-45b5-9808-694dd7b97a4b"/>
-					<imageExpression><![CDATA["C:\\Users\\USUARIO\\Documents\\NetBeansProjects\\Proyecto_Safety-Life\\src\\Imagenes\\logo 132.png"]]></imageExpression>
+					<reportElement x="476" y="0" width="119" height="89" uuid="3f4d5ea8-067c-41f4-aee1-f73295e5f03d"/>
+					<imageExpression><![CDATA["C:\\Users\\LENOVO\\Desktop\\safety\\src\\Imagenes\\logo 132.png"]]></imageExpression>
 				</image>
 			</frame>
 		</band>
@@ -116,7 +119,7 @@ cumple="si" and idpersona=1]]>
 				<text><![CDATA[Actualmente la empresa en la evaluación Inicial tiene un puntaje de]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="411" y="0" width="100" height="20" uuid="9f1a02ce-b150-4528-921d-e732b786dce7"/>
+				<reportElement x="432" y="0" width="100" height="20" uuid="9f1a02ce-b150-4528-921d-e732b786dce7"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
@@ -157,6 +160,13 @@ cumple="si" and idpersona=1]]>
 				</textElement>
 				<text><![CDATA[Acontinuacion se encuentran los items con los cuales la empresa cumple:]]></text>
 			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement x="399" y="0" width="33" height="20" uuid="d4672d5a-de5d-4558-841c-a48570a7b124"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{item_Valor_item_3}]]></textFieldExpression>
+			</textField>
 		</band>
 	</columnHeader>
 	<detail>

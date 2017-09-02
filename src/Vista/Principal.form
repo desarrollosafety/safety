@@ -178,6 +178,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Items que la Empresa No Aplica"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mn_noaplicaActionPerformed"/>
+                  </Events>
                 </MenuItem>
               </SubComponents>
             </Menu>

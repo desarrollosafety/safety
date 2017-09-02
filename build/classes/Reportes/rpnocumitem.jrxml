@@ -46,8 +46,8 @@ WHERE
 					<text><![CDATA[Evaluacion inicial]]></text>
 				</staticText>
 				<image>
-					<reportElement x="482" y="4" width="113" height="88" uuid="1db8b3db-42f6-4d57-a431-d72b5e3305c3"/>
-					<imageExpression><![CDATA["C:\\Users\\USUARIO\\Documents\\NetBeansProjects\\Proyecto_Safety-Life\\src\\Imagenes\\logo 132.png"]]></imageExpression>
+					<reportElement x="476" y="0" width="119" height="89" uuid="df4e0268-9dea-4d6b-987f-05401abe58da"/>
+					<imageExpression><![CDATA["C:\\Users\\LENOVO\\Desktop\\safety\\src\\Imagenes\\logo 132.png"]]></imageExpression>
 				</image>
 			</frame>
 		</band>

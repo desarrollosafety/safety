@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="09e0659a-e7d0-4bb8-b313-f74e60bf683d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     persona.`nombre_persona` AS persona_nombre_persona,
+     persona.`apellido_paterno` AS persona_apellido_paterno,
+     persona.`apellido_materno` AS persona_apellido_materno,
+     persona.`numero_documento` AS persona_numero_documento,
+     item.`descripcion` AS item_descripcion,
+     item.`justifi` AS item_justifi
+FROM
+     `persona` persona,
+     `item` item
+WHERE
+idpersona=1 and aplica="no"]]>
+	</queryString>
+	<field name="persona_nombre_persona" class="java.lang.String"/>
+	<field name="persona_apellido_paterno" class="java.lang.String"/>
+	<field name="persona_apellido_materno" class="java.lang.String"/>
+	<field name="persona_numero_documento" class="java.lang.Integer"/>
+	<field name="item_descripcion" class="java.lang.String"/>
+	<field name="item_justifi" class="java.lang.String"/>
+	<variable name="item_descripcion_1" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{item_descripcion}]]></variableExpression>
+	</variable>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#6699FF" uuid="609b34b5-a1a4-4aba-8c78-fe240a415659"/>
+				<staticText>
+					<reportElement x="126" y="55" width="202" height="20" forecolor="#FFFFFF" uuid="0a702503-332a-4e1d-86fb-ef41fe31aa07"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Items que la empresa no aplica]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="0" width="353" height="43" forecolor="#FFFFFF" uuid="e9ccd031-253b-4749-8a21-098c7ce6e0a1"/>
+					<textElement>
+						<font fontName="Courier New" size="32" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Evaluacion inicial]]></text>
+				</staticText>
+				<image>
+					<reportElement x="476" y="0" width="119" height="89" uuid="cdee664d-039b-4123-8392-1da2c01a0a4f"/>
+					<imageExpression><![CDATA["C:\\Users\\LENOVO\\Desktop\\safety\\src\\Imagenes\\logo 132.png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41">
+			<staticText>
+				<reportElement x="0" y="11" width="193" height="20" uuid="87b888ba-f39f-408f-a196-afdf20f8b6e4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[La Evaluacion fue realizada por:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="193" y="11" width="41" height="20" uuid="cf41b814-b243-467b-81b8-e9b713c16545"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{persona_nombre_persona}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="11" width="40" height="20" uuid="c1338f9d-ffe2-440c-b1f9-e81a963faa3b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{persona_apellido_paterno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="274" y="11" width="45" height="20" uuid="b5ed92b2-2466-4e24-b6b9-942092600b11"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{persona_apellido_materno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="375" y="11" width="30" height="20" uuid="746fcaf7-3aba-42a3-9d76-fe45c8c300cb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[C.C.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="405" y="11" width="100" height="20" uuid="55899df6-769b-4588-b1d7-9fc093b3c4c8"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{persona_numero_documento}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="74">
+			<staticText>
+				<reportElement x="87" y="54" width="77" height="20" uuid="6fa724a7-e97a-47f7-8928-e1c5332cc7db"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Descripción]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="54" width="76" height="20" uuid="6b6b056a-46db-41a2-aaf1-d4895d76691b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Justificación]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="193" height="20" uuid="546aea7c-616f-4307-b8bd-cc0d772d97b1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[La empresa cuenta con un total de ]]></text>
+			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement x="193" y="0" width="15" height="20" uuid="2a6e8aa2-902e-4b39-a02c-c6819f6511aa"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{item_descripcion_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="208" y="0" width="281" height="20" uuid="847f8d4d-1285-40ed-b548-7ab23e7cb855"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ items que no aplican segun reglamentación.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="555" height="20" uuid="3346a556-2b21-4f91-a29a-735d2bec6f6f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[A continuación se describen los Items que no aplican a la empresa y su respectiva justificación:  ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="108">
+			<textField>
+				<reportElement x="0" y="12" width="274" height="96" uuid="f661ac46-e9fb-48a5-a052-7dea4b45c543"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{item_descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="308" y="12" width="247" height="96" uuid="5e35c732-b170-4cbe-838d-f7b7e8c17db8"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{item_justifi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="74b0aa05-b22d-4b27-a0d1-90dfae9740ef"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="e4f9c959-96a1-4e9a-9893-74fba743bc1e"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="1d757b8a-7b39-49a3-9fa8-769761fb506c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

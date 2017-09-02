@@ -47,8 +47,8 @@ cumplimiento="no"]]>
 					<text><![CDATA[Verificaciones de los items que la empresa no cumple ]]></text>
 				</staticText>
 				<image>
-					<reportElement x="482" y="4" width="113" height="88" uuid="c48bd600-1ffb-4e0b-b9bc-db2c9448b393"/>
-					<imageExpression><![CDATA["C:\\Users\\USUARIO\\Documents\\NetBeansProjects\\Proyecto_Safety-Life\\src\\Imagenes\\logo 132.png"]]></imageExpression>
+					<reportElement x="476" y="3" width="119" height="89" uuid="fe675563-2414-4cd7-bbd3-67e4c41b72ad"/>
+					<imageExpression><![CDATA["C:\\Users\\LENOVO\\Desktop\\safety\\src\\Imagenes\\logo 132.png"]]></imageExpression>
 				</image>
 			</frame>
 		</band>
