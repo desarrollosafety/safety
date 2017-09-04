@@ -61,6 +61,7 @@ Llamados_Atencion vista_llamadosAtencion;
 private Connection connection= new Conexion().getConexion();
     public Principal() {
         initComponents();
+        JOptionPane.showMessageDialog(null, "listoooo");
         btn_evaluacion.setVisible(false);
         btn_primero.setVisible(true);
         btn_relleno2.setVisible(false);
@@ -165,6 +166,7 @@ private Connection connection= new Conexion().getConexion();
         jLabel7 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         label_fondo = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
         jm_realizarEvaIni = new javax.swing.JMenu();
@@ -325,11 +327,11 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(jTextField2);
-        jTextField2.setBounds(22, 214, 177, 20);
+        jTextField2.setBounds(22, 214, 177, 24);
 
         jTextField3.setEditable(false);
         panel_perfil.add(jTextField3);
-        jTextField3.setBounds(22, 283, 177, 20);
+        jTextField3.setBounds(22, 283, 177, 24);
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel2.setText("Genero:");
@@ -338,11 +340,11 @@ private Connection connection= new Conexion().getConexion();
 
         jTextField4.setEditable(false);
         panel_perfil.add(jTextField4);
-        jTextField4.setBounds(312, 214, 177, 20);
+        jTextField4.setBounds(312, 214, 177, 24);
 
         jTextField5.setEditable(false);
         panel_perfil.add(jTextField5);
-        jTextField5.setBounds(22, 358, 177, 20);
+        jTextField5.setBounds(22, 358, 177, 24);
 
         jTextField6.setEditable(false);
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
@@ -351,15 +353,15 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(jTextField6);
-        jTextField6.setBounds(312, 358, 177, 20);
+        jTextField6.setBounds(312, 358, 177, 24);
 
         jTextField7.setEditable(false);
         panel_perfil.add(jTextField7);
-        jTextField7.setBounds(312, 283, 177, 20);
+        jTextField7.setBounds(312, 283, 177, 24);
 
         jTextField8.setEditable(false);
         panel_perfil.add(jTextField8);
-        jTextField8.setBounds(22, 439, 177, 20);
+        jTextField8.setBounds(22, 439, 177, 24);
 
         jTextField9.setEditable(false);
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
@@ -368,7 +370,7 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(jTextField9);
-        jTextField9.setBounds(310, 420, 216, 20);
+        jTextField9.setBounds(310, 420, 216, 24);
 
         btnEditar_Perfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/editar.png"))); // NOI18N
         btnEditar_Perfil.setText("Editar Perfil");
@@ -380,7 +382,7 @@ private Connection connection= new Conexion().getConexion();
         btnGuardar.setText("Guardar");
         btnGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         panel_perfil.add(btnGuardar);
-        btnGuardar.setBounds(390, 460, 123, 40);
+        btnGuardar.setBounds(390, 460, 128, 40);
 
         Btn_Cerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar.png"))); // NOI18N
         Btn_Cerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -390,7 +392,7 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(Btn_Cerrar);
-        Btn_Cerrar.setBounds(500, 10, 36, 33);
+        Btn_Cerrar.setBounds(500, 10, 36, 40);
 
         txt_nombrePerfil.setFont(new java.awt.Font("Lucida Handwriting", 1, 36)); // NOI18N
         txt_nombrePerfil.setForeground(new java.awt.Color(255, 255, 255));
@@ -550,6 +552,10 @@ private Connection connection= new Conexion().getConexion();
         jLabel13.setText("Llamados de Atención");
         jPanel1.add(jLabel13);
         jLabel13.setBounds(630, 390, 160, 30);
+
+        jLabel11.setText("Holaaa cabronnn integraste");
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(810, 190, 210, 16);
 
         label_fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PRINCIPAL3.jpg"))); // NOI18N
         jPanel1.add(label_fondo);
@@ -1045,6 +1051,7 @@ btn_evaluacion.setVisible(false);
     private javax.swing.JMenu helpMenu;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
