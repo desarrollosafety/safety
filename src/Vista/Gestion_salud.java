@@ -1386,6 +1386,11 @@ public class Gestion_salud extends javax.swing.JFrame {
         jLabel25.setText("perfiles del cargo, descripción de las tareas y el medio en el cual desarrollaran la labor  de los trabajadores.");
 
         jButton15.setText("Criterio");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -8362,6 +8367,12 @@ gh.toFront();
         im.toFront();
         im.setVisible(true);
     }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+         Criterio25 im= new Criterio25();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton15ActionPerformed
 
     /**
      * @param args the command line arguments
