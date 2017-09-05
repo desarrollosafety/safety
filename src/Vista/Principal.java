@@ -124,6 +124,7 @@ private Connection connection= new Conexion().getConexion();
         btn_perfil = new javax.swing.JButton();
         btn_acerca = new javax.swing.JButton();
         btn_ayuda = new javax.swing.JButton();
+        label_rol = new javax.swing.JLabel();
         panel_perfil = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         txt_PrimerApellido = new javax.swing.JLabel();
@@ -148,7 +149,6 @@ private Connection connection= new Conexion().getConexion();
         Btn_Cerrar = new javax.swing.JButton();
         txt_nombrePerfil = new javax.swing.JLabel();
         lbl_fondoPerfil = new javax.swing.JLabel();
-        label_rol = new javax.swing.JLabel();
         label_nombreUser = new javax.swing.JLabel();
         btn_relleno2 = new javax.swing.JLabel();
         logo = new javax.swing.JLabel();
@@ -168,6 +168,7 @@ private Connection connection= new Conexion().getConexion();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         label_fondo = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
         jm_realizarEvaIni = new javax.swing.JMenu();
@@ -269,6 +270,10 @@ private Connection connection= new Conexion().getConexion();
         });
         jPanel1.add(btn_ayuda);
         btn_ayuda.setBounds(-175, 150, 229, 61);
+
+        label_rol.setFont(new java.awt.Font("Calibri Light", 1, 18)); // NOI18N
+        jPanel1.add(label_rol);
+        label_rol.setBounds(1130, 180, 210, 30);
 
         panel_perfil.setLayout(null);
 
@@ -407,10 +412,6 @@ private Connection connection= new Conexion().getConexion();
 
         jPanel1.add(panel_perfil);
         panel_perfil.setBounds(60, 10, 550, 520);
-
-        label_rol.setFont(new java.awt.Font("Calibri Light", 1, 18)); // NOI18N
-        jPanel1.add(label_rol);
-        label_rol.setBounds(1130, 180, 210, 30);
 
         label_nombreUser.setFont(new java.awt.Font("Calibri Light", 1, 18)); // NOI18N
         label_nombreUser.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -554,13 +555,20 @@ private Connection connection= new Conexion().getConexion();
         jPanel1.add(jLabel13);
         jLabel13.setBounds(630, 390, 160, 30);
 
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Holaaa cabronnn integraste");
         jPanel1.add(jLabel11);
-        jLabel11.setBounds(810, 190, 210, 16);
+        jLabel11.setBounds(800, 160, 210, 16);
 
+        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel15.setText("hola manadas de desocupados jajajaja");
+        jPanel1.add(jLabel15);
+        jLabel15.setBounds(800, 190, 230, 16);
+
+        label_fondo.setForeground(new java.awt.Color(0, 0, 0));
         label_fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PRINCIPAL3.jpg"))); // NOI18N
         jPanel1.add(label_fondo);
-        label_fondo.setBounds(0, -10, 1370, 690);
+        label_fondo.setBounds(-10, -10, 1370, 690);
 
         desktopPane.add(jPanel1);
         jPanel1.setBounds(1, 13, 1370, 683);
@@ -1055,6 +1063,7 @@ btn_evaluacion.setVisible(false);
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
