@@ -965,7 +965,7 @@ btn_evaluacion.setVisible(false);
     }//GEN-LAST:event_btn_primeroMouseClicked
 
     private void jm_registrarEmpresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jm_registrarEmpresaActionPerformed
-         Registro_Empresa gh = new Registro_Empresa();
+         regis_empres gh = new regis_empres();
         gh.toFront();
         gh.setVisible(true);
     }//GEN-LAST:event_jm_registrarEmpresaActionPerformed
