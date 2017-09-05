@@ -167,6 +167,7 @@ private Connection connection= new Conexion().getConexion();
         jLabel7 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         label_fondo = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
         jm_realizarEvaIni = new javax.swing.JMenu();
@@ -552,6 +553,12 @@ private Connection connection= new Conexion().getConexion();
         jLabel13.setText("Llamados de Atención");
         jPanel1.add(jLabel13);
         jLabel13.setBounds(630, 390, 160, 30);
+
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel11.setText("Hola cabrones has integrado ");
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(870, 200, 160, 14);
 
         label_fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PRINCIPAL3.jpg"))); // NOI18N
         jPanel1.add(label_fondo);
@@ -1047,6 +1054,7 @@ btn_evaluacion.setVisible(false);
     private javax.swing.JMenu helpMenu;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
