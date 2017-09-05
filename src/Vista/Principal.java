@@ -61,6 +61,7 @@ Llamados_Atencion vista_llamadosAtencion;
 private Connection connection= new Conexion().getConexion();
     public Principal() {
         initComponents();
+        JOptionPane.showMessageDialog(null, "Hola muchachos");
         btn_evaluacion.setVisible(false);
         btn_primero.setVisible(true);
         btn_relleno2.setVisible(false);
