@@ -101,9 +101,11 @@ public String Tamaño;
         jPanel1.setBackground(new java.awt.Color(100, 211, 82));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Datos de la empresa");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nit Empresa");
 
         txtnit.addActionListener(new java.awt.event.ActionListener() {
@@ -117,7 +119,8 @@ public String Tamaño;
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Nombre de la Empresa");
 
         txtnomem.addActionListener(new java.awt.event.ActionListener() {
@@ -131,10 +134,12 @@ public String Tamaño;
             }
         });
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Cantidad de Empleados");
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Ciudad");
 
         txtciudad.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -143,7 +148,8 @@ public String Tamaño;
             }
         });
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Departamento");
 
         txtdepartamento.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -152,10 +158,12 @@ public String Tamaño;
             }
         });
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Sucursal");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Telefono");
 
         txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -164,12 +172,14 @@ public String Tamaño;
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Razon Social ");
 
         cbrazon.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "LTDA", "SAS", "S ENC", "SA" }));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("No Actividad Economica ");
 
         txtactividad.addActionListener(new java.awt.event.ActionListener() {
@@ -183,7 +193,8 @@ public String Tamaño;
             }
         });
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("Nivel de Riesgo ");
 
         cbnivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "1", "2", "3", "4", "5", "" }));
@@ -211,40 +222,52 @@ public String Tamaño;
         });
         jScrollPane1.setViewportView(jtdatos);
 
-        btnregistrar.setBackground(new java.awt.Color(153, 153, 153));
-        btnregistrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnregistrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnregistrar.setBackground(new java.awt.Color(100, 211, 82));
+        btnregistrar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnregistrar.setForeground(new java.awt.Color(0, 0, 0));
+        btnregistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/save(1).png"))); // NOI18N
         btnregistrar.setText("Registrar");
+        btnregistrar.setBorder(null);
+        btnregistrar.setBorderPainted(false);
         btnregistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnregistrarActionPerformed(evt);
             }
         });
 
-        btneditar.setBackground(new java.awt.Color(153, 153, 153));
-        btneditar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btneditar.setForeground(new java.awt.Color(255, 255, 255));
+        btneditar.setBackground(new java.awt.Color(100, 211, 82));
+        btneditar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btneditar.setForeground(new java.awt.Color(0, 0, 0));
+        btneditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/editar.png"))); // NOI18N
         btneditar.setText("Editar");
+        btneditar.setBorder(null);
+        btneditar.setBorderPainted(false);
         btneditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btneditarActionPerformed(evt);
             }
         });
 
-        btn_eliminar.setBackground(new java.awt.Color(153, 153, 153));
-        btn_eliminar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_eliminar.setForeground(new java.awt.Color(255, 255, 255));
+        btn_eliminar.setBackground(new java.awt.Color(100, 211, 82));
+        btn_eliminar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btn_eliminar.setForeground(new java.awt.Color(0, 0, 0));
+        btn_eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/minimizar_2.png"))); // NOI18N
         btn_eliminar.setText("Eliminar");
+        btn_eliminar.setBorder(null);
+        btn_eliminar.setBorderPainted(false);
         btn_eliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_eliminarActionPerformed(evt);
             }
         });
 
-        btnsalir.setBackground(new java.awt.Color(153, 153, 153));
-        btnsalir.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnsalir.setForeground(new java.awt.Color(255, 255, 255));
+        btnsalir.setBackground(new java.awt.Color(100, 211, 82));
+        btnsalir.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnsalir.setForeground(new java.awt.Color(0, 0, 0));
+        btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar.png"))); // NOI18N
         btnsalir.setText("Salir");
+        btnsalir.setBorder(null);
+        btnsalir.setBorderPainted(false);
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsalirActionPerformed(evt);
@@ -297,7 +320,7 @@ public String Tamaño;
                         .addComponent(txtactividad, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(cbnivel, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(txtcantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 941, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(69, 69, 69))
         );
@@ -360,7 +383,7 @@ public String Tamaño;
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel12)
                             .addComponent(cbnivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
