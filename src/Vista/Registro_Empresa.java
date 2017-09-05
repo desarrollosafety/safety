@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author leandro
  */
-public class regis_empres extends javax.swing.JFrame {
+public class Registro_Empresa extends javax.swing.JFrame {
 DefaultTableModel modelo;
 
 M_RegistroEmpresa tr = new M_RegistroEmpresa();
@@ -23,7 +23,7 @@ public String Tamaño;
     /**
      * Creates new form regis_empres
      */
-    public regis_empres() {
+    public Registro_Empresa() {
         initComponents();
          setTitle("Formulario para el registro de la empresa");
          mostrar("");
@@ -98,14 +98,12 @@ public String Tamaño;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 102));
+        jPanel1.setBackground(new java.awt.Color(100, 211, 82));
 
-        jLabel10.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel10.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel10.setText("Datos de la empresa");
 
-        jLabel2.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("Nit Empresa");
 
         txtnit.addActionListener(new java.awt.event.ActionListener() {
@@ -119,8 +117,7 @@ public String Tamaño;
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("Nombre de la Empresa");
 
         txtnomem.addActionListener(new java.awt.event.ActionListener() {
@@ -134,12 +131,10 @@ public String Tamaño;
             }
         });
 
-        jLabel11.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel11.setText("Cantidad de Empleados");
 
-        jLabel7.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("Ciudad");
 
         txtciudad.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -148,8 +143,7 @@ public String Tamaño;
             }
         });
 
-        jLabel8.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Departamento");
 
         txtdepartamento.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -158,12 +152,10 @@ public String Tamaño;
             }
         });
 
-        jLabel9.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel9.setText("Sucursal");
 
-        jLabel4.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("Telefono");
 
         txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -172,14 +164,12 @@ public String Tamaño;
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setText("Razon Social ");
 
         cbrazon.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "LTDA", "SAS", "S ENC", "SA" }));
 
-        jLabel6.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel6.setText("No Actividad Economica ");
 
         txtactividad.addActionListener(new java.awt.event.ActionListener() {
@@ -193,8 +183,7 @@ public String Tamaño;
             }
         });
 
-        jLabel12.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel12.setText("Nivel de Riesgo ");
 
         cbnivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "1", "2", "3", "4", "5", "" }));
@@ -222,52 +211,40 @@ public String Tamaño;
         });
         jScrollPane1.setViewportView(jtdatos);
 
-        btnregistrar.setBackground(new java.awt.Color(0, 204, 102));
-        btnregistrar.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        btnregistrar.setForeground(new java.awt.Color(0, 0, 0));
-        btnregistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/save(1).png"))); // NOI18N
+        btnregistrar.setBackground(new java.awt.Color(153, 153, 153));
+        btnregistrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnregistrar.setForeground(new java.awt.Color(255, 255, 255));
         btnregistrar.setText("Registrar");
-        btnregistrar.setBorder(null);
-        btnregistrar.setBorderPainted(false);
         btnregistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnregistrarActionPerformed(evt);
             }
         });
 
-        btneditar.setBackground(new java.awt.Color(0, 204, 102));
-        btneditar.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        btneditar.setForeground(new java.awt.Color(0, 0, 0));
-        btneditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/editar.png"))); // NOI18N
+        btneditar.setBackground(new java.awt.Color(153, 153, 153));
+        btneditar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btneditar.setForeground(new java.awt.Color(255, 255, 255));
         btneditar.setText("Editar");
-        btneditar.setBorder(null);
-        btneditar.setBorderPainted(false);
         btneditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btneditarActionPerformed(evt);
             }
         });
 
-        btn_eliminar.setBackground(new java.awt.Color(0, 204, 102));
-        btn_eliminar.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        btn_eliminar.setForeground(new java.awt.Color(0, 0, 0));
-        btn_eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/minimizar_2.png"))); // NOI18N
+        btn_eliminar.setBackground(new java.awt.Color(153, 153, 153));
+        btn_eliminar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_eliminar.setForeground(new java.awt.Color(255, 255, 255));
         btn_eliminar.setText("Eliminar");
-        btn_eliminar.setBorder(null);
-        btn_eliminar.setBorderPainted(false);
         btn_eliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_eliminarActionPerformed(evt);
             }
         });
 
-        btnsalir.setBackground(new java.awt.Color(0, 204, 102));
-        btnsalir.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
-        btnsalir.setForeground(new java.awt.Color(0, 0, 0));
-        btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar.png"))); // NOI18N
+        btnsalir.setBackground(new java.awt.Color(153, 153, 153));
+        btnsalir.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnsalir.setForeground(new java.awt.Color(255, 255, 255));
         btnsalir.setText("Salir");
-        btnsalir.setBorder(null);
-        btnsalir.setBorderPainted(false);
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsalirActionPerformed(evt);
@@ -320,27 +297,27 @@ public String Tamaño;
                         .addComponent(txtactividad, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(cbnivel, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(txtcantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 903, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(52, 52, 52))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 941, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(69, 69, 69))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel10))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(55, 55, 55)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnregistrar)
                             .addComponent(btneditar)
                             .addComponent(btnsalir)
-                            .addComponent(btn_eliminar))))
-                .addGap(33, 33, 33)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btn_eliminar))
+                        .addGap(36, 36, 36)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel10)
+                        .addGap(57, 57, 57)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtnit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2))
@@ -382,9 +359,8 @@ public String Tamaño;
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel12)
-                            .addComponent(cbnivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(47, Short.MAX_VALUE))
+                            .addComponent(cbnivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -460,7 +436,7 @@ public String Tamaño;
         btn_eliminar.setEnabled(true);
         btneditar.setEnabled(true);
         btnregistrar.setEnabled(false);
-        btnsalir.setEnabled(false);
+        btnsalir.setEnabled(true);
         txtnit.setEnabled(false);
         /* variables para elminar y editar*/
 
@@ -611,20 +587,21 @@ public String Tamaño;
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(regis_empres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(regis_empres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(regis_empres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(regis_empres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new regis_empres().setVisible(true);
+                new Registro_Empresa().setVisible(true);
             }
         });
     }

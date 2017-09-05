@@ -7,7 +7,7 @@ package Controlador;
 
 import Modelo.Conexion;
 import Modelo.M_RegistroEmpresa;
-import Vista.regis_empres;
+import Vista.Registro_Empresa;
 import Modelo.M_RegistroEmpresa;
 import Modelo.Mrecursos;
 

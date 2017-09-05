@@ -1612,6 +1612,11 @@ public class Gestion_salud extends javax.swing.JFrame {
         jLabel55.setText("ocupacionales.");
 
         jButton16.setText("Criterio");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
@@ -8373,6 +8378,12 @@ gh.toFront();
         im.toFront();
         im.setVisible(true);
     }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+         Criterio26 im= new Criterio26();
+        im.toFront();
+        im.setVisible(true);
+    }//GEN-LAST:event_jButton16ActionPerformed
 
     /**
      * @param args the command line arguments
