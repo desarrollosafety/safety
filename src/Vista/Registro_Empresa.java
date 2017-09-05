@@ -583,12 +583,7 @@ public String Tamaño;
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-         try{
-            UIManager.setLookAndFeel("com.jtattoo.plaf.mcwin.McWinLookAndFeel");
-        }catch(Exception e){
-            
-        }
-
+    
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
