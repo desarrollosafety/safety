@@ -222,52 +222,32 @@ public String Tamaño;
         });
         jScrollPane1.setViewportView(jtdatos);
 
-        btnregistrar.setBackground(new java.awt.Color(100, 211, 82));
-        btnregistrar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnregistrar.setForeground(new java.awt.Color(0, 0, 0));
-        btnregistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/save(1).png"))); // NOI18N
-        btnregistrar.setText("Registrar");
-        btnregistrar.setBorder(null);
-        btnregistrar.setBorderPainted(false);
+        btnregistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/guardaX24.png"))); // NOI18N
+        btnregistrar.setText("Guardar");
         btnregistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnregistrarActionPerformed(evt);
             }
         });
 
-        btneditar.setBackground(new java.awt.Color(100, 211, 82));
-        btneditar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btneditar.setForeground(new java.awt.Color(0, 0, 0));
         btneditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/editar.png"))); // NOI18N
         btneditar.setText("Editar");
-        btneditar.setBorder(null);
-        btneditar.setBorderPainted(false);
         btneditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btneditarActionPerformed(evt);
             }
         });
 
-        btn_eliminar.setBackground(new java.awt.Color(100, 211, 82));
-        btn_eliminar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btn_eliminar.setForeground(new java.awt.Color(0, 0, 0));
-        btn_eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/minimizar_2.png"))); // NOI18N
+        btn_eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar.png"))); // NOI18N
         btn_eliminar.setText("Eliminar");
-        btn_eliminar.setBorder(null);
-        btn_eliminar.setBorderPainted(false);
         btn_eliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_eliminarActionPerformed(evt);
             }
         });
 
-        btnsalir.setBackground(new java.awt.Color(100, 211, 82));
-        btnsalir.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnsalir.setForeground(new java.awt.Color(0, 0, 0));
-        btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar.png"))); // NOI18N
+        btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerra_ventana.png"))); // NOI18N
         btnsalir.setText("Salir");
-        btnsalir.setBorder(null);
-        btnsalir.setBorderPainted(false);
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsalirActionPerformed(evt);
@@ -281,15 +261,15 @@ public String Tamaño;
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel10)
-                .addGap(266, 266, 266)
+                .addGap(258, 258, 258)
                 .addComponent(btnregistrar)
-                .addGap(133, 133, 133)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btneditar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(btn_eliminar)
-                .addGap(121, 121, 121)
+                .addGap(26, 26, 26)
                 .addComponent(btnsalir)
-                .addGap(206, 206, 206))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -327,18 +307,17 @@ public String Tamaño;
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(55, 55, 55)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnregistrar)
                             .addComponent(btneditar)
-                            .addComponent(btnsalir)
-                            .addComponent(btn_eliminar))
-                        .addGap(36, 36, 36)
+                            .addComponent(btn_eliminar)
+                            .addComponent(btnsalir))
+                        .addGap(32, 32, 32)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
                         .addComponent(jLabel10)
                         .addGap(57, 57, 57)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -383,7 +362,7 @@ public String Tamaño;
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel12)
                             .addComponent(cbnivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addGap(48, 48, 48))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -482,8 +461,11 @@ public String Tamaño;
 
     }//GEN-LAST:event_jtdatosMouseClicked
 
-    private void btnregistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregistrarActionPerformed
+    private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
+              this.dispose();       
+    }//GEN-LAST:event_btnsalirActionPerformed
 
+    private void btnregistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregistrarActionPerformed
         int valor= Integer.parseInt(txtcantidad.getText());
 
         if( valor > 0 && valor < 10){
@@ -522,12 +504,10 @@ public String Tamaño;
 
             limpiar();
         }
-
     }//GEN-LAST:event_btnregistrarActionPerformed
 
     private void btneditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditarActionPerformed
-        // TODO add your handling code here:
-        int valor= Integer.parseInt(txtcantidad.getText());
+           int valor= Integer.parseInt(txtcantidad.getText());
 
         if( valor > 0 && valor < 10){
 
@@ -563,12 +543,10 @@ public String Tamaño;
             txtnit.setEnabled(true);
 
         }
-
     }//GEN-LAST:event_btneditarActionPerformed
 
     private void btn_eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eliminarActionPerformed
-
-        tr.setEstado("Inactivo");
+           tr.setEstado("Inactivo");
         int opcionSalir = JOptionPane.showConfirmDialog(null,"¿ Esta seguro que desea eliminar este registro ?");
         if (JOptionPane.YES_OPTION == opcionSalir){
             if(func.eliminar(tr)){
@@ -583,15 +561,7 @@ public String Tamaño;
             }
 
         }
-
     }//GEN-LAST:event_btn_eliminarActionPerformed
-
-    private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
-        int opcionSalir = JOptionPane.showConfirmDialog(null,"Esta seguro que desea salir.");
-        if (JOptionPane.YES_OPTION == opcionSalir){
-            dispose();
-        }
-    }//GEN-LAST:event_btnsalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -632,7 +602,7 @@ public String Tamaño;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_eliminar;
     private javax.swing.JButton btneditar;
-    public javax.swing.JButton btnregistrar;
+    private javax.swing.JButton btnregistrar;
     private javax.swing.JButton btnsalir;
     private javax.swing.JComboBox<String> cbnivel;
     private javax.swing.JComboBox<String> cbrazon;
