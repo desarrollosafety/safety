@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author leandro
  */
-public class regis_empres extends javax.swing.JFrame {
+public class Registro_Empresa extends javax.swing.JFrame {
 DefaultTableModel modelo;
 
 M_RegistroEmpresa tr = new M_RegistroEmpresa();
@@ -23,7 +23,7 @@ public String Tamaño;
     /**
      * Creates new form regis_empres
      */
-    public regis_empres() {
+    public Registro_Empresa() {
         initComponents();
          setTitle("Formulario para el registro de la empresa");
          mostrar("");
@@ -96,9 +96,9 @@ public String Tamaño;
         btn_eliminar = new javax.swing.JButton();
         btnsalir = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 102));
+        jPanel1.setBackground(new java.awt.Color(100, 211, 82));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel10.setText("Datos de la empresa");
@@ -436,7 +436,7 @@ public String Tamaño;
         btn_eliminar.setEnabled(true);
         btneditar.setEnabled(true);
         btnregistrar.setEnabled(false);
-        btnsalir.setEnabled(false);
+        btnsalir.setEnabled(true);
         txtnit.setEnabled(false);
         /* variables para elminar y editar*/
 
@@ -587,20 +587,21 @@ public String Tamaño;
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(regis_empres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(regis_empres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(regis_empres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(regis_empres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new regis_empres().setVisible(true);
+                new Registro_Empresa().setVisible(true);
             }
         });
     }
