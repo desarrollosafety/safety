@@ -48,6 +48,7 @@ public class M_EncDatosPer {
     }
     
     public int Insertardatos(int idDato, String respuesta, int encuestaId){
+        
         int resp = 0;
         try {
              Connection accesoBD=conexion.getConexion();

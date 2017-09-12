@@ -103,6 +103,7 @@ int idEncuesta;
     @Override
     public void actionPerformed(ActionEvent ae) {
         if(ae.getSource()==vista_realizarEncuesta.btn_GuardarEncuesta){
+         
            encuDatosPersonales=new M_EncDatosPer();
             String[] datosPersonales=new String[10];
             datosPersonales[0]=vista_realizarEncuesta.cb_edad.getSelectedItem().toString();
@@ -120,6 +121,7 @@ int idEncuesta;
            for(int i=0; i<datosPersonales.length; i++){
              String respuesta=datosPersonales[i];
           datPer =encuDatosPersonales.Insertardatos(iddato, respuesta, idEncuesta);
+             
           iddato=iddato+1;
            }
            if(datPer!=0){

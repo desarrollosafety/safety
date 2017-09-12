@@ -48,8 +48,8 @@ idpersona=1 and aplica="no"]]>
 					<text><![CDATA[Evaluacion inicial]]></text>
 				</staticText>
 				<image>
-					<reportElement x="476" y="0" width="119" height="89" uuid="cdee664d-039b-4123-8392-1da2c01a0a4f"/>
-					<imageExpression><![CDATA["C:\\Users\\LENOVO\\Desktop\\safety\\src\\Imagenes\\logo 132.png"]]></imageExpression>
+					<reportElement x="485" y="17" width="94" height="75" uuid="8e307f6c-7759-4c5c-af42-dac530e2207c"/>
+					<imageExpression><![CDATA["C:\\Users\\johany\\Documents\\NetBeansProjects\\safety\\src\\Imagenes\\logo 132.png"]]></imageExpression>
 				</image>
 			</frame>
 		</band>

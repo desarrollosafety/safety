@@ -407,7 +407,7 @@ private Connection connection= new Conexion().getConexion();
 
         lbl_fondoPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/perfil2.png"))); // NOI18N
         panel_perfil.add(lbl_fondoPerfil);
-        lbl_fondoPerfil.setBounds(-10, -10, 560, 530);
+        lbl_fondoPerfil.setBounds(0, -10, 550, 530);
 
         jPanel1.add(panel_perfil);
         panel_perfil.setBounds(60, 10, 550, 520);
