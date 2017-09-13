@@ -8,7 +8,6 @@ package Vista;
 
 import Controlador.Cevaluacion;
 import Controlador.Crecursos;
-import Criterios.*;
 import Modelo.Mevaluacion;
 import Modelo.Mrecursos;
 import java.awt.image.RenderedImage;
@@ -368,8 +367,6 @@ public class Recursos extends javax.swing.JFrame{
   
      // configurar botones y llenar el progress bar dinamicamente
        ps.setE1(1);
-      cm.Puntaje();
-      gh.punt= ps.getPunt();
        gh.config();
        int valo=10;
        ps.setBarra(ps.getBarra()+valo);
@@ -417,14 +414,11 @@ public class Recursos extends javax.swing.JFrame{
         rbno111 = new javax.swing.JRadioButton();
         btnmv11 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         rbsi112 = new javax.swing.JRadioButton();
         rbno112 = new javax.swing.JRadioButton();
         btnmv12 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         rbsi113 = new javax.swing.JRadioButton();
         rbno113 = new javax.swing.JRadioButton();
         btnmv13 = new javax.swing.JButton();
@@ -463,7 +457,6 @@ public class Recursos extends javax.swing.JFrame{
         rbsi131 = new javax.swing.JRadioButton();
         rbno131 = new javax.swing.JRadioButton();
         btnmv31 = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
@@ -481,16 +474,12 @@ public class Recursos extends javax.swing.JFrame{
         rbsi141 = new javax.swing.JRadioButton();
         rbno141 = new javax.swing.JRadioButton();
         btnmv41 = new javax.swing.JButton();
-        jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
         rbsi142 = new javax.swing.JRadioButton();
         rbno142 = new javax.swing.JRadioButton();
         btnmv42 = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
         jPanel15 = new javax.swing.JPanel();
         jLabel60 = new javax.swing.JLabel();
@@ -507,7 +496,6 @@ public class Recursos extends javax.swing.JFrame{
         rbsi151 = new javax.swing.JRadioButton();
         rbno151 = new javax.swing.JRadioButton();
         btnmv51 = new javax.swing.JButton();
-        jLabel63 = new javax.swing.JLabel();
         jButton7 = new javax.swing.JButton();
         jPanel16 = new javax.swing.JPanel();
         lblnocum6 = new javax.swing.JLabel();
@@ -524,14 +512,11 @@ public class Recursos extends javax.swing.JFrame{
         rbsi161 = new javax.swing.JRadioButton();
         rbno161 = new javax.swing.JRadioButton();
         btnmv61 = new javax.swing.JButton();
-        jLabel67 = new javax.swing.JLabel();
-        jLabel68 = new javax.swing.JLabel();
         jLabel69 = new javax.swing.JLabel();
         rbsi162 = new javax.swing.JRadioButton();
         rbno162 = new javax.swing.JRadioButton();
         btnmv62 = new javax.swing.JButton();
         jLabel70 = new javax.swing.JLabel();
-        jLabel71 = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
         jPanel17 = new javax.swing.JPanel();
         jLabel72 = new javax.swing.JLabel();
@@ -548,7 +533,6 @@ public class Recursos extends javax.swing.JFrame{
         rbsi171 = new javax.swing.JRadioButton();
         rbno171 = new javax.swing.JRadioButton();
         btnmv71 = new javax.swing.JButton();
-        jLabel75 = new javax.swing.JLabel();
         jButton9 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         lblnocum8 = new javax.swing.JLabel();
@@ -565,14 +549,11 @@ public class Recursos extends javax.swing.JFrame{
         rbsi181 = new javax.swing.JRadioButton();
         rbno181 = new javax.swing.JRadioButton();
         btnmv81 = new javax.swing.JButton();
-        jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         rbsi182 = new javax.swing.JRadioButton();
         rbno182 = new javax.swing.JRadioButton();
         btnmv82 = new javax.swing.JButton();
-        jLabel33 = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
-        jPanel11 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
@@ -588,8 +569,6 @@ public class Recursos extends javax.swing.JFrame{
         rbsi191 = new javax.swing.JRadioButton();
         rbno191 = new javax.swing.JRadioButton();
         btnmv91 = new javax.swing.JButton();
-        jLabel52 = new javax.swing.JLabel();
-        jLabel53 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
         rbsi192 = new javax.swing.JRadioButton();
         rbno192 = new javax.swing.JRadioButton();
@@ -610,11 +589,6 @@ public class Recursos extends javax.swing.JFrame{
         rbsi1101 = new javax.swing.JRadioButton();
         rbno1101 = new javax.swing.JRadioButton();
         btnmv101 = new javax.swing.JButton();
-        jLabel58 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel76 = new javax.swing.JLabel();
-        jLabel77 = new javax.swing.JLabel();
-        jLabel78 = new javax.swing.JLabel();
         jLabel79 = new javax.swing.JLabel();
         jButton11 = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
@@ -632,29 +606,36 @@ public class Recursos extends javax.swing.JFrame{
         rbsi1111 = new javax.swing.JRadioButton();
         rbno1111 = new javax.swing.JRadioButton();
         btnmv111 = new javax.swing.JButton();
-        jLabel37 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
         jButton13 = new javax.swing.JButton();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "E1.1\tRecursos financieros y técnico humanos y de otra índole requeridos para coordinar y desarrollar el sistema de gestión.(4%)", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 3, 18))); // NOI18N
+        jPanel2.setBackground(new java.awt.Color(249, 251, 250));
         jPanel2.setToolTipText("");
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 1:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
+        jPanel3.setBackground(new java.awt.Color(183, 219, 243));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 1:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Decker", 1, 14), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Modo de Verificación ");
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 94, 210, -1));
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Responsable del sistema de gestión de Seguridad y Salud en el trabajo SG-SST  (0.5%).");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(99, 27, -1, -1));
 
         lblnocum1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Close.png"))); // NOI18N
+        jPanel3.add(lblnocum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 27, -1, -1));
 
         lblcum1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/checked.png"))); // NOI18N
+        jPanel3.add(lblcum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 27, -1, -1));
 
         noaplicaitem1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         noaplicaitem1.setText("No Aplica");
@@ -663,6 +644,7 @@ public class Recursos extends javax.swing.JFrame{
                 noaplicaitem1ActionPerformed(evt);
             }
         });
+        jPanel3.add(noaplicaitem1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 30, -1, -1));
 
         rbjustiitem1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbjustiitem1.setText("Justifica");
@@ -671,6 +653,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbjustiitem1ActionPerformed(evt);
             }
         });
+        jPanel3.add(rbjustiitem1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 30, -1, -1));
 
         rbnojustiitem1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbnojustiitem1.setText("No justifica");
@@ -679,6 +662,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbnojustiitem1ActionPerformed(evt);
             }
         });
+        jPanel3.add(rbnojustiitem1, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 30, -1, -1));
 
         txtitem1.setColumns(20);
         txtitem1.setRows(5);
@@ -689,15 +673,20 @@ public class Recursos extends javax.swing.JFrame{
         });
         jScrollPane3.setViewportView(txtitem1);
 
+        jPanel3.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(963, 27, 158, 85));
+
         btnadjnoitem1.setText("Adjuntar Doc");
         btnadjnoitem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadjnoitem1ActionPerformed(evt);
             }
         });
+        jPanel3.add(btnadjnoitem1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1127, 27, 108, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel3.setText("1. Documento que consta la designación del responsable del sistema de gestión  SST, con la respectiva asignación de responsabilidades.");
+        jLabel3.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("<html>1. Documento que consta la designación del responsable del sistema de gestión  SST, con la respectiva asignación de<br> \nresponsabilidades.");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 130, -1, -1));
 
         rbsi111.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi111.setText("Cumple");
@@ -706,6 +695,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi111ActionPerformed(evt);
             }
         });
+        jPanel3.add(rbsi111, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 130, -1, -1));
 
         rbno111.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno111.setText("No cumple");
@@ -714,6 +704,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno111ActionPerformed(evt);
             }
         });
+        jPanel3.add(rbno111, new org.netbeans.lib.awtextra.AbsoluteConstraints(1026, 132, -1, -1));
 
         btnmv11.setText("Adjuntar Doc");
         btnmv11.addActionListener(new java.awt.event.ActionListener() {
@@ -721,12 +712,12 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv11ActionPerformed(evt);
             }
         });
+        jPanel3.add(btnmv11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 130, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel4.setText("2. Titulo de formación del encargado del sistema de gestión y seguridad en el trabajo (Técnico-Tecnólogo-profesional-");
-
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel5.setText("maestría-especialización).");
+        jLabel4.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setText("<html>2. Titulo de formación del encargado del sistema de gestión y seguridad en el trabajo (Técnico-Tecnólogo-profesional<br> \n maestría-especialización).");
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
         rbsi112.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi112.setText("Cumple");
@@ -735,6 +726,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi112ActionPerformed(evt);
             }
         });
+        jPanel3.add(rbsi112, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 180, -1, -1));
 
         rbno112.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno112.setText("No cumple");
@@ -743,6 +735,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno112ActionPerformed(evt);
             }
         });
+        jPanel3.add(rbno112, new org.netbeans.lib.awtextra.AbsoluteConstraints(1026, 180, -1, -1));
 
         btnmv12.setText("Adjuntar Doc");
         btnmv12.addActionListener(new java.awt.event.ActionListener() {
@@ -750,18 +743,17 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv12ActionPerformed(evt);
             }
         });
+        jPanel3.add(btnmv12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 178, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel6.setText("3. Licencia de seguridad y salud en el trabajo vigente (de persona natural o jurídica), en caso de no tenerla se le sugiere mirar los ");
+        jLabel6.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setText("<html>3. Licencia de seguridad y salud en el trabajo vigente (de persona natural o jurídica), en caso de no tenerla se le<br> sugiere mirar los requisitos de formación y cursos solicitados en los artículos 5 y 6 de la resolución 1111 del 2017.   ");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 750, -1));
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("requisitos de formación y cursos solicitados en los artículos 5 y 6 de la resolución 1111 del 2017.   ");
-
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("4. El encargado del sistema de gestión y seguridad en el trabajo cuenta con el certificado exigido de aprobación del curso ");
-
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel9.setText("virtual de 50 horas en seguridad y salud en el trabajo.  ");
+        jLabel8.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel8.setText("<html>4. El encargado del sistema de gestión y seguridad en el trabajo cuenta con el certificado exigido de aprobación<br> del curso virtual de 50 horas en seguridad y salud en el trabajo.  ");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
 
         rbsi113.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi113.setText("Cumple");
@@ -770,6 +762,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi113ActionPerformed(evt);
             }
         });
+        jPanel3.add(rbsi113, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 240, -1, -1));
 
         rbno113.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno113.setText("No cumple");
@@ -778,6 +771,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno113ActionPerformed(evt);
             }
         });
+        jPanel3.add(rbno113, new org.netbeans.lib.awtextra.AbsoluteConstraints(1026, 242, -1, -1));
 
         btnmv13.setText("Adjuntar Doc");
         btnmv13.addActionListener(new java.awt.event.ActionListener() {
@@ -785,6 +779,7 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv13ActionPerformed(evt);
             }
         });
+        jPanel3.add(btnmv13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 240, -1, -1));
 
         rbsi114.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi114.setText("Cumple");
@@ -793,6 +788,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi114ActionPerformed(evt);
             }
         });
+        jPanel3.add(rbsi114, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 290, -1, -1));
 
         rbno114.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno114.setText("No cumple");
@@ -801,6 +797,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno114ActionPerformed(evt);
             }
         });
+        jPanel3.add(rbno114, new org.netbeans.lib.awtextra.AbsoluteConstraints(1026, 290, -1, -1));
 
         btnmv14.setText("Adjuntar Doc");
         btnmv14.addActionListener(new java.awt.event.ActionListener() {
@@ -808,163 +805,25 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv14ActionPerformed(evt);
             }
         });
+        jPanel3.add(btnmv14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 288, -1, -1));
 
         jButton3.setText("Criterio");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(99, 51, -1, -1));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(31, 31, 31)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(lblnocum1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblcum1)
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jButton3))
-                                .addGap(18, 18, 18)
-                                .addComponent(noaplicaitem1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(rbjustiitem1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(rbsi114)
-                                    .addComponent(rbnojustiitem1)
-                                    .addComponent(rbsi113)
-                                    .addComponent(rbsi112)
-                                    .addComponent(rbsi111))))
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnadjnoitem1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel8)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel3Layout.createSequentialGroup()
-                                            .addComponent(jLabel3)
-                                            .addGap(18, 18, 18))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                            .addComponent(jLabel4)
-                                            .addGap(124, 124, 124)))
-                                    .addGroup(jPanel3Layout.createSequentialGroup()
-                                        .addGap(10, 10, 10)
-                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel5)
-                                            .addComponent(jLabel7)
-                                            .addComponent(jLabel9))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                        .addComponent(rbno114)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnmv14))
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(jPanel3Layout.createSequentialGroup()
-                                            .addComponent(rbno113)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(btnmv13))
-                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                                .addComponent(rbno112)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(btnmv12))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                                                .addGap(124, 124, 124)
-                                                .addComponent(rbno111)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(btnmv11)))))))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rbjustiitem1)
-                        .addComponent(rbnojustiitem1)
-                        .addComponent(noaplicaitem1))
-                    .addComponent(btnadjnoitem1)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblnocum1)
-                                .addComponent(lblcum1))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel1))
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                            .addComponent(jLabel2)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton3))))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(btnmv11))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel5))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(rbno111)
-                            .addComponent(rbsi111))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(rbsi112)
-                            .addComponent(rbno112)
-                            .addComponent(btnmv12))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rbsi113)
-                    .addComponent(rbno113)
-                    .addComponent(btnmv13)
-                    .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel9))
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rbsi114)
-                        .addComponent(rbno114)
-                        .addComponent(btnmv14)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 2:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
+        jPanel4.setBackground(new java.awt.Color(183, 219, 243));
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 2:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Decker", 1, 14), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblnocum2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Close.png"))); // NOI18N
+        jPanel4.add(lblnocum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 28, -1, -1));
 
         lblcum2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/checked.png"))); // NOI18N
+        jPanel4.add(lblcum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 28, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel10.setText("Responsabilidades en el sistema de gestión de seguridad y salud en el trabajo SG-SST (0.5%).");
+        jLabel10.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel10.setText("<html>Responsabilidades en el sistema de gestión de seguridad<br> y salud en el trabajo SG-SST (0.5%).");
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 32, -1, -1));
 
         noaplicaitem2.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         noaplicaitem2.setText("No Aplica");
@@ -973,6 +832,7 @@ public class Recursos extends javax.swing.JFrame{
                 noaplicaitem2ActionPerformed(evt);
             }
         });
+        jPanel4.add(noaplicaitem2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 30, -1, -1));
 
         rbjustiitem2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbjustiitem2.setText("Justifica");
@@ -981,6 +841,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbjustiitem2ActionPerformed(evt);
             }
         });
+        jPanel4.add(rbjustiitem2, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 30, -1, -1));
 
         rbnojustiitem2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbnojustiitem2.setText("No justifica");
@@ -989,6 +850,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbnojustiitem2ActionPerformed(evt);
             }
         });
+        jPanel4.add(rbnojustiitem2, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 30, -1, -1));
 
         txtitem2.setColumns(20);
         txtitem2.setRows(5);
@@ -999,18 +861,25 @@ public class Recursos extends javax.swing.JFrame{
         });
         jScrollPane4.setViewportView(txtitem2);
 
+        jPanel4.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 30, 158, 85));
+
         btnadjnoitem2.setText("Adjuntar Doc");
         btnadjnoitem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadjnoitem2ActionPerformed(evt);
             }
         });
+        jPanel4.add(btnadjnoitem2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 30, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Modo de Verificación ");
+        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 120, 210, -1));
 
-        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("1. Soporte que contenga la asignación y documentación de las responsabilidades en seguridad y salud en el trabajo.");
+        jPanel4.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
         rbsi121.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi121.setText("Cumple");
@@ -1019,6 +888,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi121ActionPerformed(evt);
             }
         });
+        jPanel4.add(rbsi121, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 140, -1, -1));
 
         rbno121.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno121.setText("No cumple");
@@ -1027,6 +897,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno121ActionPerformed(evt);
             }
         });
+        jPanel4.add(rbno121, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 140, -1, -1));
 
         btnmv21.setText("Adjuntar Doc");
         btnmv21.addActionListener(new java.awt.event.ActionListener() {
@@ -1034,102 +905,30 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv21ActionPerformed(evt);
             }
         });
+        jPanel4.add(btnmv21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 140, -1, -1));
 
         jButton4.setText("Criterio");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
+        jPanel4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 74, -1, -1));
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblnocum2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel12)
-                        .addGap(96, 96, 96)
-                        .addComponent(rbsi121)
-                        .addGap(18, 18, 18)
-                        .addComponent(rbno121)
-                        .addGap(27, 27, 27)
-                        .addComponent(btnmv21)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(lblcum2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel10)
-                                    .addComponent(jButton4))
-                                .addGap(18, 18, 18)
-                                .addComponent(noaplicaitem2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(rbjustiitem2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(rbnojustiitem2))
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addGap(15, 15, 15)
-                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnadjnoitem2)
-                        .addGap(253, 253, 253))))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblnocum2)
-                                .addComponent(lblcum2))
-                            .addGap(60, 60, 60))
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(rbjustiitem2)
-                                    .addComponent(rbnojustiitem2)
-                                    .addComponent(noaplicaitem2))
-                                .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(jLabel10)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton4)))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnadjnoitem2)
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(22, 22, 22)))
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(rbsi121)
-                    .addComponent(rbno121)
-                    .addComponent(btnmv21))
-                .addContainerGap(29, Short.MAX_VALUE))
-        );
+        jPanel6.setBackground(new java.awt.Color(183, 219, 243));
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 3:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Decker", 1, 14), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 3:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
-
-        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("Modo de Verificación ");
+        jPanel6.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 150, -1));
 
-        jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
         jLabel16.setText("Asignación de recursos para el sistema de gestión de seguridad y salud en el trabajo ");
+        jPanel6.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 27, -1, -1));
 
         lblnocum3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Close.png"))); // NOI18N
+        jPanel6.add(lblnocum3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 27, -1, -1));
 
         lblcum3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/checked.png"))); // NOI18N
+        jPanel6.add(lblcum3, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 27, -1, -1));
 
         noaplicaitem3.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         noaplicaitem3.setText("No Aplica");
@@ -1138,6 +937,7 @@ public class Recursos extends javax.swing.JFrame{
                 noaplicaitem3ActionPerformed(evt);
             }
         });
+        jPanel6.add(noaplicaitem3, new org.netbeans.lib.awtextra.AbsoluteConstraints(652, 27, -1, -1));
 
         rbjustiitem3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbjustiitem3.setText("Justifica");
@@ -1146,6 +946,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbjustiitem3ActionPerformed(evt);
             }
         });
+        jPanel6.add(rbjustiitem3, new org.netbeans.lib.awtextra.AbsoluteConstraints(758, 27, -1, -1));
 
         rbnojustiitem3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbnojustiitem3.setText("No justifica");
@@ -1154,6 +955,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbnojustiitem3ActionPerformed(evt);
             }
         });
+        jPanel6.add(rbnojustiitem3, new org.netbeans.lib.awtextra.AbsoluteConstraints(847, 27, -1, -1));
 
         txtitem3.setColumns(20);
         txtitem3.setRows(5);
@@ -1164,15 +966,20 @@ public class Recursos extends javax.swing.JFrame{
         });
         jScrollPane5.setViewportView(txtitem3);
 
+        jPanel6.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 28, 158, 85));
+
         btnadjnoitem3.setText("Adjuntar Doc");
         btnadjnoitem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadjnoitem3ActionPerformed(evt);
             }
         });
+        jPanel6.add(btnadjnoitem3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1139, 27, -1, -1));
 
-        jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel17.setText("1. Evidencias físicas y/o  documentales que demuestren la definición y asignación de los recursos humanos, financieros y tecnicos y de otra indole ");
+        jLabel17.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel17.setText("<html>1. Evidencias físicas y/o  documentales que demuestren la definición y asignación de los recursos humanos,<br> financieros y tecnicos y de otra\nindole   para la implementación, mantenimiento y continuidad del SG-SST.");
+        jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 155, -1, -1));
 
         rbsi131.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi131.setText("Cumple");
@@ -1181,6 +988,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi131ActionPerformed(evt);
             }
         });
+        jPanel6.add(rbsi131, new org.netbeans.lib.awtextra.AbsoluteConstraints(921, 161, -1, -1));
 
         rbno131.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno131.setText("No cumple");
@@ -1189,6 +997,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno131ActionPerformed(evt);
             }
         });
+        jPanel6.add(rbno131, new org.netbeans.lib.awtextra.AbsoluteConstraints(1013, 161, -1, -1));
 
         btnmv31.setText("Adjuntar Doc");
         btnmv31.addActionListener(new java.awt.event.ActionListener() {
@@ -1196,111 +1005,30 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv31ActionPerformed(evt);
             }
         });
+        jPanel6.add(btnmv31, new org.netbeans.lib.awtextra.AbsoluteConstraints(1139, 159, -1, -1));
 
-        jLabel18.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel18.setText("  para la implementación, mantenimiento y continuidad del SG-SST.");
-
-        jLabel19.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(0, 0, 0));
         jLabel19.setText("SG-SST (0.5%).");
+        jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 51, -1, -1));
 
         jButton5.setText("Criterio");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
+        jPanel6.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, -1, -1));
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel17)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel18)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(rbsi131)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbno131)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnmv31)
-                        .addGap(82, 82, 82))))
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(lblnocum3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblcum3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel16)
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(jLabel19)
-                                .addGap(8, 8, 8)
-                                .addComponent(jButton5)))
-                        .addGap(18, 18, 18)
-                        .addComponent(noaplicaitem3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbjustiitem3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbnojustiitem3))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnadjnoitem3, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rbjustiitem3)
-                        .addComponent(rbnojustiitem3)
-                        .addComponent(noaplicaitem3))
-                    .addComponent(btnadjnoitem3)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(jPanel6Layout.createSequentialGroup()
-                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel6Layout.createSequentialGroup()
-                                    .addComponent(jLabel16)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel19)
-                                        .addComponent(jButton5)))
-                                .addComponent(lblnocum3)
-                                .addComponent(lblcum3))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel15))
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel17)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel18))
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rbsi131)
-                        .addComponent(rbno131)
-                        .addComponent(btnmv31)))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-
+        jPanel7.setBackground(new java.awt.Color(183, 219, 243));
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 4:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblnocum4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Close.png"))); // NOI18N
+        jPanel7.add(lblnocum4, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 47, -1, -1));
 
         lblcum4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/checked.png"))); // NOI18N
+        jPanel7.add(lblcum4, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 47, -1, -1));
 
-        jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
         jLabel20.setText("Afiliación al sistema general de riesgos laborales (0.5%).");
+        jPanel7.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 47, -1, -1));
 
         noaplicaitem4.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         noaplicaitem4.setText("No Aplica");
@@ -1309,6 +1037,7 @@ public class Recursos extends javax.swing.JFrame{
                 noaplicaitem4ActionPerformed(evt);
             }
         });
+        jPanel7.add(noaplicaitem4, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 40, -1, -1));
 
         rbjustiitem4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbjustiitem4.setText("Justifica");
@@ -1317,6 +1046,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbjustiitem4ActionPerformed(evt);
             }
         });
+        jPanel7.add(rbjustiitem4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 40, -1, -1));
 
         rbnojustiitem4.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbnojustiitem4.setText("No justifica");
@@ -1325,6 +1055,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbnojustiitem4ActionPerformed(evt);
             }
         });
+        jPanel7.add(rbnojustiitem4, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 40, -1, -1));
 
         txtitem4.setColumns(20);
         txtitem4.setRows(5);
@@ -1335,18 +1066,25 @@ public class Recursos extends javax.swing.JFrame{
         });
         jScrollPane6.setViewportView(txtitem4);
 
+        jPanel7.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 50, 158, 85));
+
         btnadjnoitem4.setText("Adjuntar Doc");
         btnadjnoitem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadjnoitem4ActionPerformed(evt);
             }
         });
+        jPanel7.add(btnadjnoitem4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 60, -1, -1));
 
-        jLabel21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(0, 0, 0));
         jLabel21.setText("Modo de Verificación ");
+        jPanel7.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 125, 210, -1));
 
-        jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel22.setText("1. Lista de los trabajadores vinculados laboralmente a la fecha y comparar con la planilla de pago de aportes de la seguridad social ");
+        jLabel22.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel22.setText("<html>1. Lista de los trabajadores vinculados laboralmente a la fecha y comparar con la planilla de pago de<br>\n aportes de la seguridad social de los cuatro meses anteriores a la fecha de verificación (Ver nota 1).");
+        jPanel7.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
 
         rbsi141.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi141.setText("Cumple");
@@ -1355,6 +1093,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi141ActionPerformed(evt);
             }
         });
+        jPanel7.add(rbsi141, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 190, -1, -1));
 
         rbno141.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno141.setText("No cumple");
@@ -1363,6 +1102,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno141ActionPerformed(evt);
             }
         });
+        jPanel7.add(rbno141, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 190, -1, -1));
 
         btnmv41.setText("Adjuntar Doc");
         btnmv41.addActionListener(new java.awt.event.ActionListener() {
@@ -1370,15 +1110,12 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv41ActionPerformed(evt);
             }
         });
+        jPanel7.add(btnmv41, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 190, 100, -1));
 
-        jLabel23.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel23.setText("de los cuatro meses anteriores a la fecha de verificación (Ver nota 1).");
-
-        jLabel24.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel24.setText("2. Lista de los trabajadores vinculados por prestación de servicios a la fecha y comparar con la última planilla de pago de aportes ");
-
-        jLabel25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel25.setText("a la seguridad social suministrada por los contratistas (Ver nota 1 y 2).");
+        jLabel24.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel24.setText("<html>2. Lista de los trabajadores vinculados por prestación de servicios a la fecha y comparar con la última<br>\n planilla de pago de aportes a la seguridad social suministrada por los contratistas (Ver nota 1 y 2).");
+        jPanel7.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
 
         rbsi142.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi142.setText("Cumple");
@@ -1387,6 +1124,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi142ActionPerformed(evt);
             }
         });
+        jPanel7.add(rbsi142, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 260, -1, -1));
 
         rbno142.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno142.setText("No cumple");
@@ -1395,6 +1133,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno142ActionPerformed(evt);
             }
         });
+        jPanel7.add(rbno142, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 260, -1, -1));
 
         btnmv42.setText("Adjuntar Doc");
         btnmv42.addActionListener(new java.awt.event.ActionListener() {
@@ -1402,155 +1141,40 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv42ActionPerformed(evt);
             }
         });
+        jPanel7.add(btnmv42, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 260, -1, -1));
 
-        jLabel26.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel26.setText("Nota 1: Empresas de 1 a 10 trabajadores verificar 100%, entre 11 y 50 el 20%, entre 51 y 200 el 10% y mayores a 200 verificar el registro de 30 trabajadores. También de la muestra");
+        jLabel26.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel26.setText("<html>Nota 1: Empresas de 1 a 10 trabajadores verificar 100%, entre 11 y 50 el 20%, entre 51 y 200 el 10% y mayores a 200 verificar el registro<br>\nde 30 trabajadores. También de la muestraseleccionada se verificara la afiliación al sistema general de seguridad social.\n");
+        jPanel7.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, -1, -1));
 
-        jLabel27.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel27.setText("seleccionada se verificara la afiliación al sistema general de seguridad social.");
-
-        jLabel28.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel28.setText("Nota 2: Trabajadores independientes que se afilien través de agremiaciones verificar que corresponda a una agremiación autorizada por el Ministerio de salud y proteccion social");
-
-        jLabel29.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel29.setText("(listado pagina Web).");
+        jLabel28.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel28.setText("<html>Nota 2: Trabajadores independientes que se afilien través de agremiaciones verificar que corresponda a una agremiación autorizada por<br>\nel Ministerio de salud y proteccion social (listado pagina Web).");
+        jPanel7.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
 
         jButton6.setText("Criterio");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
+        jPanel7.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 71, -1, -1));
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(lblnocum4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(lblcum4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel20)
-                                    .addComponent(jButton6))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(noaplicaitem4)
-                                .addGap(30, 30, 30)
-                                .addComponent(rbjustiitem4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(rbnojustiitem4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnadjnoitem4, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(81, 81, 81))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel7Layout.createSequentialGroup()
-                                        .addComponent(jLabel23)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(rbsi141)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(rbno141)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(btnmv41))
-                                    .addGroup(jPanel7Layout.createSequentialGroup()
-                                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel22)
-                                            .addComponent(jLabel24)
-                                            .addComponent(jLabel25))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(rbsi142)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(rbno142)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(btnmv42)))
-                                .addGap(105, 105, 105))
-                            .addComponent(jLabel28)
-                            .addComponent(jLabel26)
-                            .addComponent(jLabel27))
-                        .addGap(34, 34, 34))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(jLabel29)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblnocum4)
-                            .addComponent(lblcum4)
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(jLabel20)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton6)))
-                        .addGap(22, 22, 22)
-                        .addComponent(jLabel21))
-                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel7Layout.createSequentialGroup()
-                            .addComponent(btnadjnoitem4)
-                            .addGap(1, 1, 1))
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rbjustiitem4)
-                        .addComponent(rbnojustiitem4)
-                        .addComponent(noaplicaitem4)))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel22)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel23))
-                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rbsi141)
-                        .addComponent(rbno141)
-                        .addComponent(btnmv41)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel24)
-                .addGap(4, 4, 4)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25)
-                    .addComponent(rbsi142)
-                    .addComponent(rbno142)
-                    .addComponent(btnmv42))
-                .addGap(31, 31, 31)
-                .addComponent(jLabel26)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel27)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel28)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel29)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
+        jPanel15.setBackground(new java.awt.Color(183, 219, 243));
         jPanel15.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 5:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
+        jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel60.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel60.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(0, 0, 0));
         jLabel60.setText("Modo de Verificación ");
+        jPanel15.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 101, 210, -1));
 
-        jLabel61.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel61.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel61.setForeground(new java.awt.Color(0, 0, 0));
         jLabel61.setText("Pago de pensión de trabajadores de alto riesgo (0.5%).");
+        jPanel15.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 27, -1, -1));
 
         lblnocum5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Close.png"))); // NOI18N
+        jPanel15.add(lblnocum5, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 27, -1, -1));
 
         lblcum5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/checked.png"))); // NOI18N
+        jPanel15.add(lblcum5, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 27, -1, -1));
 
         noaplicaitem5.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         noaplicaitem5.setText("No Aplica");
@@ -1559,6 +1183,7 @@ public class Recursos extends javax.swing.JFrame{
                 noaplicaitem5ActionPerformed(evt);
             }
         });
+        jPanel15.add(noaplicaitem5, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 30, -1, -1));
 
         rbjustiitem5.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbjustiitem5.setText("Justifica");
@@ -1567,6 +1192,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbjustiitem5ActionPerformed(evt);
             }
         });
+        jPanel15.add(rbjustiitem5, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 30, -1, -1));
 
         rbnojustiitem5.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbnojustiitem5.setText("No justifica");
@@ -1575,6 +1201,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbnojustiitem5ActionPerformed(evt);
             }
         });
+        jPanel15.add(rbnojustiitem5, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 30, -1, -1));
 
         txtitem5.setColumns(20);
         txtitem5.setRows(5);
@@ -1585,15 +1212,20 @@ public class Recursos extends javax.swing.JFrame{
         });
         jScrollPane15.setViewportView(txtitem5);
 
+        jPanel15.add(jScrollPane15, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 30, 158, 85));
+
         btnadjnoitem5.setText("Adjuntar Doc");
         btnadjnoitem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadjnoitem5ActionPerformed(evt);
             }
         });
+        jPanel15.add(btnadjnoitem5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 40, -1, -1));
 
-        jLabel62.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel62.setText("1. Se tienen identificados los trabajadores que se dedican en forma permanente al ejercicio de las actividades de alto riesgo que trata ");
+        jLabel62.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel62.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel62.setText("<html>1. Se tienen identificados los trabajadores que se dedican en forma permanente al ejercicio de las<br>\n actividades de alto riesgo que trata el decreto 2090 de 2003.");
+        jPanel15.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 137, -1, -1));
 
         rbsi151.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi151.setText("Cumple");
@@ -1602,6 +1234,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi151ActionPerformed(evt);
             }
         });
+        jPanel15.add(rbsi151, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 140, -1, -1));
 
         rbno151.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno151.setText("No cumple");
@@ -1610,6 +1243,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno151ActionPerformed(evt);
             }
         });
+        jPanel15.add(rbno151, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 140, -1, -1));
 
         btnmv51.setText("Adjuntar Doc");
         btnmv51.addActionListener(new java.awt.event.ActionListener() {
@@ -1617,107 +1251,25 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv51ActionPerformed(evt);
             }
         });
-
-        jLabel63.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel63.setText("el decreto 2090 de 2003.");
+        jPanel15.add(btnmv51, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 140, -1, -1));
 
         jButton7.setText("Criterio");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
+        jPanel15.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 51, -1, -1));
 
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel15Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel62)
-                    .addComponent(jLabel63))
-                .addGap(36, 36, 36)
-                .addComponent(rbsi151)
-                .addGap(18, 18, 18)
-                .addComponent(rbno151)
-                .addGap(18, 18, 18)
-                .addComponent(btnmv51)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel15Layout.createSequentialGroup()
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(lblnocum5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblcum5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel61)
-                            .addComponent(jButton7)))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(noaplicaitem5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(rbjustiitem5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(rbnojustiitem5)
-                .addGap(35, 35, 35)
-                .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnadjnoitem5, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(68, 68, 68))
-        );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel15Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel15Layout.createSequentialGroup()
-                                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblnocum5)
-                                    .addComponent(lblcum5))
-                                .addGap(34, 34, 34))
-                            .addGroup(jPanel15Layout.createSequentialGroup()
-                                .addComponent(jLabel61)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton7)
-                                .addGap(18, 18, 18)))
-                        .addComponent(jLabel60))
-                    .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(rbjustiitem5)
-                            .addComponent(rbnojustiitem5)
-                            .addComponent(noaplicaitem5))
-                        .addComponent(btnadjnoitem5)
-                        .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel62)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel63))
-                    .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(rbsi151)
-                            .addComponent(rbno151)
-                            .addComponent(btnmv51))))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-
+        jPanel16.setBackground(new java.awt.Color(183, 219, 243));
         jPanel16.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 6:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
+        jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblnocum6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Close.png"))); // NOI18N
+        jPanel16.add(lblnocum6, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 47, -1, -1));
 
         lblcum6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/checked.png"))); // NOI18N
+        jPanel16.add(lblcum6, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 47, -1, -1));
 
-        jLabel64.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel64.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel64.setForeground(new java.awt.Color(0, 0, 0));
         jLabel64.setText("Conformación COPASST/ Vigía (0.5%).");
+        jPanel16.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 47, -1, -1));
 
         noaplicaitem6.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         noaplicaitem6.setText("No Aplica");
@@ -1726,6 +1278,7 @@ public class Recursos extends javax.swing.JFrame{
                 noaplicaitem6ActionPerformed(evt);
             }
         });
+        jPanel16.add(noaplicaitem6, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 50, -1, -1));
 
         rbjustiitem6.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbjustiitem6.setText("Justifica");
@@ -1734,6 +1287,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbjustiitem6ActionPerformed(evt);
             }
         });
+        jPanel16.add(rbjustiitem6, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 50, -1, -1));
 
         rbnojustiitem6.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbnojustiitem6.setText("No justifica");
@@ -1742,6 +1296,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbnojustiitem6ActionPerformed(evt);
             }
         });
+        jPanel16.add(rbnojustiitem6, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 50, -1, -1));
 
         txtitem6.setColumns(20);
         txtitem6.setRows(5);
@@ -1752,18 +1307,25 @@ public class Recursos extends javax.swing.JFrame{
         });
         jScrollPane16.setViewportView(txtitem6);
 
+        jPanel16.add(jScrollPane16, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 50, 158, 85));
+
         btnadjnoitem6.setText("Adjuntar Doc");
         btnadjnoitem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadjnoitem6ActionPerformed(evt);
             }
         });
+        jPanel16.add(btnadjnoitem6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 60, 108, -1));
 
-        jLabel65.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel65.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel65.setForeground(new java.awt.Color(0, 0, 0));
         jLabel65.setText("Modo de Verificación ");
+        jPanel16.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 126, 210, -1));
 
-        jLabel66.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel66.setText("1. Acta mediante la cual se designa el vigía SST (Seguridad y Salud en el Trabajo) o solicitar los soportes de la convocatoria, ");
+        jLabel66.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel66.setText("<html>1. Acta mediante la cual se designa el vigía SST (Seguridad y Salud en el Trabajo) o solicitar los soportes de la convocatoria,<br>\nelección, conformación del comité paritario SST y el acta de constitución (Para el caso del comité paritario constatar si es<br>\nsi es igual el número de representantes del empleador y de los trabajadores y que el acta de conformación se encuentra vigente).");
+        jPanel16.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
 
         rbsi161.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi161.setText("Cumple");
@@ -1772,6 +1334,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi161ActionPerformed(evt);
             }
         });
+        jPanel16.add(rbsi161, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 180, -1, -1));
 
         rbno161.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno161.setText("No cumple");
@@ -1780,6 +1343,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno161ActionPerformed(evt);
             }
         });
+        jPanel16.add(rbno161, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 180, -1, -1));
 
         btnmv61.setText("Adjuntar Doc");
         btnmv61.addActionListener(new java.awt.event.ActionListener() {
@@ -1787,15 +1351,12 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv61ActionPerformed(evt);
             }
         });
+        jPanel16.add(btnmv61, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 180, -1, -1));
 
-        jLabel67.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel67.setText("elección, conformación del comité paritario SST y el acta de constitución (Para el caso del comité paritario constatar si es");
-
-        jLabel68.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel68.setText("si es igual el número de representantes del empleador y de los trabajadores y que el acta de conformación se encuentra vigente).");
-
-        jLabel69.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel69.setText("2. Actas de reunión mensuales del último año del comité paritario o los soportes de las gestiones adelantadas por el vigía ");
+        jLabel69.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel69.setText("<html>2. Actas de reunión mensuales del último año del comité paritario o los soportes de las gestiones adelantadas por el vigía<br>\nSST y verificar el cumplimiento de sus funciones.");
+        jPanel16.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
 
         rbsi162.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi162.setText("Cumple");
@@ -1804,6 +1365,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi162ActionPerformed(evt);
             }
         });
+        jPanel16.add(rbsi162, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 250, -1, -1));
 
         rbno162.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno162.setText("No cumple");
@@ -1812,6 +1374,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno162ActionPerformed(evt);
             }
         });
+        jPanel16.add(rbno162, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 250, -1, -1));
 
         btnmv62.setText("Adjuntar Doc");
         btnmv62.addActionListener(new java.awt.event.ActionListener() {
@@ -1819,146 +1382,35 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv62ActionPerformed(evt);
             }
         });
+        jPanel16.add(btnmv62, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 250, -1, -1));
 
-        jLabel70.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel70.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(0, 0, 0));
         jLabel70.setText("Nota: Las empresas de menos de 10 trabajadores deben contar con un vigía en seguridad y salud en el trabajo, y de 10 o más trabajadores con un comité paritario SST.");
-
-        jLabel71.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel71.setText("SST y verificar el cumplimiento de sus funciones.");
+        jPanel16.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
 
         jButton8.setText("Criterio");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
+        jPanel16.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 72, -1, -1));
 
-        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
-        jPanel16.setLayout(jPanel16Layout);
-        jPanel16Layout.setHorizontalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblnocum6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
-                                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel16Layout.createSequentialGroup()
-                                        .addGap(21, 21, 21)
-                                        .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(jPanel16Layout.createSequentialGroup()
-                                        .addComponent(lblcum6)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel64)
-                                            .addComponent(jButton8))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(noaplicaitem6)
-                                        .addGap(30, 30, 30)
-                                        .addComponent(rbjustiitem6)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(rbnojustiitem6)
-                                        .addGap(47, 47, 47)))
-                                .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(33, 33, 33)
-                                .addComponent(btnadjnoitem6, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel16Layout.createSequentialGroup()
-                                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel66)
-                                    .addComponent(jLabel67))
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addGap(54, 54, 54))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel68)
-                            .addComponent(jLabel69)
-                            .addComponent(jLabel71))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel16Layout.createSequentialGroup()
-                                .addComponent(rbsi162)
-                                .addGap(18, 18, 18)
-                                .addComponent(rbno162))
-                            .addGroup(jPanel16Layout.createSequentialGroup()
-                                .addComponent(rbsi161)
-                                .addGap(18, 18, 18)
-                                .addComponent(rbno161)))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnmv61)
-                            .addComponent(btnmv62))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(jPanel16Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jLabel70)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel16Layout.setVerticalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblnocum6)
-                            .addComponent(lblcum6)
-                            .addGroup(jPanel16Layout.createSequentialGroup()
-                                .addComponent(jLabel64)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton8)))
-                        .addGap(22, 22, 22)
-                        .addComponent(jLabel65))
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel16Layout.createSequentialGroup()
-                            .addComponent(btnadjnoitem6)
-                            .addGap(1, 1, 1))
-                        .addComponent(jScrollPane16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rbjustiitem6)
-                        .addComponent(rbnojustiitem6)
-                        .addComponent(noaplicaitem6)))
-                .addGap(18, 28, Short.MAX_VALUE)
-                .addComponent(jLabel66)
-                .addGap(6, 6, 6)
-                .addComponent(jLabel67)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel68)
-                    .addComponent(rbsi161)
-                    .addComponent(rbno161)
-                    .addComponent(btnmv61))
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(rbsi162)
-                            .addComponent(rbno162)
-                            .addComponent(btnmv62)))
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel69)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel71)))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel70)
-                .addContainerGap())
-        );
-
+        jPanel17.setBackground(new java.awt.Color(183, 219, 243));
         jPanel17.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 7:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
+        jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel72.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel72.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel72.setForeground(new java.awt.Color(0, 0, 0));
         jLabel72.setText("Modo de Verificación ");
+        jPanel17.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 102, 150, -1));
 
-        jLabel73.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel73.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(0, 0, 0));
         jLabel73.setText("Capacitación COPASST/ vigía (0.5%).");
+        jPanel17.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 27, 240, -1));
 
         lblnocum7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Close.png"))); // NOI18N
+        jPanel17.add(lblnocum7, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 27, -1, -1));
 
         lblcum7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/checked.png"))); // NOI18N
+        jPanel17.add(lblcum7, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 27, -1, -1));
 
         noaplicaitem7.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         noaplicaitem7.setText("No Aplica");
@@ -1967,6 +1419,7 @@ public class Recursos extends javax.swing.JFrame{
                 noaplicaitem7ActionPerformed(evt);
             }
         });
+        jPanel17.add(noaplicaitem7, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 40, -1, -1));
 
         rbjustiitem7.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbjustiitem7.setText("Justifica");
@@ -1975,6 +1428,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbjustiitem7ActionPerformed(evt);
             }
         });
+        jPanel17.add(rbjustiitem7, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 40, -1, -1));
 
         rbnojustiitem7.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbnojustiitem7.setText("No justifica");
@@ -1983,6 +1437,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbnojustiitem7ActionPerformed(evt);
             }
         });
+        jPanel17.add(rbnojustiitem7, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 40, -1, -1));
 
         txtitem7.setColumns(20);
         txtitem7.setRows(5);
@@ -1993,15 +1448,20 @@ public class Recursos extends javax.swing.JFrame{
         });
         jScrollPane17.setViewportView(txtitem7);
 
+        jPanel17.add(jScrollPane17, new org.netbeans.lib.awtextra.AbsoluteConstraints(952, 36, 158, 85));
+
         btnadjnoitem7.setText("Adjuntar Doc");
         btnadjnoitem7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadjnoitem7ActionPerformed(evt);
             }
         });
+        jPanel17.add(btnadjnoitem7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 30, 108, -1));
 
-        jLabel74.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel74.setText("1. Registros que constaten la capacitación y evaluación tanto para el vigía SST o para los miembros del comité paritario SST según aplique ");
+        jLabel74.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel74.setText("<html>1. Registros que constaten la capacitación y evaluación tanto para el vigía SST o para los miembros del <br>comité paritario SST según aplique \nque estén vigentes.");
+        jPanel17.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 139, -1, -1));
 
         rbsi171.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi171.setText("Cumple");
@@ -2010,6 +1470,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi171ActionPerformed(evt);
             }
         });
+        jPanel17.add(rbsi171, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 140, -1, -1));
 
         rbno171.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno171.setText("No cumple");
@@ -2018,6 +1479,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno171ActionPerformed(evt);
             }
         });
+        jPanel17.add(rbno171, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 140, -1, -1));
 
         btnmv71.setText("Adjuntar Doc");
         btnmv71.addActionListener(new java.awt.event.ActionListener() {
@@ -2025,106 +1487,25 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv71ActionPerformed(evt);
             }
         });
-
-        jLabel75.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel75.setText("que estén vigentes.");
+        jPanel17.add(btnmv71, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 140, -1, -1));
 
         jButton9.setText("Criterio");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
+        jPanel17.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 52, -1, -1));
 
-        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
-        jPanel17.setLayout(jPanel17Layout);
-        jPanel17Layout.setHorizontalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel17Layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(lblnocum7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblcum7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel73)
-                                    .addComponent(jButton9)))
-                            .addGroup(jPanel17Layout.createSequentialGroup()
-                                .addGap(31, 31, 31)
-                                .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(noaplicaitem7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbjustiitem7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbnojustiitem7)
-                        .addGap(35, 35, 35)
-                        .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel74)
-                            .addComponent(jLabel75))
-                        .addGap(30, 30, 30)
-                        .addComponent(rbsi171)
-                        .addGap(18, 18, 18)
-                        .addComponent(rbno171)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnmv71)
-                    .addComponent(btnadjnoitem7, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(68, 68, 68))
-        );
-        jPanel17Layout.setVerticalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel17Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblnocum7)
-                            .addComponent(lblcum7)
-                            .addGroup(jPanel17Layout.createSequentialGroup()
-                                .addComponent(jLabel73)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton9)))
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel72))
-                    .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(rbjustiitem7)
-                            .addComponent(rbnojustiitem7)
-                            .addComponent(noaplicaitem7))
-                        .addComponent(btnadjnoitem7)
-                        .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel74)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel75))
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(rbsi171)
-                            .addComponent(rbno171)
-                            .addComponent(btnmv71))))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-
+        jPanel5.setBackground(new java.awt.Color(183, 219, 243));
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 8:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblnocum8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Close.png"))); // NOI18N
+        jPanel5.add(lblnocum8, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 47, -1, -1));
 
         lblcum8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/checked.png"))); // NOI18N
+        jPanel5.add(lblcum8, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 47, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
         jLabel13.setText("Conformación comité convivencia (0.5%).");
+        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 47, -1, -1));
 
         noaplicaitem8.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         noaplicaitem8.setText("No Aplica");
@@ -2133,6 +1514,7 @@ public class Recursos extends javax.swing.JFrame{
                 noaplicaitem8ActionPerformed(evt);
             }
         });
+        jPanel5.add(noaplicaitem8, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 50, -1, -1));
 
         rbjustiitem8.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbjustiitem8.setText("Justifica");
@@ -2141,6 +1523,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbjustiitem8ActionPerformed(evt);
             }
         });
+        jPanel5.add(rbjustiitem8, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 50, -1, -1));
 
         rbnojustiitem8.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbnojustiitem8.setText("No justifica");
@@ -2149,6 +1532,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbnojustiitem8ActionPerformed(evt);
             }
         });
+        jPanel5.add(rbnojustiitem8, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 50, -1, -1));
 
         txtitem8.setColumns(20);
         txtitem8.setRows(5);
@@ -2159,18 +1543,25 @@ public class Recursos extends javax.swing.JFrame{
         });
         jScrollPane7.setViewportView(txtitem8);
 
+        jPanel5.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 50, 158, 85));
+
         btnadjnoitem8.setText("Adjuntar Doc");
         btnadjnoitem8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadjnoitem8ActionPerformed(evt);
             }
         });
+        jPanel5.add(btnadjnoitem8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 50, 108, -1));
 
-        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("Modo de Verificación ");
+        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 126, 210, -1));
 
-        jLabel30.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel30.setText("1. Documento de conformación del comité de convivencia laboral y verificar que este conformado de acuerdo a la normativa");
+        jLabel30.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel30.setText("<html>1. Documento de conformación del comité de convivencia laboral y verificar que este conformado de acuerdo a la normativa<br>\ny que su periodo de conformación se encuentre vigente.");
+        jPanel5.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
 
         rbsi181.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi181.setText("Cumple");
@@ -2179,6 +1570,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi181ActionPerformed(evt);
             }
         });
+        jPanel5.add(rbsi181, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 160, -1, -1));
 
         rbno181.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno181.setText("No cumple");
@@ -2187,6 +1579,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno181ActionPerformed(evt);
             }
         });
+        jPanel5.add(rbno181, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 160, -1, -1));
 
         btnmv81.setText("Adjuntar Doc");
         btnmv81.addActionListener(new java.awt.event.ActionListener() {
@@ -2194,12 +1587,12 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv81ActionPerformed(evt);
             }
         });
+        jPanel5.add(btnmv81, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 160, -1, -1));
 
-        jLabel31.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel31.setText("y que su periodo de conformación se encuentre vigente.");
-
-        jLabel32.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel32.setText("2. Actas de las reuniones (como mínimo una reunión cada tres meses) junto con los informes de gestión del comité de convi- ");
+        jLabel32.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel32.setText("<html>2. Actas de las reuniones (como mínimo una reunión cada tres meses) junto con los informes de gestión del comité de convi-<br>\nvencia laboral, verificando el desarrollo de sus funciones. ");
+        jPanel5.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
 
         rbsi182.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi182.setText("Cumple");
@@ -2208,6 +1601,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi182ActionPerformed(evt);
             }
         });
+        jPanel5.add(rbsi182, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 250, -1, -1));
 
         rbno182.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno182.setText("No cumple");
@@ -2216,6 +1610,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno182ActionPerformed(evt);
             }
         });
+        jPanel5.add(rbno182, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 250, -1, -1));
 
         btnmv82.setText("Adjuntar Doc");
         btnmv82.addActionListener(new java.awt.event.ActionListener() {
@@ -2223,133 +1618,30 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv82ActionPerformed(evt);
             }
         });
-
-        jLabel33.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel33.setText("vencia laboral, verificando el desarrollo de sus funciones. ");
+        jPanel5.add(btnmv82, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 250, -1, -1));
 
         jButton10.setText("Criterio");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
+        jPanel5.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 72, -1, -1));
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblnocum8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addGap(21, 21, 21)
-                                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(lblcum8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel13)
-                                            .addComponent(jButton10))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(noaplicaitem8)
-                                        .addGap(30, 30, 30)
-                                        .addComponent(rbjustiitem8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(rbnojustiitem8)
-                                        .addGap(47, 47, 47)))
-                                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(33, 33, 33)
-                                .addComponent(btnadjnoitem8, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(jLabel31)
-                                        .addGap(673, 673, 673)
-                                        .addComponent(btnmv81))
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel30)
-                                            .addComponent(jLabel32)
-                                            .addComponent(jLabel33))
-                                        .addGap(77, 77, 77)
-                                        .addComponent(rbsi182)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(rbno182)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnmv82)))
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addGap(54, 54, 54))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                        .addGap(828, 828, 828)
-                        .addComponent(rbsi181)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbno181)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblnocum8)
-                            .addComponent(lblcum8)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton10)))
-                        .addGap(22, 22, 22)
-                        .addComponent(jLabel14))
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel5Layout.createSequentialGroup()
-                            .addComponent(btnadjnoitem8)
-                            .addGap(1, 1, 1))
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rbjustiitem8)
-                        .addComponent(rbnojustiitem8)
-                        .addComponent(noaplicaitem8)))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel30)
-                .addGap(4, 4, 4)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel31)
-                    .addComponent(rbsi181)
-                    .addComponent(rbno181)
-                    .addComponent(btnmv81))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel32)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel33)
-                    .addComponent(rbsi182)
-                    .addComponent(rbno182)
-                    .addComponent(btnmv82))
-                .addContainerGap(38, Short.MAX_VALUE))
-        );
-
-        jPanel11.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "E1.2Capacitación en el Sistema de Gestión de Seguridad y Salud en el Trabajo (6%)", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 3, 18))); // NOI18N
-        jPanel11.setToolTipText("");
-
+        jPanel12.setBackground(new java.awt.Color(183, 219, 243));
         jPanel12.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 1:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
+        jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel49.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel49.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(0, 0, 0));
         jLabel49.setText("Modo de Verificación ");
+        jPanel12.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 102, 140, -1));
 
-        jLabel50.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel50.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(0, 0, 0));
         jLabel50.setText("Programa Capacitación, Promoción y Prevención - Pyp. (2%)");
+        jPanel12.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 27, -1, -1));
 
         lblnocum9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Close.png"))); // NOI18N
+        jPanel12.add(lblnocum9, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 27, -1, -1));
 
         lblcum9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/checked.png"))); // NOI18N
+        jPanel12.add(lblcum9, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 27, -1, -1));
 
         noaplicaitem9.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         noaplicaitem9.setText("No Aplica");
@@ -2358,6 +1650,7 @@ public class Recursos extends javax.swing.JFrame{
                 noaplicaitem9ActionPerformed(evt);
             }
         });
+        jPanel12.add(noaplicaitem9, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 30, -1, -1));
 
         rbjustiitem9.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbjustiitem9.setText("Justifica");
@@ -2366,6 +1659,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbjustiitem9ActionPerformed(evt);
             }
         });
+        jPanel12.add(rbjustiitem9, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 30, -1, -1));
 
         rbnojustiitem9.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbnojustiitem9.setText("No justifica");
@@ -2374,6 +1668,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbnojustiitem9ActionPerformed(evt);
             }
         });
+        jPanel12.add(rbnojustiitem9, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 30, -1, -1));
 
         txtitem9.setColumns(20);
         txtitem9.setRows(5);
@@ -2384,15 +1679,20 @@ public class Recursos extends javax.swing.JFrame{
         });
         jScrollPane10.setViewportView(txtitem9);
 
+        jPanel12.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 30, 158, 85));
+
         btnadjnoitem9.setText("Adjuntar Doc");
         btnadjnoitem9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadjnoitem9ActionPerformed(evt);
             }
         });
+        jPanel12.add(btnadjnoitem9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 30, 108, -1));
 
-        jLabel51.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel51.setText("1. programa de capacitación anual y la matriz de identificación de peligros y verificar  que el mismo este dirigido a los peligros ya ");
+        jLabel51.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel51.setText("<html>1. programa de capacitación anual y la matriz de identificación de peligros y verificar  que el mismo este dirigido a los peligros ya<br>\nidentificados, con la evaluación y control del riesgo, y/o necesidades en Seguridad y Salud en el Trabajo, y verificar las evidencias<br>\nde su cumplimiento.");
+        jPanel12.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
         rbsi191.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi191.setText("Cumple");
@@ -2401,6 +1701,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi191ActionPerformed(evt);
             }
         });
+        jPanel12.add(rbsi191, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 150, -1, -1));
 
         rbno191.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno191.setText("No cumple");
@@ -2409,6 +1710,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno191ActionPerformed(evt);
             }
         });
+        jPanel12.add(rbno191, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 150, -1, -1));
 
         btnmv91.setText("Adjuntar Doc");
         btnmv91.addActionListener(new java.awt.event.ActionListener() {
@@ -2416,15 +1718,12 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv91ActionPerformed(evt);
             }
         });
+        jPanel12.add(btnmv91, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 150, -1, -1));
 
-        jLabel52.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel52.setText("identificados, con la evaluación y control del riesgo, y/o necesidades en Seguridad y Salud en el Trabajo, y verificar las evidencias ");
-
-        jLabel53.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel53.setText("de su cumplimiento.");
-
-        jLabel54.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel54.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(0, 0, 0));
         jLabel54.setText("2. Verificar si el comité paritario SST o Vigia SST participo en la revisión anual del plan de capacitación. ");
+        jPanel12.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
 
         rbsi192.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi192.setText("Cumple");
@@ -2433,6 +1732,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi192ActionPerformed(evt);
             }
         });
+        jPanel12.add(rbsi192, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 220, -1, -1));
 
         rbno192.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno192.setText("No cumple");
@@ -2441,6 +1741,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno192ActionPerformed(evt);
             }
         });
+        jPanel12.add(rbno192, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 220, -1, -1));
 
         btnmv92.setText("Adjuntar Doc");
         btnmv92.addActionListener(new java.awt.event.ActionListener() {
@@ -2448,124 +1749,25 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv92ActionPerformed(evt);
             }
         });
+        jPanel12.add(btnmv92, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 220, -1, -1));
 
         jButton12.setText("Criterio");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
-            }
-        });
+        jPanel12.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 52, -1, -1));
 
-        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
-        jPanel12.setLayout(jPanel12Layout);
-        jPanel12Layout.setHorizontalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(lblnocum9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblcum9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel50)
-                            .addComponent(jButton12)))
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(noaplicaitem9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(rbjustiitem9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(rbnojustiitem9)
-                .addGap(35, 35, 35)
-                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnadjnoitem9, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(68, 68, 68))
-            .addGroup(jPanel12Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel51)
-                            .addGroup(jPanel12Layout.createSequentialGroup()
-                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel12Layout.createSequentialGroup()
-                                        .addComponent(jLabel52)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(rbsi191))
-                                    .addGroup(jPanel12Layout.createSequentialGroup()
-                                        .addComponent(jLabel54)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(rbsi192)))
-                                .addGap(35, 35, 35)
-                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(rbno192, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(rbno191, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnmv92)
-                                    .addComponent(btnmv91))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addComponent(jLabel53)
-                        .addGap(0, 0, Short.MAX_VALUE))))
-        );
-        jPanel12Layout.setVerticalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel12Layout.createSequentialGroup()
-                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblnocum9)
-                                    .addComponent(lblcum9))
-                                .addGap(34, 34, 34))
-                            .addGroup(jPanel12Layout.createSequentialGroup()
-                                .addComponent(jLabel50)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton12)
-                                .addGap(18, 18, 18)))
-                        .addComponent(jLabel49))
-                    .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(rbjustiitem9)
-                            .addComponent(rbnojustiitem9)
-                            .addComponent(noaplicaitem9))
-                        .addComponent(btnadjnoitem9)
-                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel51)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel52)
-                    .addComponent(rbsi191)
-                    .addComponent(rbno191)
-                    .addComponent(btnmv91))
-                .addGap(1, 1, 1)
-                .addComponent(jLabel53)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel54)
-                    .addComponent(rbsi192)
-                    .addComponent(rbno192)
-                    .addComponent(btnmv92))
-                .addContainerGap(29, Short.MAX_VALUE))
-        );
-
+        jPanel13.setBackground(new java.awt.Color(183, 219, 243));
         jPanel13.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 2:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
+        jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblnocum10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Close.png"))); // NOI18N
+        jPanel13.add(lblnocum10, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 47, -1, -1));
 
         lblcum10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/checked.png"))); // NOI18N
+        jPanel13.add(lblcum10, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 47, -1, -1));
 
-        jLabel55.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel55.setText("Capacitación, inducción y Reinducción en Sistemas de Gestión de ");
+        jLabel55.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel55.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel55.setText("<html>Capacitación, inducción y Reinducción en Sistemas de Gestión de <br>\nSeguridad y Salud en el trabajo SG-SST, actividade de promoción<br>\ny Prevención Pyp. (2%)");
+        jPanel13.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 47, -1, -1));
 
         noaplicaitem10.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         noaplicaitem10.setText("No Aplica");
@@ -2574,6 +1776,7 @@ public class Recursos extends javax.swing.JFrame{
                 noaplicaitem10ActionPerformed(evt);
             }
         });
+        jPanel13.add(noaplicaitem10, new org.netbeans.lib.awtextra.AbsoluteConstraints(641, 47, -1, -1));
 
         rbjustiitem10.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbjustiitem10.setText("Justifica");
@@ -2582,6 +1785,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbjustiitem10ActionPerformed(evt);
             }
         });
+        jPanel13.add(rbjustiitem10, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 47, -1, -1));
 
         rbnojustiitem10.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbnojustiitem10.setText("No justifica");
@@ -2590,6 +1794,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbnojustiitem10ActionPerformed(evt);
             }
         });
+        jPanel13.add(rbnojustiitem10, new org.netbeans.lib.awtextra.AbsoluteConstraints(854, 47, -1, -1));
 
         txtitem10.setColumns(20);
         txtitem10.setRows(5);
@@ -2600,18 +1805,25 @@ public class Recursos extends javax.swing.JFrame{
         });
         jScrollPane11.setViewportView(txtitem10);
 
+        jPanel13.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(965, 47, 158, 85));
+
         btnadjnoitem10.setText("Adjuntar Doc");
         btnadjnoitem10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadjnoitem10ActionPerformed(evt);
             }
         });
+        jPanel13.add(btnadjnoitem10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1141, 47, 108, -1));
 
-        jLabel56.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel56.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel56.setForeground(new java.awt.Color(0, 0, 0));
         jLabel56.setText("Modo de Verificación ");
+        jPanel13.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 160, -1, -1));
 
-        jLabel57.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel57.setText("Solicitar la lista de trabajadores, independientemente de su forma de vinculación y/o contratación y verificar los ");
+        jLabel57.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel57.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel57.setText("<html>Solicitar la lista de trabajadores, independientemente de su forma de vinculación y/o contratación y verificar los <br>\nsoportes documentales que den cuenta de la capacitación y de su evaluación, de la inducción y reinducción de confor-<br>\nmidad con el criterio. La referencia es el Plan de capacitación, su cumplimiento y la cobertura de los trabajadores obje- <br>\nto de cada tema.");
+        jPanel13.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
 
         rbsi1101.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi1101.setText("Cumple");
@@ -2620,6 +1832,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi1101ActionPerformed(evt);
             }
         });
+        jPanel13.add(rbsi1101, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 210, -1, -1));
 
         rbno1101.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno1101.setText("No cumple");
@@ -2628,6 +1841,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno1101ActionPerformed(evt);
             }
         });
+        jPanel13.add(rbno1101, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 210, -1, -1));
 
         btnmv101.setText("Adjuntar Doc");
         btnmv101.addActionListener(new java.awt.event.ActionListener() {
@@ -2635,147 +1849,29 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv101ActionPerformed(evt);
             }
         });
-
-        jLabel58.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel58.setText("soportes documentales que den cuenta de la capacitación y de su evaluación, de la inducción y reinducción de confor-");
-
-        jLabel59.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel59.setText("midad con el criterio. La referencia es el Plan de capacitación, su cumplimiento y la cobertura de los trabajadores obje- ");
-
-        jLabel76.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel76.setText("to de cada tema.");
-
-        jLabel77.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel77.setText("Seguridad y Salud en el trabajo SG-SST, actividade de promoción");
-
-        jLabel78.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel78.setText("y Prevención Pyp. (2%)");
+        jPanel13.add(btnmv101, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 210, -1, -1));
 
         jLabel79.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel79.setText("Nota : Para la verificacion, empresas de 1 a 10 trabajadores verificar 100%, entre 11 y 50 el 20%, entre 51 y 200 el 10% y mayores a 200 verificar el registro de 30 trabajadores. ");
+        jPanel13.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 294, -1, -1));
 
         jButton11.setText("Criterio");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
-            }
-        });
+        jPanel13.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(99, 116, -1, -1));
 
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
-                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel76, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel13Layout.createSequentialGroup()
-                                .addComponent(lblnocum10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel13Layout.createSequentialGroup()
-                                        .addGap(21, 21, 21)
-                                        .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(jPanel13Layout.createSequentialGroup()
-                                        .addComponent(lblcum10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel55)
-                                            .addComponent(jLabel77)
-                                            .addGroup(jPanel13Layout.createSequentialGroup()
-                                                .addComponent(jLabel78)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jButton11)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                                        .addComponent(noaplicaitem10)
-                                        .addGap(30, 30, 30)
-                                        .addComponent(rbjustiitem10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(rbnojustiitem10)
-                                        .addGap(47, 47, 47)))
-                                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(33, 33, 33)
-                                .addComponent(btnadjnoitem10, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel13Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(jPanel13Layout.createSequentialGroup()
-                                            .addComponent(rbsi1101)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(rbno1101)
-                                            .addGap(192, 192, 192))
-                                        .addGroup(jPanel13Layout.createSequentialGroup()
-                                            .addComponent(jLabel57)
-                                            .addGap(461, 461, 461)))
-                                    .addGroup(jPanel13Layout.createSequentialGroup()
-                                        .addComponent(jLabel58)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnmv101)
-                                        .addGap(70, 70, 70)))))
-                        .addGap(54, 54, 54))
-                    .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel59)
-                            .addComponent(jLabel79))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel13Layout.createSequentialGroup()
-                            .addComponent(btnadjnoitem10)
-                            .addGap(1, 1, 1))
-                        .addComponent(jScrollPane11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rbjustiitem10)
-                        .addComponent(rbnojustiitem10)
-                        .addComponent(noaplicaitem10))
-                    .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblnocum10)
-                            .addComponent(lblcum10)
-                            .addGroup(jPanel13Layout.createSequentialGroup()
-                                .addComponent(jLabel55)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel77)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel78)
-                            .addComponent(jButton11))
-                        .addGap(9, 9, 9)
-                        .addComponent(jLabel56)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel57)
-                .addGap(4, 4, 4)
-                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel58)
-                    .addComponent(rbsi1101)
-                    .addComponent(rbno1101)
-                    .addComponent(btnmv101))
-                .addGap(4, 4, 4)
-                .addComponent(jLabel59)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel76)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel79)
-                .addGap(50, 50, 50))
-        );
-
+        jPanel8.setBackground(new java.awt.Color(183, 219, 243));
         jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ítem 3:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblnocum11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Close.png"))); // NOI18N
+        jPanel8.add(lblnocum11, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 47, -1, -1));
 
         lblcum11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/checked.png"))); // NOI18N
+        jPanel8.add(lblcum11, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 47, -1, -1));
 
-        jLabel34.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel34.setText("Responsables del Sistema de Gestión de Seguridad y Salud en ");
+        jLabel34.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel34.setText("<html>Responsables del Sistema de Gestión de Seguridad y Salud en<br> \nel trabajo SG-SST, con curso (50 Horas). (2%) y Prevención Pyp. (2%)");
+        jPanel8.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 47, -1, -1));
 
         noaplicaitem11.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         noaplicaitem11.setText("No Aplica");
@@ -2784,6 +1880,7 @@ public class Recursos extends javax.swing.JFrame{
                 noaplicaitem11ActionPerformed(evt);
             }
         });
+        jPanel8.add(noaplicaitem11, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 40, -1, -1));
 
         rbjustiitem11.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbjustiitem11.setText("Justifica");
@@ -2792,6 +1889,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbjustiitem11ActionPerformed(evt);
             }
         });
+        jPanel8.add(rbjustiitem11, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 40, -1, -1));
 
         rbnojustiitem11.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbnojustiitem11.setText("No justifica");
@@ -2800,6 +1898,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbnojustiitem11ActionPerformed(evt);
             }
         });
+        jPanel8.add(rbnojustiitem11, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 40, -1, -1));
 
         txtitem11.setColumns(20);
         txtitem11.setRows(5);
@@ -2810,18 +1909,25 @@ public class Recursos extends javax.swing.JFrame{
         });
         jScrollPane2.setViewportView(txtitem11);
 
+        jPanel8.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 40, 158, 85));
+
         btnadjnoitem11.setText("Adjuntar Doc");
         btnadjnoitem11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadjnoitem11ActionPerformed(evt);
             }
         });
+        jPanel8.add(btnadjnoitem11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 50, -1, -1));
 
-        jLabel35.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel35.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(0, 0, 0));
         jLabel35.setText("Modo de Verificación ");
+        jPanel8.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 144, 210, -1));
 
-        jLabel36.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel36.setText("Solicitar el certificado de aprobación del curso de capacitación virtual de cincuenta (50) horas definido por el Ministerio ");
+        jLabel36.setFont(new java.awt.Font("Decker", 0, 14)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel36.setText("<html>Solicitar el certificado de aprobación del curso de capacitación virtual de cincuenta (50) horas definido por el Ministerio <br>\nde Trabajo, expedido a nombre del responsable del Sistema de Gestión de Seguridad y Salud en el Trabajo.");
+        jPanel8.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
 
         rbsi1111.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbsi1111.setText("Cumple");
@@ -2830,6 +1936,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbsi1111ActionPerformed(evt);
             }
         });
+        jPanel8.add(rbsi1111, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 190, -1, -1));
 
         rbno1111.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         rbno1111.setText("No cumple");
@@ -2838,6 +1945,7 @@ public class Recursos extends javax.swing.JFrame{
                 rbno1111ActionPerformed(evt);
             }
         });
+        jPanel8.add(rbno1111, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 190, -1, -1));
 
         btnmv111.setText("Adjuntar Doc");
         btnmv111.addActionListener(new java.awt.event.ActionListener() {
@@ -2845,9 +1953,7 @@ public class Recursos extends javax.swing.JFrame{
                 btnmv111ActionPerformed(evt);
             }
         });
-
-        jLabel37.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel37.setText("de Trabajo, expedido a nombre del responsable del Sistema de Gestión de Seguridad y Salud en el Trabajo.");
+        jPanel8.add(btnmv111, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 190, -1, -1));
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jButton1.setText("<<< Volver");
@@ -2856,6 +1962,7 @@ public class Recursos extends javax.swing.JFrame{
                 jButton1ActionPerformed(evt);
             }
         });
+        jPanel8.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(485, 264, -1, 32));
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/save(1).png"))); // NOI18N
@@ -2870,141 +1977,18 @@ public class Recursos extends javax.swing.JFrame{
                 jButton2ActionPerformed(evt);
             }
         });
-
-        jLabel38.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel38.setText("el trabajo SG-SST, con curso (50 Horas). (2%)");
-
-        jLabel39.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel39.setText("y Prevención Pyp. (2%)");
+        jPanel8.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 264, -1, 32));
 
         jButton13.setText("Criterio");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
-            }
-        });
+        jPanel8.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, -1, -1));
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(lblnocum11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addComponent(lblcum11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel34)
-                                    .addComponent(jLabel38)
-                                    .addGroup(jPanel8Layout.createSequentialGroup()
-                                        .addComponent(jLabel39)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton13)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(noaplicaitem11)
-                                .addGap(30, 30, 30)
-                                .addComponent(rbjustiitem11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(rbnojustiitem11)
-                                .addGap(47, 47, 47)))
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(33, 33, 33)
-                        .addComponent(btnadjnoitem11, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addComponent(rbsi1111)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rbno1111)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnmv111)
-                                .addGap(91, 91, 91))
-                            .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel36)
-                                    .addComponent(jLabel37))
-                                .addGap(461, 461, 461)))))
-                .addGap(54, 54, 54))
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(480, 480, 480)
-                .addComponent(jButton1)
-                .addGap(39, 39, 39)
-                .addComponent(jButton2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel8Layout.createSequentialGroup()
-                            .addComponent(btnadjnoitem11)
-                            .addGap(1, 1, 1))
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rbjustiitem11)
-                        .addComponent(rbnojustiitem11)
-                        .addComponent(noaplicaitem11))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblnocum11)
-                            .addComponent(lblcum11)
-                            .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addComponent(jLabel34)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel38)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel39)
-                            .addComponent(jButton13))
-                        .addGap(9, 9, 9)
-                        .addComponent(jLabel35)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel36)
-                .addGap(4, 4, 4)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel37)
-                    .addComponent(rbsi1111)
-                    .addComponent(rbno1111)
-                    .addComponent(btnmv111))
-                .addGap(40, 40, 40)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(63, 63, 63))
-        );
+        jLabel40.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel40.setText("E1.2Capacitación en el Sistema de Gestión de Seguridad y Salud en el Trabajo (6%)");
 
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 1252, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        jLabel41.setFont(new java.awt.Font("Decker", 0, 18)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel41.setText("E1.1 Recursos financieros y técnico humanos y de otra índole requeridos para coordinar y desarrollar el sistema de gestión.(4%)");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -3012,38 +1996,58 @@ public class Recursos extends javax.swing.JFrame{
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel15, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addComponent(jLabel41))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel15, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(101, 101, 101)
+                        .addComponent(jLabel40)))
+                .addGap(50, 50, 50))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17)
+                .addComponent(jLabel41)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel40)
+                .addGap(35, 35, 35)
+                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(73, Short.MAX_VALUE))
         );
 
         jScrollPane1.setViewportView(jPanel2);
@@ -3052,9 +2056,7 @@ public class Recursos extends javax.swing.JFrame{
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1)
-                .addContainerGap())
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1456, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -5688,84 +4690,16 @@ gh.toFront();
        }
     }//GEN-LAST:event_btnmv111ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-    
-        Criterio1 im= new Criterio1();
-        im.toFront();
-        im.setVisible(true);
-        
-        
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-      Criterio2 im= new Criterio2();
-        im.toFront();
-        im.setVisible(true);
-        
-        
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-    Criterio3 im= new Criterio3();
-        im.toFront();
-        im.setVisible(true);
-        
-        
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        Criterio4 im= new Criterio4();
-        im.toFront();
-        im.setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-       Criterio5 im= new Criterio5();
-        im.toFront();
-        im.setVisible(true);
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-     Criterio6 im= new Criterio6();
-        im.toFront();
-        im.setVisible(true);
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-       Criterio7 im= new Criterio7();
-        im.toFront();
-        im.setVisible(true);
-    }//GEN-LAST:event_jButton9ActionPerformed
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-      Criterio8 im= new Criterio8();
-        im.toFront();
-        im.setVisible(true);
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-      Criterio9 im= new Criterio9();
-        im.toFront();
-        im.setVisible(true);
-    }//GEN-LAST:event_jButton12ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-      Criterio10 im= new Criterio10();
-        im.toFront();
-        im.setVisible(true);
-    }//GEN-LAST:event_jButton11ActionPerformed
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        Criterio11 im= new Criterio11();
-        im.toFront();
-        im.setVisible(true);
-    }//GEN-LAST:event_jButton13ActionPerformed
-
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-       
+        try{
+            UIManager.setLookAndFeel("com.jtattoo.plaf.mcwin.McWinLookAndFeel");
+        }catch(Exception e){
+            
+        }
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Recursos().setVisible(true);
@@ -5825,68 +4759,44 @@ gh.toFront();
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
-    private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
-    private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
-    private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
-    private javax.swing.JLabel jLabel75;
-    private javax.swing.JLabel jLabel76;
-    private javax.swing.JLabel jLabel77;
-    private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel15;
