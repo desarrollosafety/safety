@@ -116,7 +116,7 @@ public class M_RegistrarEmpleado extends M_Persona {
     
     }
     
-    public int registrarPersona(String nombre, String apellidoPa, String apellidoMa, String tipoDoc, int numDoc, String genero, String telefono, String direccion,  String email, int idProceso){
+    public int registrarPersona(String nombre, String apellidoPa, String apellidoMa, String tipoDoc, int numDoc, String genero, String telefono, String direccion, int idProceso,  String email ){
         //Mejor pasar los valores como parametros 
 int respuesta = 0;
 
@@ -133,8 +133,8 @@ int respuesta = 0;
             cs.setString(6, genero);
             cs.setString(7, telefono);
             cs.setString(8, direccion);
-            cs.setString(9, email);
-            cs.setInt(10, idProceso);
+            cs.setInt(9, idProceso);
+            cs.setString(10, email);
            
             
           //  JOptionPane.showMessageDialog(null,"foto "+ foto+" Longitud "+longitud);

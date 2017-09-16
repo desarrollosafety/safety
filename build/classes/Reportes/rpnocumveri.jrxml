@@ -47,8 +47,8 @@ cumplimiento="no"]]>
 					<text><![CDATA[Verificaciones de los items que la empresa no cumple ]]></text>
 				</staticText>
 				<image>
-					<reportElement x="501" y="6" width="94" height="75" uuid="94d2d12a-8b76-4822-b9c3-49721f626989"/>
-					<imageExpression><![CDATA["C:\\Users\\johany\\Documents\\NetBeansProjects\\safety\\src\\Imagenes\\logo 132.png"]]></imageExpression>
+					<reportElement x="475" y="2" width="120" height="90" uuid="02bd393e-52cd-4f18-a8a8-6bf8a3ebd287"/>
+					<imageExpression><![CDATA["C:\\Users\\Sebastian\\Documents\\NetBeansProjects\\safety\\src\\Imagenes\\logo 132.png"]]></imageExpression>
 				</image>
 			</frame>
 		</band>

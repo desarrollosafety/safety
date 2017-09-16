@@ -169,6 +169,8 @@ private Connection connection= new Conexion().getConexion();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         label_fondo = new javax.swing.JLabel();
+        pass = new javax.swing.JLabel();
+        id = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
         jm_realizarEvaIni = new javax.swing.JMenu();
         jm_realizarEvaluacion = new javax.swing.JMenuItem();
@@ -332,11 +334,11 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(jTextField2);
-        jTextField2.setBounds(22, 214, 177, 24);
+        jTextField2.setBounds(22, 214, 177, 19);
 
         jTextField3.setEditable(false);
         panel_perfil.add(jTextField3);
-        jTextField3.setBounds(22, 283, 177, 24);
+        jTextField3.setBounds(22, 283, 177, 19);
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel2.setText("Genero:");
@@ -345,11 +347,11 @@ private Connection connection= new Conexion().getConexion();
 
         jTextField4.setEditable(false);
         panel_perfil.add(jTextField4);
-        jTextField4.setBounds(312, 214, 177, 24);
+        jTextField4.setBounds(312, 214, 177, 19);
 
         jTextField5.setEditable(false);
         panel_perfil.add(jTextField5);
-        jTextField5.setBounds(22, 358, 177, 24);
+        jTextField5.setBounds(22, 358, 177, 19);
 
         jTextField6.setEditable(false);
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
@@ -358,15 +360,15 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(jTextField6);
-        jTextField6.setBounds(312, 358, 177, 24);
+        jTextField6.setBounds(312, 358, 177, 19);
 
         jTextField7.setEditable(false);
         panel_perfil.add(jTextField7);
-        jTextField7.setBounds(312, 283, 177, 24);
+        jTextField7.setBounds(312, 283, 177, 19);
 
         jTextField8.setEditable(false);
         panel_perfil.add(jTextField8);
-        jTextField8.setBounds(22, 439, 177, 24);
+        jTextField8.setBounds(22, 439, 177, 19);
 
         jTextField9.setEditable(false);
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
@@ -375,7 +377,7 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(jTextField9);
-        jTextField9.setBounds(310, 420, 216, 24);
+        jTextField9.setBounds(310, 420, 216, 19);
 
         btnEditar_Perfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/editar.png"))); // NOI18N
         btnEditar_Perfil.setText("Editar Perfil");
@@ -387,7 +389,7 @@ private Connection connection= new Conexion().getConexion();
         btnGuardar.setText("Guardar");
         btnGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         panel_perfil.add(btnGuardar);
-        btnGuardar.setBounds(390, 460, 128, 40);
+        btnGuardar.setBounds(390, 460, 126, 40);
 
         Btn_Cerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar.png"))); // NOI18N
         Btn_Cerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -397,7 +399,7 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(Btn_Cerrar);
-        Btn_Cerrar.setBounds(500, 10, 36, 40);
+        Btn_Cerrar.setBounds(500, 10, 36, 34);
 
         txt_nombrePerfil.setFont(new java.awt.Font("Lucida Handwriting", 1, 36)); // NOI18N
         txt_nombrePerfil.setForeground(new java.awt.Color(255, 255, 255));
@@ -558,6 +560,14 @@ private Connection connection= new Conexion().getConexion();
         jPanel1.add(label_fondo);
         label_fondo.setBounds(-10, -10, 1370, 690);
 
+        pass.setText("jLabel11");
+        jPanel1.add(pass);
+        pass.setBounds(1000, 10, 60, 20);
+
+        id.setText("jLabel11");
+        jPanel1.add(id);
+        id.setBounds(900, 10, 50, 20);
+
         desktopPane.add(jPanel1);
         jPanel1.setBounds(1, 13, 1370, 683);
 
@@ -713,7 +723,7 @@ private Connection connection= new Conexion().getConexion();
         menuBar.add(jm_Empresa);
 
         jmSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/SALIR.png"))); // NOI18N
-        jmSalir.setText("Salir");
+        jmSalir.setText("Cerrar Sesión");
         jmSalir.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jmSalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -793,10 +803,18 @@ panel_perfil.setVisible(false);
     
     private void jmSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jmSalirMouseClicked
     
-        int opcionSalir = JOptionPane.showConfirmDialog(null,"Esta seguro que desea salir.");
+      int opcionSalir = JOptionPane.showConfirmDialog(null,"Esta seguro que desea salir.");
         if (JOptionPane.YES_OPTION == opcionSalir){
-           System.exit(0); 
-        }
+   
+        
+        IngresoUsuario vista_ingreso = new IngresoUsuario();
+                            M_IngresoSistema modelo_adminSGSST = new M_IngresoSistema();
+                            C_IngresoSistema controlador_Ingreso = new C_IngresoSistema(vista_ingreso, modelo_adminSGSST);
+                            vista_ingreso.setVisible(true);
+                            vista_ingreso.setLocationRelativeTo(Principal.this);
+                            this.dispose();
+        
+        }   
         
     }//GEN-LAST:event_jmSalirMouseClicked
 
@@ -1043,6 +1061,7 @@ btn_evaluacion.setVisible(false);
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JMenu editMenu;
     private javax.swing.JMenu helpMenu;
+    public static javax.swing.JLabel id;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
@@ -1092,6 +1111,7 @@ btn_evaluacion.setVisible(false);
     private javax.swing.JMenuItem mn_noaplica;
     private javax.swing.JMenuItem mn_veriCumple;
     private javax.swing.JPanel panel_perfil;
+    public static javax.swing.JLabel pass;
     private javax.swing.JLabel txt_Nombres;
     private javax.swing.JLabel txt_PrimerApellido;
     private javax.swing.JLabel txt_nombrePerfil;

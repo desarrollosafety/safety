@@ -52,7 +52,6 @@ public class IngresoUsuario extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         btn_Ingresar = new javax.swing.JButton();
         btn_Cancelar = new javax.swing.JButton();
-        btn_RecuperarContraseña = new javax.swing.JButton();
         txt_Contraseña = new javax.swing.JPasswordField();
         jScrollPane1 = new javax.swing.JScrollPane();
         table_IngresoUsuario = new javax.swing.JTable();
@@ -75,10 +74,18 @@ public class IngresoUsuario extends javax.swing.JFrame {
         jPanel1.add(jLabel7);
         jLabel7.setBounds(170, 30, 550, 110);
 
+        jLabel4.setBackground(new java.awt.Color(0, 204, 255));
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 102, 255));
         jLabel4.setText("¿ Has olvidado tu Contraseña ?");
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(320, 410, 200, 15);
+        jLabel4.setBounds(310, 350, 200, 15);
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel1.setText("Ingresar Como: ");
@@ -115,22 +122,12 @@ public class IngresoUsuario extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btn_Ingresar);
-        btn_Ingresar.setBounds(280, 360, 140, 35);
+        btn_Ingresar.setBounds(230, 380, 140, 35);
 
         btn_Cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar.png"))); // NOI18N
         btn_Cancelar.setText("Cancelar");
         jPanel1.add(btn_Cancelar);
-        btn_Cancelar.setBounds(430, 360, 130, 35);
-
-        btn_RecuperarContraseña.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/recuperar contra.png"))); // NOI18N
-        btn_RecuperarContraseña.setText("Recuperar Contraseña");
-        btn_RecuperarContraseña.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_RecuperarContraseñaActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btn_RecuperarContraseña);
-        btn_RecuperarContraseña.setBounds(300, 430, 230, 42);
+        btn_Cancelar.setBounds(430, 380, 130, 35);
         jPanel1.add(txt_Contraseña);
         txt_Contraseña.setBounds(280, 305, 276, 31);
 
@@ -154,7 +151,7 @@ public class IngresoUsuario extends javax.swing.JFrame {
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/login.jpg"))); // NOI18N
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(0, 0, 764, 530);
+        jLabel9.setBounds(0, 0, 764, 470);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -167,7 +164,7 @@ public class IngresoUsuario extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 448, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
         );
 
@@ -184,9 +181,11 @@ public class IngresoUsuario extends javax.swing.JFrame {
 
     }//GEN-LAST:event_txt_UserKeyTyped
 
-    private void btn_RecuperarContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RecuperarContraseñaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_RecuperarContraseñaActionPerformed
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+       RecuperarContraseña jh= new RecuperarContraseña();
+       jh.toFront();
+       jh.setVisible(true);
+    }//GEN-LAST:event_jLabel4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -213,7 +212,6 @@ public class IngresoUsuario extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btn_Cancelar;
     public javax.swing.JButton btn_Ingresar;
-    public javax.swing.JButton btn_RecuperarContraseña;
     public javax.swing.JComboBox<String> cb_Rol;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

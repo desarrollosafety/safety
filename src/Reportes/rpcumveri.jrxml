@@ -65,8 +65,8 @@ cumplimiento="si"]]>
 					<text><![CDATA[Verificaciones de los items que la empresa cumple satisfactoriamente]]></text>
 				</staticText>
 				<image>
-					<reportElement x="501" y="5" width="94" height="75" uuid="235c3d36-050e-480f-bee2-44e643a6794f"/>
-					<imageExpression><![CDATA["C:\\Users\\johany\\Documents\\NetBeansProjects\\safety\\src\\Imagenes\\logo 132.png"]]></imageExpression>
+					<reportElement x="475" y="0" width="120" height="90" uuid="626f6087-5947-4ea9-80c5-fa9ec1d393c4"/>
+					<imageExpression><![CDATA["C:\\Users\\Sebastian\\Documents\\NetBeansProjects\\safety\\src\\Imagenes\\logo 132.png"]]></imageExpression>
 				</image>
 			</frame>
 		</band>

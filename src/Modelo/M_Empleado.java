@@ -23,6 +23,15 @@ public class M_Empleado extends M_Persona {
     private int idJefe;
     private Date fechaIngreso;
     private String estado_empleado;
+    private String constraseña_antigua;
+
+    public String getConstraseña_antigua() {
+        return constraseña_antigua;
+    }
+
+    public void setConstraseña_antigua(String constraseña_antigua) {
+        this.constraseña_antigua = constraseña_antigua;
+    }
 
     Conexion conexion=new Conexion();
     public M_Empleado() {
@@ -106,11 +115,9 @@ public class M_Empleado extends M_Persona {
             empleado.setContraseña_usuario(rs.getString(14));
             
             empleado.setEstado_empleado(rs.getString(15));
+            empleado.setConstraseña_antigua(rs.getString(16));
                
             ingreso_empleado.add(empleado);
-            
-            
-            
             
             }
         } catch (Exception e) {

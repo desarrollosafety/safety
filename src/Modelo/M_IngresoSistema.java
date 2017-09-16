@@ -7,10 +7,13 @@ package Modelo;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import javax.swing.JOptionPane;
+import org.apache.commons.codec.digest.DigestUtils;
 
 /**
  *
@@ -22,10 +25,14 @@ public class M_IngresoSistema extends M_Persona {
     private String password;
     private int idGerente;
     private String estado;
+    private String password_antigua;
     
     private 
 
     Conexion conexion=new Conexion();
+    
+    private final Connection cn = conexion.getConexion();
+    String sSQL;
     public M_IngresoSistema() {
     }
 
@@ -35,6 +42,14 @@ public class M_IngresoSistema extends M_Persona {
         this.password = password;
         this.idGerente = idGerente;
         this.estado = estado;
+    }
+
+    public String getPassword_antigua() {
+        return password_antigua;
+    }
+
+    public void setPassword_antigua(String password_antigua) {
+        this.password_antigua = password_antigua;
     }
 
     public Date getFechaIngreso() {
@@ -106,10 +121,9 @@ public class M_IngresoSistema extends M_Persona {
             ingreso.setPassword(rs.getString(12));
             ingreso.setIdGerente(rs.getInt(13));
             ingreso.setEstado(rs.getString(14));
+            ingreso.setPassword_antigua(rs.getString(15));
             
             listaSGSST.add(ingreso);
-            
-            
             
             }
             
@@ -121,7 +135,7 @@ public class M_IngresoSistema extends M_Persona {
     
     
     public ArrayList<M_IngresoSistema>Ingreso_Gerente(String userGerente, String contraseñaGerente){
-     ArrayList<M_IngresoSistema> listaGerente =new ArrayList();
+    ArrayList<M_IngresoSistema> listaGerente =new ArrayList();
     M_IngresoSistema ingreso;
     
         try {
@@ -146,7 +160,7 @@ public class M_IngresoSistema extends M_Persona {
             ingreso.setUser(rs.getString(11));
             ingreso.setPassword(rs.getString(12));
             ingreso.setEstado(rs.getString(13));
-            
+            ingreso.setPassword_antigua(rs.getString(14));
             
             listaGerente.add(ingreso);
             }
@@ -183,6 +197,7 @@ public class M_IngresoSistema extends M_Persona {
             ingreso.setUser(rs.getString(11));
             ingreso.setPassword(rs.getString(12));
             ingreso.setEstado(rs.getString(13));
+            ingreso.setPassword_antigua(rs.getString(14));
             
             listaJefe.add(ingreso);
             }
@@ -202,5 +217,117 @@ public class M_IngresoSistema extends M_Persona {
         }
     return null;
     }
+    
+   public boolean actualizarContraJefe(M_IngresoSistema dts){
+
+        boolean res=false;
+        
+        sSQL = "UPDATE jefe_proceso j,persona p SET j.contraseña_jefe=?,j.contraseña_antigua=? WHERE j.idPersona=p.idPersona and j.idPersona=?";
+        
+         try {
+
+            PreparedStatement pst = cn.prepareStatement(sSQL);
+
+            pst.setString(1, dts.getPassword());
+            pst.setString(2, dts.getPassword());
+            pst.setInt(3, dts.getIdPersona());
+            
+            int n = pst.executeUpdate();
+
+            if (n != 0) {
+              res= true;  
+            } else {
+            res= false;    
+                }
+            } catch (SQLException e) {
+                JOptionPane.showConfirmDialog(null, e);
+                
+            }
+            return res;   
+        }
+
+    public boolean actualizarContraAdmin(M_IngresoSistema dts){
+        
+        boolean res=false;
+        
+        sSQL = "UPDATE administrador_sgsst j,persona p SET j.contraseña_admi=?,j.contraseña_antigua=? WHERE j.idPersona=p.idPersona and j.idPersona=?";
+        
+         try {
+
+            PreparedStatement pst = cn.prepareStatement(sSQL);
+
+            pst.setString(1, dts.getPassword());
+            pst.setString(2, dts.getPassword());
+            pst.setInt(3, dts.getIdPersona());
+            
+            int n = pst.executeUpdate();
+
+            if (n != 0) {
+              res= true;  
+            } else {
+            res= false;    
+                }
+            } catch (SQLException e) {
+                JOptionPane.showConfirmDialog(null, e);
+                
+            }
+            return res;   
+        }
+    
+    public boolean actualizarContraEmp(M_IngresoSistema dts){
+
+        boolean res=false;
+        
+        sSQL = "UPDATE empleados j,persona p SET j.contraseña_empleado=?,j.contraseña_antigua=? WHERE j.idPersona=p.idPersona and j.idPersona=?";
+        
+          try {
+
+            PreparedStatement pst = cn.prepareStatement(sSQL);
+
+            pst.setString(1, dts.getPassword());
+            pst.setString(2, dts.getPassword());
+            pst.setInt(3, dts.getIdPersona());
+            
+            int n = pst.executeUpdate();
+
+            if (n != 0) {
+              res= true;  
+            } else {
+            res= false;    
+                }
+            } catch (SQLException e) {
+                JOptionPane.showConfirmDialog(null, e);
+                
+            }
+            return res;   
+        }    
+
+    public boolean actualizarContraGerente(M_IngresoSistema dts){
+
+        boolean res=false;
+        
+        sSQL = "UPDATE gerente j,persona p SET j.contraseña_gerente=?,j.contraseña_antigua=? WHERE j.idPersona=p.idPersona and j.idPersona=?";
+        
+          try {
+
+            PreparedStatement pst = cn.prepareStatement(sSQL);
+
+            pst.setString(1, dts.getPassword());
+            pst.setString(2, dts.getPassword());
+            pst.setInt(3, dts.getIdPersona());
+            
+            int n = pst.executeUpdate();
+
+            if (n != 0) {
+              res= true;  
+            } else {
+            res= false;    
+                }
+            } catch (SQLException e) {
+                JOptionPane.showConfirmDialog(null, e);
+                
+            }
+            return res;   
+        }
     
 }

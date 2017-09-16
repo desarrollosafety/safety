@@ -7,6 +7,7 @@ package Controlador;
 
 import Modelo.M_Empleado;
 import Modelo.M_IngresoSistema;
+import Vista.CambiarContraseña;
 import Vista.Encuesta_SocioDemografica;
 import Vista.IngresoUsuario;
 import Vista.Principal;
@@ -65,6 +66,7 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
         modelo.addColumn("password");
         modelo.addColumn("idGerente");
         modelo.addColumn("estado");
+        modelo.addColumn("password_antigua");
         this.vista_ingreso.table_IngresoUsuario.setModel(modelo);
 
     }
@@ -77,10 +79,12 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
              user = vista_ingreso.txt_User.getText();
             char[] contraseña = vista_ingreso.txt_Contraseña.getPassword();
             contraseñatxt = new String(contraseña);
+            String con = DigestUtils.md5Hex(contraseñatxt);
             encriptacion=DigestUtils.md5Hex(contraseñatxt);
 
             if (rol.equals("Administrador SGSST")) {
-                ArrayList<M_IngresoSistema> array = modelo_ingreso.Ingreso_AdminSGSST(user, contraseñatxt);
+                System.out.println(encriptacion);
+                ArrayList<M_IngresoSistema> array = modelo_ingreso.Ingreso_AdminSGSST(user, con);
                 int cantidad = array.size();
                
                 if (cantidad == 0) {
@@ -91,6 +95,7 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                         System.exit(0);
                     }
                 } else {
+                    
                     Object[] fila = new Object[modelo.getColumnCount()];
 
                     for (int i = 0; i < array.size(); i++) {
@@ -108,6 +113,7 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                         fila[11] = array.get(i).getPassword();
                         fila[12] = array.get(i).getIdGerente();
                         fila[13] = array.get(i).getEstado();
+                        fila[14] = array.get(i).getPassword_antigua();
 
                         modelo.addRow(fila);
                         if (modelo.getRowCount() > 0) {
@@ -115,11 +121,23 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                             principal.label_nombreUser.setText(modelo.getValueAt(0, 1).toString() + " " + modelo.getValueAt(0, 2) + " " + modelo.getValueAt(0, 3));
                             principal.label_rol.setText("Administrador SGSST");
                             id=Integer.parseInt(modelo.getValueAt(0, 0).toString());
-                          nombrecompleto=(modelo.getValueAt(0, 1).toString()+" "+modelo.getValueAt(0, 2)+" "+modelo.getValueAt(0, 3));
+                            nombrecompleto=(modelo.getValueAt(0, 1).toString()+" "+modelo.getValueAt(0, 2)+" "+modelo.getValueAt(0, 3));
+                            principal.pass.setText(modelo.getValueAt(0, 11).toString());
+                            principal.id.setText(modelo.getValueAt(0, 0).toString());
+                        
+                          if(modelo.getValueAt(0, 11).toString().equals(modelo.getValueAt(0, 14).toString())){
                           principal.setVisible(true);
-                            this.vista_ingreso.dispose();
-                        } else {
+                          this.vista_ingreso.dispose();    
+                          }else{
+                          principal.setVisible(true);
+                          this.vista_ingreso.dispose();    
+                          CambiarContraseña ca = new CambiarContraseña();
+                          ca.setLocationRelativeTo(null);
+                          ca.setVisible(true);
+                          }
+                          } else {
                         }
+                        
                     }
                 }
             }
@@ -154,6 +172,7 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                             fila[12] = array.get(i).getUser_empleado();
                             fila[13] = array.get(i).getContraseña_usuario();
                             fila[14] = array.get(i).getEstado_empleado();
+                            fila[15] = array.get(i).getConstraseña_antigua();
 
                             modelo.addRow(fila);
                             if (modelo.getRowCount() > 0) {
@@ -171,10 +190,21 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                                id=Integer.parseInt(modelo.getValueAt(0, 0).toString());
                           nombrecompleto=(modelo.getValueAt(0, 1).toString()+" "+modelo.getValueAt(0, 2)+" "+modelo.getValueAt(0, 3));
                                 principal.setVisible(true);
-                                
-                                this.vista_ingreso.dispose();
-                            } else {
-                            }
+                                principal.pass.setText(modelo.getValueAt(0, 13).toString());
+                            principal.id.setText(modelo.getValueAt(0, 0).toString());
+                        
+                          if(modelo.getValueAt(0, 13).toString().equals(modelo.getValueAt(0, 15).toString())){
+                          principal.setVisible(true);
+                          this.vista_ingreso.dispose();    
+                          }else{
+                          principal.setVisible(true);
+                          this.vista_ingreso.dispose();    
+                          CambiarContraseña ca = new CambiarContraseña();
+                          ca.setLocationRelativeTo(null);
+                          ca.setVisible(true);
+                          }
+                          } else {
+                        }
                         }
                     }
                 }
@@ -182,7 +212,7 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                 
 
                     if (rol.equals("Gerente")) {
-                        ArrayList<M_IngresoSistema> array = modelo_ingreso.Ingreso_Gerente(user, contraseñatxt);
+                        ArrayList<M_IngresoSistema> array = modelo_ingreso.Ingreso_Gerente(user, encriptacion);
                         int cantidad = array.size();
                        
                         if (cantidad == 0) {
@@ -209,6 +239,7 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                                     fila[10] = array.get(i).getUser();
                                     fila[11] = array.get(i).getPassword();
                                     fila[12] = array.get(i).getEstado();
+                                    fila[13] = array.get(i).getPassword_antigua();
 
                                     modelo.addRow(fila);
                                     if (modelo.getRowCount() > 0) {
@@ -220,9 +251,21 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                                         
                                           id=Integer.parseInt(modelo.getValueAt(0, 0).toString());
                           nombrecompleto=(modelo.getValueAt(0, 1).toString()+" "+modelo.getValueAt(0, 2)+" "+modelo.getValueAt(0, 3));
-                                        this.vista_ingreso.dispose();
-                                    } else {
-                                    }
+                          principal.pass.setText(modelo.getValueAt(0, 11).toString());
+                            principal.id.setText(modelo.getValueAt(0, 0).toString());
+                        
+                          if(modelo.getValueAt(0, 11).toString().equals(modelo.getValueAt(0, 13).toString())){
+                          principal.setVisible(true);
+                          this.vista_ingreso.dispose();    
+                          }else{
+                          principal.setVisible(true);
+                          this.vista_ingreso.dispose();    
+                          CambiarContraseña ca = new CambiarContraseña();
+                          ca.setLocationRelativeTo(null);
+                          ca.setVisible(true);
+                          }
+                          } else {
+                        }
                                 }
                             }
                         }
@@ -230,7 +273,7 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                     }
 
                     if (rol.equals("Jefe de Proceso")) {
-                        ArrayList<M_IngresoSistema> array = modelo_ingreso.ingreso_JefeProceso(user, contraseñatxt);
+                        ArrayList<M_IngresoSistema> array = modelo_ingreso.ingreso_JefeProceso(user, encriptacion);
                         int cantidad = array.size();
 
                         if (cantidad == 0) {
@@ -256,6 +299,7 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                                     fila[10] = array.get(i).getUser();
                                     fila[11] = array.get(i).getPassword();
                                     fila[12] = array.get(i).getEstado();
+                                    fila[13] = array.get(i).getPassword_antigua();
                                     modelo.addRow(fila);
 
                                     if (modelo.getRowCount() > 0){
@@ -265,10 +309,21 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                                         
                                           id=Integer.parseInt(modelo.getValueAt(0, 0).toString());
                           nombrecompleto=(modelo.getValueAt(0, 1).toString()+" "+modelo.getValueAt(0, 2)+" "+modelo.getValueAt(0, 3));
-                                        principal.setVisible(true);
-                                        this.vista_ingreso.dispose();
-                                    }else{
-                                    }
+                          principal.pass.setText(modelo.getValueAt(0, 11).toString());
+                            principal.id.setText(modelo.getValueAt(0, 0).toString());
+                        
+                          if(modelo.getValueAt(0, 11).toString().equals(modelo.getValueAt(0, 13).toString())){
+                          principal.setVisible(true);
+                          this.vista_ingreso.dispose();    
+                          }else{
+                          principal.setVisible(true);
+                          this.vista_ingreso.dispose();    
+                          CambiarContraseña ca = new CambiarContraseña();
+                          ca.setLocationRelativeTo(null);
+                          ca.setVisible(true);
+                          }
+                          } else {
+                        }
                                 }
                             }
                         }

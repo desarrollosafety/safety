@@ -112,7 +112,7 @@ public static String ruta;
       
      
      
-int resp=modelo_registrarEmpleado.registrarPersona(nombre, apellidoPa, apellidoMa, tipoDoc, numeroDoc, genero, telefono, direccion, email, idProceso);
+int resp=modelo_registrarEmpleado.registrarPersona(nombre, apellidoPa, apellidoMa, tipoDoc, numeroDoc, genero, telefono, direccion,idProceso, email);
      if(resp>0){
          String estadoEmpleado="Activo";
        

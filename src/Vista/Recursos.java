@@ -371,9 +371,11 @@ public class Recursos extends javax.swing.JFrame{
        int valo=10;
        ps.setBarra(ps.getBarra()+valo);
        this.dispose();
+        cm.Puntaje();
+        gh.punt=ps.getPunt();
        gh.val=ps.getBarra();
-        gh.empezar();
-        
+       gh.empezar();
+      
        cm.est_recursos(ps); 
        gh.setVisible(true);
        gh.toFront();
