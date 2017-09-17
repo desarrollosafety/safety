@@ -334,11 +334,11 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(jTextField2);
-        jTextField2.setBounds(22, 214, 177, 19);
+        jTextField2.setBounds(22, 214, 177, 20);
 
         jTextField3.setEditable(false);
         panel_perfil.add(jTextField3);
-        jTextField3.setBounds(22, 283, 177, 19);
+        jTextField3.setBounds(22, 283, 177, 20);
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel2.setText("Genero:");
@@ -347,11 +347,11 @@ private Connection connection= new Conexion().getConexion();
 
         jTextField4.setEditable(false);
         panel_perfil.add(jTextField4);
-        jTextField4.setBounds(312, 214, 177, 19);
+        jTextField4.setBounds(312, 214, 177, 20);
 
         jTextField5.setEditable(false);
         panel_perfil.add(jTextField5);
-        jTextField5.setBounds(22, 358, 177, 19);
+        jTextField5.setBounds(22, 358, 177, 20);
 
         jTextField6.setEditable(false);
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
@@ -360,15 +360,15 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(jTextField6);
-        jTextField6.setBounds(312, 358, 177, 19);
+        jTextField6.setBounds(312, 358, 177, 20);
 
         jTextField7.setEditable(false);
         panel_perfil.add(jTextField7);
-        jTextField7.setBounds(312, 283, 177, 19);
+        jTextField7.setBounds(312, 283, 177, 20);
 
         jTextField8.setEditable(false);
         panel_perfil.add(jTextField8);
-        jTextField8.setBounds(22, 439, 177, 19);
+        jTextField8.setBounds(22, 439, 177, 20);
 
         jTextField9.setEditable(false);
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
@@ -377,7 +377,7 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(jTextField9);
-        jTextField9.setBounds(310, 420, 216, 19);
+        jTextField9.setBounds(310, 420, 216, 20);
 
         btnEditar_Perfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/editar.png"))); // NOI18N
         btnEditar_Perfil.setText("Editar Perfil");
@@ -389,7 +389,7 @@ private Connection connection= new Conexion().getConexion();
         btnGuardar.setText("Guardar");
         btnGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         panel_perfil.add(btnGuardar);
-        btnGuardar.setBounds(390, 460, 126, 40);
+        btnGuardar.setBounds(390, 460, 123, 40);
 
         Btn_Cerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar.png"))); // NOI18N
         Btn_Cerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -399,7 +399,7 @@ private Connection connection= new Conexion().getConexion();
             }
         });
         panel_perfil.add(Btn_Cerrar);
-        Btn_Cerrar.setBounds(500, 10, 36, 34);
+        Btn_Cerrar.setBounds(500, 10, 36, 33);
 
         txt_nombrePerfil.setFont(new java.awt.Font("Lucida Handwriting", 1, 36)); // NOI18N
         txt_nombrePerfil.setForeground(new java.awt.Color(255, 255, 255));
@@ -709,10 +709,10 @@ private Connection connection= new Conexion().getConexion();
         menuBar.add(jmLlamadosdeAtencion);
 
         jm_Empresa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/clipboard.png"))); // NOI18N
-        jm_Empresa.setText("Empresa");
+        jm_Empresa.setText("Sucursales");
         jm_Empresa.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
 
-        jm_registrarEmpresa.setText("Registrar empresa");
+        jm_registrarEmpresa.setText("Registrar sucursales");
         jm_registrarEmpresa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jm_registrarEmpresaActionPerformed(evt);

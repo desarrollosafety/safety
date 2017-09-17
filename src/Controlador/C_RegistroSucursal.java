@@ -6,9 +6,10 @@
 package Controlador; 
 
 import Modelo.Conexion;
-import Modelo.M_RegistroSucursal;
+import Modelo.M_Sucursal;
+
 import Vista.Registro_Sucursal;
-import Modelo.M_RegistroSucursal;
+
 import Modelo.Mrecursos;
 
 
@@ -49,7 +50,7 @@ public class C_RegistroSucursal implements ActionListener, KeyListener{
     
     }*/
     
-    M_RegistroSucursal tr= new M_RegistroSucursal();
+    M_Sucursal tr= new M_Sucursal();
 
     @Override
     public void actionPerformed(java.awt.event.ActionEvent ae) {
@@ -74,30 +75,26 @@ public class C_RegistroSucursal implements ActionListener, KeyListener{
     private String sSQL;
       public DefaultTableModel mostrar(String buscar){
        DefaultTableModel modelo;
-       String [] titulos = {"Nit","Empresa","Cantidad de empleados","Ciudad","Departamento","Sucursal","Telefono","Razon social","Actividad economica","Nivel de riesgo","Tamaño"};
+       String [] titulos = {"Id sucursal","Nombre Sucursal","Dirección","Telefono","E-mail","Cantidad de empleados"};
           
        String [] registro =new String [11];
          modelo = new DefaultTableModel(null, titulos);
        
              
-       sSQL="select nitempresa, nombre_empresa, cantidad, ciudad, departamento, sucursal, telefono, razonsoc, actividad, nivelriesg, tamañoemp from empresa where estado='activo' ";
+       sSQL="select idsucursal, nombre_sucursal, direccion_sucursal, telefono_sucursal, email, cantidademple from sucursales where estado_sucursal='activo' ";
        
        try {
            Statement st= cn.createStatement();
            ResultSet rs=st.executeQuery(sSQL);
            
            while(rs.next()){
-               registro [0]=rs.getString("nitempresa");
-               registro [1]=rs.getString("nombre_empresa");
-               registro [2]=rs.getString("cantidad");
-               registro [3]=rs.getString("ciudad");
-               registro [4]=rs.getString("departamento");
-               registro [5]=rs.getString("sucursal");
-               registro [6]=rs.getString("telefono");
-               registro [7]=rs.getString("razonsoc");
-                registro [8]=rs.getString("actividad");
-                 registro [9]=rs.getString("nivelriesg");
-                  registro [10]=rs.getString("tamañoemp");
+               registro [0]=rs.getString("idsucursal");
+               registro [1]=rs.getString("nombre_sucursal");
+               registro [2]=rs.getString("direccion_sucursal");
+               registro [3]=rs.getString("telefono_sucursal");
+               registro [4]=rs.getString("email");
+               registro [5]=rs.getString("cantidademple");
+               
                                
                        modelo.addRow(registro);
                
@@ -125,31 +122,28 @@ public class C_RegistroSucursal implements ActionListener, KeyListener{
     
     
     
-    public boolean inserEmp(M_RegistroSucursal dts){
+    public boolean inserSucur (M_Sucursal dts){
         
                
         
         try {
 
-            PreparedStatement pst = cn.prepareStatement("insert into empresa (nitempresa, nombre_empresa, cantidad, ciudad, departamento, sucursal,"
-                    + "telefono, razonsoc, actividad, nivelriesg, tamañoemp, estado) values (?,?,?,?,?,?,?,?,?,?,?,?)");
+            PreparedStatement pst = cn.prepareStatement("insert into sucursales (nombre_sucursal, direccion_sucursal, telefono_sucursal, estado_sucursal, idmunicipio, idempresa,"
+                    + "email, cantidademple) values (?,?,?,?,?,?,?,?)");
             
             
             
 
-          pst.setString(1, dts.getNitEmpresa());
-          pst.setString(2, dts.getNomEmpresa());
-          pst.setInt(3, dts.getCantEmpl());
-          pst.setString(4, dts.getCiudad());
-          pst.setString(5, dts.getDepartamento());
-          pst.setString(6, dts.getSucursal());
-          pst.setInt(7, dts.getTelefono());  
-          pst.setString(8, dts.getRazonSocial());
-          pst.setInt(9, dts.getActEconomica());
-          pst.setString(10, dts.getNivelRiesgo());
-          pst.setString(11, dts.getTamaño());
-          pst.setString(12, dts.getEstado());
-                       
+          pst.setString(1, dts.getNombreSucursal());
+          pst.setString(2, dts.getDireccionSucursal());
+          pst.setString(3, dts.getTelefonoSucursal());
+          pst.setString(4, dts.getEstadoSucursal());
+          pst.setInt(5, dts.getIdMunicipio());
+          pst.setInt(6, dts.getIdEmpresa());
+          pst.setString(7, dts.getEmail());  
+          pst.setInt(8, dts.getCantEmple());
+          
+               
            int n = pst.executeUpdate();
 
             return true;
@@ -164,15 +158,15 @@ public class C_RegistroSucursal implements ActionListener, KeyListener{
         
     }
     
-     public boolean eliminar (M_RegistroSucursal dts){
-       sSQL="update empresa set estado=? where nitempresa=?";
+     public boolean eliminar (M_Sucursal dts){
+       sSQL="update sucursales set estado_sucursal=? where idsucursal=?";
             
            
        
        try {
            PreparedStatement pst=cn.prepareStatement(sSQL);
-            pst.setString(1, dts.getEstado());
-           pst.setString(2, dts.getAnt2());
+            pst.setString(1, dts.getEstadoSucursal());
+           pst.setInt(2, dts.getIdsucursal());
            
            
            int n=pst.executeUpdate();
@@ -191,26 +185,23 @@ public class C_RegistroSucursal implements ActionListener, KeyListener{
    }
     
      
-      public boolean editar (M_RegistroSucursal dts){
-       sSQL="update empresa set nitempresa=?, nombre_empresa=?, cantidad=?, ciudad=?, departamento=?, sucursal=?, telefono=?, razonsoc=?, actividad=?, nivelriesg=?, tamañoemp=? "+
-               " where nitempresa=?";
+      public boolean editar (M_Sucursal dts){
+       sSQL="update sucursales set nombre_sucursal=?, direccion_sucursal=?, telefono_sucursal=?, estado_sucursal=?, idmunicipio=?, idempresa=?, email=?, cantidademple=? "+
+               " where idsucursal=?";
            
        
        try {
            PreparedStatement pst=cn.prepareStatement(sSQL);
-            pst.setString(1, dts.getNitEmpresa());
-           pst.setString(2, dts.getNomEmpresa());
-           pst.setInt(3, dts.getCantEmpl());
-           pst.setString(4, dts.getCiudad());
-           pst.setString(5, dts.getDepartamento());
-           pst.setString(6, dts.getSucursal());
-           pst.setInt(7, dts.getTelefono());
-           pst.setString(8, dts.getRazonSocial());
-           pst.setInt(9, dts.getActEconomica());
-           pst.setString(10, dts.getNivelRiesgo());
-           pst.setString(11, dts.getTamaño());
+            pst.setString(1, dts.getNombreSucursal());
+          pst.setString(2, dts.getDireccionSucursal());
+          pst.setString(3, dts.getTelefonoSucursal());
+          pst.setString(4, dts.getEstadoSucursal());
+          pst.setInt(5, dts.getIdMunicipio());
+          pst.setInt(6, dts.getIdEmpresa());
+          pst.setString(7, dts.getEmail());  
+          pst.setInt(8, dts.getCantEmple());
            
-           pst.setString(12, dts.getAnt2());
+         pst.setInt(9, dts.getIdsucursal());
            
            int n=pst.executeUpdate();
            

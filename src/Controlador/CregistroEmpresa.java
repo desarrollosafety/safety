@@ -69,8 +69,7 @@ public class CregistroEmpresa {
             
             if(rs.next()){    
                 
-          // Evaluacion_Ini.lbl1.setText(rs.getString("estado"));
-            
+                     
             tr.setRegistro(Integer.parseInt(rs.getString("registro")));         
           
             }

@@ -9,36 +9,25 @@ package Modelo;
  *
  * @author USUARIO
  */
-public class M_Sucursal extends M_Empresa {
+public class M_Sucursal {
     
-    private int idSucursal;
-    private String nombreSucursal;
-    private String direccionSucursal;
-    private String telefonoSucursal;
-    private String nitEmpresa;
-    private String estadoSucursal;
-    private int idMunicipio;
+   private int idsucursal;
 
-    public M_Sucursal() {
+    public int getIdsucursal() {
+        return idsucursal;
     }
 
-    public M_Sucursal(int idSucursal, String nombreSucursal, String direccionSucursal, String telefonoSucursal, String nitEmpresa, String estadoSucursal, int idMunicipio) {
-        this.idSucursal = idSucursal;
-        this.nombreSucursal = nombreSucursal;
-        this.direccionSucursal = direccionSucursal;
-        this.telefonoSucursal = telefonoSucursal;
-        this.nitEmpresa = nitEmpresa;
-        this.estadoSucursal = estadoSucursal;
-        this.idMunicipio = idMunicipio;
+    public void setIdsucursal(int idsucursal) {
+        this.idsucursal = idsucursal;
     }
-
-    public int getIdSucursal() {
-        return idSucursal;
-    }
-
-    public void setIdSucursal(int idSucursal) {
-        this.idSucursal = idSucursal;
-    }
+    private String nombreSucursal="";
+    private String direccionSucursal="";
+    private String telefonoSucursal="";
+    private String estadoSucursal="";
+    private int idMunicipio=0;
+    private int idEmpresa=0;
+    private String email="";
+    private int cantEmple=0;
 
     public String getNombreSucursal() {
         return nombreSucursal;
@@ -64,14 +53,6 @@ public class M_Sucursal extends M_Empresa {
         this.telefonoSucursal = telefonoSucursal;
     }
 
-    public String getNitEmpresa() {
-        return nitEmpresa;
-    }
-
-    public void setNitEmpresa(String nitEmpresa) {
-        this.nitEmpresa = nitEmpresa;
-    }
-
     public String getEstadoSucursal() {
         return estadoSucursal;
     }
@@ -87,6 +68,32 @@ public class M_Sucursal extends M_Empresa {
     public void setIdMunicipio(int idMunicipio) {
         this.idMunicipio = idMunicipio;
     }
+
+    public int getIdEmpresa() {
+        return idEmpresa;
+    }
+
+    public void setIdEmpresa(int idEmpresa) {
+        this.idEmpresa = idEmpresa;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getCantEmple() {
+        return cantEmple;
+    }
+
+    public void setCantEmple(int cantEmple) {
+        this.cantEmple = cantEmple;
+    }
+
     
+   
     
 }
