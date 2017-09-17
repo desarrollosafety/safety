@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Modelo;
-import Controlador.C_RegistroEmpresa;
+import Controlador.C_RegistroSucursal;
 import java.io.FileInputStream;
 
 import java.sql.CallableStatement;
@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
  *
  * @author YOREL
  */
-public class M_RegistroEmpresa {
+public class M_RegistroSucursal {
     
     private static String ant2;
     private String nitEmpresa;
@@ -33,7 +33,7 @@ public class M_RegistroEmpresa {
     private String nivelRiesgo;
     private String estado;
 
-    public M_RegistroEmpresa(String nitEmpresa, String nomEmpresa, int cantEmpl, String Tamaño, String ciudad, String departamento, String sucursal, int telefono, String razonSocial, int actEconomica, String nivelRiesgo, String estado) {
+    public M_RegistroSucursal(String nitEmpresa, String nomEmpresa, int cantEmpl, String Tamaño, String ciudad, String departamento, String sucursal, int telefono, String razonSocial, int actEconomica, String nivelRiesgo, String estado) {
         this.nitEmpresa = nitEmpresa;
         this.nomEmpresa = nomEmpresa;
         this.cantEmpl = cantEmpl;
@@ -48,7 +48,7 @@ public class M_RegistroEmpresa {
         this.estado = estado;
     }
 
-    public M_RegistroEmpresa() {
+    public M_RegistroSucursal() {
     }
 
     public static String getAnt2() {
@@ -56,7 +56,7 @@ public class M_RegistroEmpresa {
     }
 
     public static void setAnt2(String ant2) {
-        M_RegistroEmpresa.ant2 = ant2;
+        M_RegistroSucursal.ant2 = ant2;
     }
 
     public String getNitEmpresa() {

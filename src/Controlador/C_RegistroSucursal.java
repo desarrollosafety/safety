@@ -6,9 +6,9 @@
 package Controlador; 
 
 import Modelo.Conexion;
-import Modelo.M_RegistroEmpresa;
-import Vista.Registro_Empresa;
-import Modelo.M_RegistroEmpresa;
+import Modelo.M_RegistroSucursal;
+import Vista.Registro_Sucursal;
+import Modelo.M_RegistroSucursal;
 import Modelo.Mrecursos;
 
 
@@ -28,7 +28,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author YOREL
  */
-public class C_RegistroEmpresa implements ActionListener, KeyListener{
+public class C_RegistroSucursal implements ActionListener, KeyListener{
     
      private Conexion mysql=new Conexion();
    private Connection cn=mysql.getConexion();
@@ -49,7 +49,7 @@ public class C_RegistroEmpresa implements ActionListener, KeyListener{
     
     }*/
     
-    M_RegistroEmpresa tr= new M_RegistroEmpresa();
+    M_RegistroSucursal tr= new M_RegistroSucursal();
 
     @Override
     public void actionPerformed(java.awt.event.ActionEvent ae) {
@@ -125,7 +125,7 @@ public class C_RegistroEmpresa implements ActionListener, KeyListener{
     
     
     
-    public boolean inserEmp(M_RegistroEmpresa dts){
+    public boolean inserEmp(M_RegistroSucursal dts){
         
                
         
@@ -164,7 +164,7 @@ public class C_RegistroEmpresa implements ActionListener, KeyListener{
         
     }
     
-     public boolean eliminar (M_RegistroEmpresa dts){
+     public boolean eliminar (M_RegistroSucursal dts){
        sSQL="update empresa set estado=? where nitempresa=?";
             
            
@@ -191,7 +191,7 @@ public class C_RegistroEmpresa implements ActionListener, KeyListener{
    }
     
      
-      public boolean editar (M_RegistroEmpresa dts){
+      public boolean editar (M_RegistroSucursal dts){
        sSQL="update empresa set nitempresa=?, nombre_empresa=?, cantidad=?, ciudad=?, departamento=?, sucursal=?, telefono=?, razonsoc=?, actividad=?, nivelriesg=?, tamañoemp=? "+
                " where nitempresa=?";
            

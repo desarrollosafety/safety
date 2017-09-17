@@ -7,10 +7,12 @@ package Controlador;
 
 import Modelo.M_Empleado;
 import Modelo.M_IngresoSistema;
+import Modelo.MregistroEmpresa;
 import Vista.CambiarContraseña;
 import Vista.Encuesta_SocioDemografica;
 import Vista.IngresoUsuario;
 import Vista.Principal;
+import Vista.Registro_empresa;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -27,7 +29,7 @@ import org.apache.commons.codec.digest.DigestUtils;
  * @author USUARIO
  */
 public class C_IngresoSistema implements ActionListener, KeyListener {
-
+   
     IngresoUsuario vista_ingreso = new IngresoUsuario();
     M_IngresoSistema modelo_ingreso = new M_IngresoSistema();
     Encuesta_SocioDemografica encuesta=new Encuesta_SocioDemografica();
@@ -126,8 +128,20 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                             principal.id.setText(modelo.getValueAt(0, 0).toString());
                         
                           if(modelo.getValueAt(0, 11).toString().equals(modelo.getValueAt(0, 14).toString())){
+                           MregistroEmpresa ñl= new MregistroEmpresa();
+                                 CregistroEmpresa jk= new CregistroEmpresa();
+                        jk.Regis_act();
+                                          if(ñl.getRegistro()==0){
+                            this.vista_ingreso.dispose(); 
+                            Registro_empresa op = new Registro_empresa();
+                            op.toFront();
+                            op.setVisible(true);
+                            
+                        }else{
                           principal.setVisible(true);
                           this.vista_ingreso.dispose();    
+                         
+                        }
                           }else{
                           principal.setVisible(true);
                           this.vista_ingreso.dispose();    
@@ -137,6 +151,10 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                           }
                           } else {
                         }
+                        
+                     
+                        
+                        
                         
                     }
                 }
@@ -255,8 +273,24 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                             principal.id.setText(modelo.getValueAt(0, 0).toString());
                         
                           if(modelo.getValueAt(0, 11).toString().equals(modelo.getValueAt(0, 13).toString())){
+                             MregistroEmpresa ñl= new MregistroEmpresa();
+                                 CregistroEmpresa jk= new CregistroEmpresa();
+                        jk.Regis_act();
+                                          if(ñl.getRegistro()==0){
+                            this.vista_ingreso.dispose(); 
+                            Registro_empresa op = new Registro_empresa();
+                            op.toFront();
+                            op.setVisible(true);
+                            
+                        }else{
                           principal.setVisible(true);
                           this.vista_ingreso.dispose();    
+                         
+                        }
+                          
+                          
+                          
+                          
                           }else{
                           principal.setVisible(true);
                           this.vista_ingreso.dispose();    
@@ -313,8 +347,20 @@ public class C_IngresoSistema implements ActionListener, KeyListener {
                             principal.id.setText(modelo.getValueAt(0, 0).toString());
                         
                           if(modelo.getValueAt(0, 11).toString().equals(modelo.getValueAt(0, 13).toString())){
+                              MregistroEmpresa ñl= new MregistroEmpresa();
+                                 CregistroEmpresa jk= new CregistroEmpresa();
+                        jk.Regis_act();
+                                          if(ñl.getRegistro()==0){
+                            this.vista_ingreso.dispose(); 
+                            Registro_empresa op = new Registro_empresa();
+                            op.toFront();
+                            op.setVisible(true);
+                            
+                        }else{
                           principal.setVisible(true);
                           this.vista_ingreso.dispose();    
+                         
+                        }  
                           }else{
                           principal.setVisible(true);
                           this.vista_ingreso.dispose();    

@@ -5,8 +5,8 @@
  */
 package Vista;
 
-import Controlador.C_RegistroEmpresa;
-import Modelo.M_RegistroEmpresa;
+import Controlador.C_RegistroSucursal;
+import Modelo.M_RegistroSucursal;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -14,20 +14,25 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author leandro
  */
-public class Registro_Empresa extends javax.swing.JFrame {
+public class Registro_Sucursal extends javax.swing.JFrame {
 DefaultTableModel modelo;
 
-M_RegistroEmpresa tr = new M_RegistroEmpresa();
-C_RegistroEmpresa func = new C_RegistroEmpresa();
+M_RegistroSucursal tr = new M_RegistroSucursal();
+C_RegistroSucursal func = new C_RegistroSucursal();
 public String Tamaño;
     /**
      * Creates new form regis_empres
      */
-    public Registro_Empresa() {
+    public Registro_Sucursal() {
         initComponents();
          setTitle("Formulario para el registro de la empresa");
          mostrar("");
         this.setLocationRelativeTo(null);
+
+        txtnit.setText(jtdatos.getValueAt(0, 0).toString());
+        txtnomem.setText(jtdatos.getValueAt(0, 1).toString());  
+        txtnit.setEnabled(false);
+        txtnomem.setEnabled(false);
         btn_eliminar.setEnabled(false);
         btneditar.setEnabled(false);
     }
@@ -47,8 +52,7 @@ public String Tamaño;
      public void limpiar(){
          
          
-         txtnit.setText("");
-       txtnomem.setText("");
+        
        txtcantidad.setText("");
        txtciudad.setText("");
        txtdepartamento.setText("");
@@ -101,11 +105,9 @@ public String Tamaño;
         jPanel1.setBackground(new java.awt.Color(100, 211, 82));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Datos de la empresa");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Nit Empresa");
 
         txtnit.addActionListener(new java.awt.event.ActionListener() {
@@ -120,7 +122,6 @@ public String Tamaño;
         });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Nombre de la Empresa");
 
         txtnomem.addActionListener(new java.awt.event.ActionListener() {
@@ -135,11 +136,9 @@ public String Tamaño;
         });
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Cantidad de Empleados");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Ciudad");
 
         txtciudad.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -149,7 +148,6 @@ public String Tamaño;
         });
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Departamento");
 
         txtdepartamento.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -159,11 +157,9 @@ public String Tamaño;
         });
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Sucursal");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Telefono");
 
         txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -173,13 +169,11 @@ public String Tamaño;
         });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Razon Social ");
 
         cbrazon.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "LTDA", "SAS", "S ENC", "SA" }));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("No Actividad Economica ");
 
         txtactividad.addActionListener(new java.awt.event.ActionListener() {
@@ -194,7 +188,6 @@ public String Tamaño;
         });
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("Nivel de Riesgo ");
 
         cbnivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "1", "2", "3", "4", "5", "" }));
@@ -288,9 +281,7 @@ public String Tamaño;
                         .addGap(1, 1, 1)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(txtnit, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtnomem, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtnomem, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(txtsucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(txtciudad, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -299,7 +290,8 @@ public String Tamaño;
                         .addComponent(cbrazon, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(txtactividad, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(cbnivel, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(txtcantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtcantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtnit, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 941, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(69, 69, 69))
@@ -436,6 +428,7 @@ public String Tamaño;
     private void jtdatosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtdatosMouseClicked
 
         btn_eliminar.setEnabled(true);
+        
         btneditar.setEnabled(true);
         btnregistrar.setEnabled(false);
         btnsalir.setEnabled(true);
@@ -446,7 +439,7 @@ public String Tamaño;
         tr.setAnt2(jtdatos.getValueAt(fila1, 0).toString());
 
         int fila = jtdatos.rowAtPoint(evt.getPoint());
-
+       
         txtnit.setText(jtdatos.getValueAt(fila, 0).toString());
         txtnomem.setText(jtdatos.getValueAt(fila, 1).toString());
         txtcantidad.setText(jtdatos.getValueAt(fila, 2).toString());
@@ -458,7 +451,11 @@ public String Tamaño;
         cbrazon.setSelectedItem(jtdatos.getValueAt(fila, 7).toString());
         txtactividad.setText(jtdatos.getValueAt(fila, 8).toString());
         cbnivel.setSelectedItem(jtdatos.getValueAt(fila, 9).toString());
-
+        
+        if(fila==0){
+            btn_eliminar.setEnabled(false);
+            
+        }
     }//GEN-LAST:event_jtdatosMouseClicked
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
@@ -540,7 +537,7 @@ public String Tamaño;
             btnregistrar.setEnabled(true);
             btn_eliminar.setEnabled(false);
             btneditar.setEnabled(false);
-            txtnit.setEnabled(true);
+            
 
         }
     }//GEN-LAST:event_btneditarActionPerformed
@@ -580,21 +577,23 @@ public String Tamaño;
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Sucursal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Sucursal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Sucursal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Registro_Empresa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Registro_Sucursal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Registro_Empresa().setVisible(true);
+                new Registro_Sucursal().setVisible(true);
             }
         });
     }
