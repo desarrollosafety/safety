@@ -372,6 +372,7 @@ private Conexion mysql=new Conexion();
            JOptionPane.showMessageDialog(null, "La empresa se ha registrado exitosamente");
            tr.setRegistro(1);
            im.actRegis(tr);
+           this.dispose();
            Principal jh = new Principal();
            jh.toFront();
            jh.setVisible(true);
